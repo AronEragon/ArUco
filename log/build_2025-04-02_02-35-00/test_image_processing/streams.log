@@ -1,0 +1,22 @@
+[0.034s] Invoking command in '/home/eragon/ArUco/build/test_image_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_image_processing -- -j8 -l8
+[0.160s] [100%] Built target test_image_processing_node
+[0.204s] Invoked command in '/home/eragon/ArUco/build/test_image_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_image_processing -- -j8 -l8
+[0.206s] Invoking command in '/home/eragon/ArUco/build/test_image_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_image_processing
+[0.225s] -- Install configuration: "Debug"
+[0.226s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/lib/test_image_processing/test_image_processing_node
+[0.226s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/ament_index/resource_index/package_run_dependencies/test_image_processing
+[0.226s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/ament_index/resource_index/parent_prefix_path/test_image_processing
+[0.226s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/environment/ament_prefix_path.sh
+[0.227s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/environment/ament_prefix_path.dsv
+[0.227s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/environment/path.sh
+[0.227s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/environment/path.dsv
+[0.227s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/local_setup.bash
+[0.227s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/local_setup.sh
+[0.228s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/local_setup.zsh
+[0.228s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/local_setup.dsv
+[0.228s] -- Installing: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.dsv
+[0.228s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/ament_index/resource_index/packages/test_image_processing
+[0.228s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/cmake/test_image_processingConfig.cmake
+[0.228s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/cmake/test_image_processingConfig-version.cmake
+[0.229s] -- Up-to-date: /home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.xml
+[0.264s] Invoked command in '/home/eragon/ArUco/build/test_image_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_image_processing

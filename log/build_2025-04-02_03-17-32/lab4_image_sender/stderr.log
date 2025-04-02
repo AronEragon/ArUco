@@ -1,0 +1,22 @@
+/home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:73:31: error: stray ‘#’ in program
+   73 |         cv_ptr->image = image;#include <rclcpp/rclcpp.hpp>
+      |                               ^
+/home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp: In member function ‘void ArUcoDetector::image_callback(const ConstSharedPtr&)’:
+/home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:73:32: error: ‘include’ was not declared in this scope
+   73 |         cv_ptr->image = image;#include <rclcpp/rclcpp.hpp>
+      |                                ^~~~~~~
+/home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:73:47: error: expected primary-expression before ‘/’ token
+   73 |         cv_ptr->image = image;#include <rclcpp/rclcpp.hpp>
+      |                                               ^
+/home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:73:54: error: expected primary-expression before ‘.’ token
+   73 |         cv_ptr->image = image;#include <rclcpp/rclcpp.hpp>
+      |                                                      ^
+/home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:80:1: error: expected primary-expression before ‘using’
+   80 | using namespace std::chrono_literals;
+      | ^~~~~
+/home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:147:41: error: a function-definition is not allowed here before ‘{’ token
+  147 |         int main(int argc, char **argv) {
+      |                                         ^
+gmake[2]: *** [CMakeFiles/lab4_image_sender_node.dir/build.make:76: CMakeFiles/lab4_image_sender_node.dir/src/lab4_image_sender_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_sender_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

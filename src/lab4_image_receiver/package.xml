@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<package format="3">
+  <name>lab4_image_receiver</name>
+  <version>0.0.0</version>
+  <description>ROS 2 package for detecting ArUco markers and publishing their positions to RViz2.</description>
+  <maintainer email="eragonaron@gmail.com">ivan</maintainer>
+  <license>Apache 2.0</license>
+
+  <!-- Build tool dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Dependencies for the package -->
+  <depend>rclcpp</depend>               <!-- ROS 2 C++ client library -->
+  <depend>sensor_msgs</depend>          <!-- For image messages -->
+  <depend>cv_bridge</depend>            <!-- To convert between ROS images and OpenCV images -->
+  <depend>image_transport</depend>      <!-- For subscribing to camera images -->
+  <depend>opencv2</depend>              <!-- OpenCV library -->
+  <depend>visualization_msgs</depend>   <!-- For publishing markers to RViz2 -->
+
+  <!-- Test dependencies -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- Export configuration -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

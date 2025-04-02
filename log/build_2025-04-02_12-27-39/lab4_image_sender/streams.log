@@ -1,0 +1,4 @@
+[0.052s] Invoking command in '/home/eragon/ArUco/build/lab4_image_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_sender -- -j8 -l8
+[0.212s] [ 50%] Building CXX object CMakeFiles/lab4_image_sender_node.dir/src/lab4_image_sender_node.cpp.o
+[9.661s] [100%] Linking CXX executable lab4_image_sender_node
+[10.431s] [100%] Built target lab4_image_sender_node

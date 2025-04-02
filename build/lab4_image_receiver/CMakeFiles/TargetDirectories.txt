@@ -1,0 +1,10 @@
+/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/uninstall.dir
+/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/lab4_image_receiver_uninstall.dir
+/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/lab4_image_receiver_node.dir
+/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/test.dir
+/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/edit_cache.dir
+/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/rebuild_cache.dir
+/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/list_install_components.dir
+/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/install.dir
+/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/install/local.dir
+/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/install/strip.dir

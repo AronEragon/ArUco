@@ -1,0 +1,454 @@
+[0.232s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--event-handlers', 'status+', 'console_start_end+', '--cmake-args', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']
+[0.232s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=['status+', 'console_start_end+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77ad04f6d900>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77ad04f6d1e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77ad04f6d1e0>>, mixin_verb=('build',))
+[0.589s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.589s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.589s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.589s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.589s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.589s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.589s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/eragon/ArUco'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.612s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.613s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.614s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ignore', 'ignore_ament_install']
+[0.615s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ignore_ament_install'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_pkg']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_pkg'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['colcon_meta']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'colcon_meta'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['ros']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'ros'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['cmake', 'python']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'cmake'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'python'
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extensions ['python_setup_py']
+[0.616s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera) by extension 'python_setup_py'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extensions ['ignore', 'ignore_ament_install']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extension 'ignore'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extension 'ignore_ament_install'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extensions ['colcon_pkg']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extension 'colcon_pkg'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extensions ['colcon_meta']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extension 'colcon_meta'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extensions ['ros']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extension 'ros'
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extensions ['cmake', 'python']
+[0.617s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extension 'cmake'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extension 'python'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extensions ['python_setup_py']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/create_aruco) by extension 'python_setup_py'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extensions ['ignore', 'ignore_ament_install']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extension 'ignore'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extension 'ignore_ament_install'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extensions ['colcon_pkg']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extension 'colcon_pkg'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extensions ['colcon_meta']
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extension 'colcon_meta'
+[0.618s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extensions ['ros']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extension 'ros'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extensions ['cmake', 'python']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extension 'cmake'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extension 'python'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extensions ['python_setup_py']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/detection_py) by extension 'python_setup_py'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extensions ['ignore', 'ignore_ament_install']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extension 'ignore'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extension 'ignore_ament_install'
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extensions ['colcon_pkg']
+[0.619s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extension 'colcon_pkg'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extensions ['colcon_meta']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extension 'colcon_meta'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extensions ['ros']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extension 'ros'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extensions ['cmake', 'python']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extension 'cmake'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extension 'python'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extensions ['python_setup_py']
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/generate_aruco_marker) by extension 'python_setup_py'
+[0.620s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_receiver) by extensions ['ignore', 'ignore_ament_install']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_receiver) by extension 'ignore'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_receiver) by extension 'ignore_ament_install'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_receiver) by extensions ['colcon_pkg']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_receiver) by extension 'colcon_pkg'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_receiver) by extensions ['colcon_meta']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_receiver) by extension 'colcon_meta'
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_receiver) by extensions ['ros']
+[0.621s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_receiver) by extension 'ros'
+[0.627s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab4_image_receiver' with type 'ros.ament_cmake' and name 'lab4_image_receiver'
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_sender) by extensions ['ignore', 'ignore_ament_install']
+[0.627s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_sender) by extension 'ignore'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_sender) by extension 'ignore_ament_install'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_sender) by extensions ['colcon_pkg']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_sender) by extension 'colcon_pkg'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_sender) by extensions ['colcon_meta']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_sender) by extension 'colcon_meta'
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_sender) by extensions ['ros']
+[0.628s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab4_image_sender) by extension 'ros'
+[0.630s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab4_image_sender' with type 'ros.ament_cmake' and name 'lab4_image_sender'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_processing) by extensions ['ignore', 'ignore_ament_install']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_processing) by extension 'ignore'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_processing) by extension 'ignore_ament_install'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_processing) by extensions ['colcon_pkg']
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_processing) by extension 'colcon_pkg'
+[0.630s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_processing) by extensions ['colcon_meta']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_processing) by extension 'colcon_meta'
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_processing) by extensions ['ros']
+[0.631s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_processing) by extension 'ros'
+[0.632s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_image_processing' with type 'ros.ament_cmake' and name 'test_image_processing'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_receiver) by extensions ['ignore', 'ignore_ament_install']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_receiver) by extension 'ignore'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_receiver) by extension 'ignore_ament_install'
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_receiver) by extensions ['colcon_pkg']
+[0.632s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_receiver) by extension 'colcon_pkg'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_receiver) by extensions ['colcon_meta']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_receiver) by extension 'colcon_meta'
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_receiver) by extensions ['ros']
+[0.633s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_receiver) by extension 'ros'
+[0.634s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_image_receiver' with type 'ros.ament_cmake' and name 'test_image_receiver'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_sender) by extensions ['ignore', 'ignore_ament_install']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_sender) by extension 'ignore'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_sender) by extension 'ignore_ament_install'
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_sender) by extensions ['colcon_pkg']
+[0.634s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_sender) by extension 'colcon_pkg'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_sender) by extensions ['colcon_meta']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_sender) by extension 'colcon_meta'
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_sender) by extensions ['ros']
+[0.635s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_image_sender) by extension 'ros'
+[0.636s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_image_sender' with type 'ros.ament_cmake' and name 'test_image_sender'
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.699s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.699s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.704s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/eragon/ArUco/install
+[0.706s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 284 installed packages in /opt/ros/humble
+[0.709s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.778s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_receiver' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_receiver' build argument 'cmake_target' from command line to 'None'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_receiver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_receiver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_receiver' build argument 'cmake_clean_first' from command line to 'False'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_receiver' build argument 'cmake_force_configure' from command line to 'False'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_receiver' build argument 'ament_cmake_args' from command line to 'None'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_receiver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.779s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_receiver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.779s] DEBUG:colcon.colcon_core.verb:Building package 'lab4_image_receiver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/ArUco/build/lab4_image_receiver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/ArUco/install/lab4_image_receiver', 'merge_install': False, 'path': '/home/eragon/ArUco/src/lab4_image_receiver', 'symlink_install': False, 'test_result_base': None}
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_sender' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_sender' build argument 'cmake_target' from command line to 'None'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_sender' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_sender' build argument 'cmake_clean_cache' from command line to 'False'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_sender' build argument 'cmake_clean_first' from command line to 'False'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_sender' build argument 'cmake_force_configure' from command line to 'False'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_sender' build argument 'ament_cmake_args' from command line to 'None'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_sender' build argument 'catkin_cmake_args' from command line to 'None'
+[0.780s] Level 5:colcon.colcon_core.verb:set package 'lab4_image_sender' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.781s] DEBUG:colcon.colcon_core.verb:Building package 'lab4_image_sender' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/ArUco/build/lab4_image_sender', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/ArUco/install/lab4_image_sender', 'merge_install': False, 'path': '/home/eragon/ArUco/src/lab4_image_sender', 'symlink_install': False, 'test_result_base': None}
+[0.781s] Level 5:colcon.colcon_core.verb:set package 'test_image_processing' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.781s] Level 5:colcon.colcon_core.verb:set package 'test_image_processing' build argument 'cmake_target' from command line to 'None'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'test_image_processing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'test_image_processing' build argument 'cmake_clean_cache' from command line to 'False'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'test_image_processing' build argument 'cmake_clean_first' from command line to 'False'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'test_image_processing' build argument 'cmake_force_configure' from command line to 'False'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'test_image_processing' build argument 'ament_cmake_args' from command line to 'None'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'test_image_processing' build argument 'catkin_cmake_args' from command line to 'None'
+[0.782s] Level 5:colcon.colcon_core.verb:set package 'test_image_processing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.782s] DEBUG:colcon.colcon_core.verb:Building package 'test_image_processing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/ArUco/build/test_image_processing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/ArUco/install/test_image_processing', 'merge_install': False, 'path': '/home/eragon/ArUco/src/test_image_processing', 'symlink_install': False, 'test_result_base': None}
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'test_image_receiver' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'test_image_receiver' build argument 'cmake_target' from command line to 'None'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'test_image_receiver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'test_image_receiver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'test_image_receiver' build argument 'cmake_clean_first' from command line to 'False'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'test_image_receiver' build argument 'cmake_force_configure' from command line to 'False'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'test_image_receiver' build argument 'ament_cmake_args' from command line to 'None'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'test_image_receiver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.783s] Level 5:colcon.colcon_core.verb:set package 'test_image_receiver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.783s] DEBUG:colcon.colcon_core.verb:Building package 'test_image_receiver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/ArUco/build/test_image_receiver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/ArUco/install/test_image_receiver', 'merge_install': False, 'path': '/home/eragon/ArUco/src/test_image_receiver', 'symlink_install': False, 'test_result_base': None}
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'test_image_sender' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'test_image_sender' build argument 'cmake_target' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'test_image_sender' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'test_image_sender' build argument 'cmake_clean_cache' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'test_image_sender' build argument 'cmake_clean_first' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'test_image_sender' build argument 'cmake_force_configure' from command line to 'False'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'test_image_sender' build argument 'ament_cmake_args' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'test_image_sender' build argument 'catkin_cmake_args' from command line to 'None'
+[0.784s] Level 5:colcon.colcon_core.verb:set package 'test_image_sender' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.784s] DEBUG:colcon.colcon_core.verb:Building package 'test_image_sender' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/ArUco/build/test_image_sender', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/ArUco/install/test_image_sender', 'merge_install': False, 'path': '/home/eragon/ArUco/src/test_image_sender', 'symlink_install': False, 'test_result_base': None}
+[0.784s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.786s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.787s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/ArUco/src/lab4_image_receiver' with build type 'ament_cmake'
+[0.787s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/ArUco/src/lab4_image_receiver'
+[0.794s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.794s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.795s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.806s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/ArUco/src/lab4_image_sender' with build type 'ament_cmake'
+[0.807s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/ArUco/src/lab4_image_sender'
+[0.808s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.808s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.818s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/ArUco/src/test_image_processing' with build type 'ament_cmake'
+[0.819s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/ArUco/src/test_image_processing'
+[0.820s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.820s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.831s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/ArUco/src/test_image_receiver' with build type 'ament_cmake'
+[0.831s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/ArUco/src/test_image_receiver'
+[0.832s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.832s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.841s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/ArUco/src/test_image_sender' with build type 'ament_cmake'
+[0.841s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/ArUco/src/test_image_sender'
+[0.842s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.842s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.869s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/lab4_image_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_sender -- -j8 -l8
+[0.875s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/test_image_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_image_processing -- -j8 -l8
+[0.885s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/test_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_image_receiver -- -j8 -l8
+[0.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/test_image_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_image_sender -- -j8 -l8
+[1.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/test_image_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_image_processing -- -j8 -l8
+[1.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/test_image_processing': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_image_processing
+[1.080s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/lab4_image_sender' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_sender -- -j8 -l8
+[1.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/lab4_image_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_sender
+[1.084s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/test_image_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_image_receiver -- -j8 -l8
+[1.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/test_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_image_receiver
+[1.090s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/test_image_sender' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_image_sender -- -j8 -l8
+[1.092s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/test_image_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_image_sender
+[1.105s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_image_processing)
+[1.109s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/test_image_processing' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_image_processing
+[1.116s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing' for CMake module files
+[1.117s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing' for CMake config files
+[1.118s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_image_processing', 'cmake_prefix_path')
+[1.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/hook/cmake_prefix_path.ps1'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/hook/cmake_prefix_path.dsv'
+[1.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/hook/cmake_prefix_path.sh'
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing/lib'
+[1.124s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing/bin'
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing/lib/pkgconfig/test_image_processing.pc'
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing/lib/python3.10/site-packages'
+[1.125s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing/bin'
+[1.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.ps1'
+[1.128s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.dsv'
+[1.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.sh'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.bash'
+[1.132s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.zsh'
+[1.133s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/test_image_processing/share/colcon-core/packages/test_image_processing)
+[1.135s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_image_processing)
+[1.135s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing' for CMake module files
+[1.136s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing' for CMake config files
+[1.136s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_image_processing', 'cmake_prefix_path')
+[1.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/hook/cmake_prefix_path.ps1'
+[1.138s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/hook/cmake_prefix_path.dsv'
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/hook/cmake_prefix_path.sh'
+[1.141s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing/lib'
+[1.142s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing/bin'
+[1.142s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing/lib/pkgconfig/test_image_processing.pc'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing/lib/python3.10/site-packages'
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_processing/bin'
+[1.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.ps1'
+[1.145s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.dsv'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.sh'
+[1.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.bash'
+[1.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_processing/share/test_image_processing/package.zsh'
+[1.149s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/test_image_processing/share/colcon-core/packages/test_image_processing)
+[1.151s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab4_image_sender)
+[1.152s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender' for CMake module files
+[1.155s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender' for CMake config files
+[1.159s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/lab4_image_sender' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_sender
+[1.160s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab4_image_sender', 'cmake_prefix_path')
+[1.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/hook/cmake_prefix_path.ps1'
+[1.162s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/hook/cmake_prefix_path.dsv'
+[1.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/hook/cmake_prefix_path.sh'
+[1.164s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender/lib'
+[1.164s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender/bin'
+[1.164s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender/lib/pkgconfig/lab4_image_sender.pc'
+[1.164s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender/lib/python3.10/site-packages'
+[1.165s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender/bin'
+[1.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.ps1'
+[1.166s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.dsv'
+[1.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.sh'
+[1.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.bash'
+[1.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.zsh'
+[1.170s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/lab4_image_sender/share/colcon-core/packages/lab4_image_sender)
+[1.171s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab4_image_sender)
+[1.172s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender' for CMake module files
+[1.173s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender' for CMake config files
+[1.174s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab4_image_sender', 'cmake_prefix_path')
+[1.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/hook/cmake_prefix_path.ps1'
+[1.175s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/hook/cmake_prefix_path.dsv'
+[1.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/hook/cmake_prefix_path.sh'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender/lib'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender/bin'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender/lib/pkgconfig/lab4_image_sender.pc'
+[1.178s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender/lib/python3.10/site-packages'
+[1.179s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_sender/bin'
+[1.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.ps1'
+[1.180s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.dsv'
+[1.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.sh'
+[1.182s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.bash'
+[1.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.zsh'
+[1.184s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/lab4_image_sender/share/colcon-core/packages/lab4_image_sender)
+[1.185s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_image_receiver)
+[1.185s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver' for CMake module files
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver' for CMake config files
+[1.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/test_image_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_image_receiver
+[1.189s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_image_receiver', 'cmake_prefix_path')
+[1.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/hook/cmake_prefix_path.ps1'
+[1.190s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/hook/cmake_prefix_path.dsv'
+[1.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/hook/cmake_prefix_path.sh'
+[1.192s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver/lib'
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver/bin'
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver/lib/pkgconfig/test_image_receiver.pc'
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver/lib/python3.10/site-packages'
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver/bin'
+[1.194s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.ps1'
+[1.195s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.dsv'
+[1.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.sh'
+[1.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.bash'
+[1.199s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.zsh'
+[1.200s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/test_image_receiver/share/colcon-core/packages/test_image_receiver)
+[1.201s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_image_receiver)
+[1.202s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver' for CMake module files
+[1.203s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver' for CMake config files
+[1.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_image_receiver', 'cmake_prefix_path')
+[1.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/hook/cmake_prefix_path.ps1'
+[1.206s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/hook/cmake_prefix_path.dsv'
+[1.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/hook/cmake_prefix_path.sh'
+[1.208s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver/lib'
+[1.208s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver/bin'
+[1.208s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver/lib/pkgconfig/test_image_receiver.pc'
+[1.209s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver/lib/python3.10/site-packages'
+[1.209s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_receiver/bin'
+[1.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.ps1'
+[1.211s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.dsv'
+[1.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.sh'
+[1.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.bash'
+[1.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.zsh'
+[1.216s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/test_image_receiver/share/colcon-core/packages/test_image_receiver)
+[1.217s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_image_sender)
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender' for CMake module files
+[1.219s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender' for CMake config files
+[1.220s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/test_image_sender' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_image_sender
+[1.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_image_sender', 'cmake_prefix_path')
+[1.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/hook/cmake_prefix_path.ps1'
+[1.222s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/hook/cmake_prefix_path.dsv'
+[1.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/hook/cmake_prefix_path.sh'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender/lib'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender/bin'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender/lib/pkgconfig/test_image_sender.pc'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender/lib/python3.10/site-packages'
+[1.226s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender/bin'
+[1.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/package.ps1'
+[1.228s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/package.dsv'
+[1.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/package.sh'
+[1.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/package.bash'
+[1.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/package.zsh'
+[1.233s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/test_image_sender/share/colcon-core/packages/test_image_sender)
+[1.234s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_image_sender)
+[1.235s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender' for CMake module files
+[1.237s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender' for CMake config files
+[1.238s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_image_sender', 'cmake_prefix_path')
+[1.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/hook/cmake_prefix_path.ps1'
+[1.241s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/hook/cmake_prefix_path.dsv'
+[1.242s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/hook/cmake_prefix_path.sh'
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender/lib'
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender/bin'
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender/lib/pkgconfig/test_image_sender.pc'
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender/lib/python3.10/site-packages'
+[1.244s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_image_sender/bin'
+[1.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/package.ps1'
+[1.246s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/package.dsv'
+[1.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/package.sh'
+[1.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/package.bash'
+[1.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_image_sender/share/test_image_sender/package.zsh'
+[1.250s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/test_image_sender/share/colcon-core/packages/test_image_sender)
+[12.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[12.131s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_receiver
+[12.160s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab4_image_receiver)
+[12.161s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver' for CMake module files
+[12.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_receiver
+[12.163s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver' for CMake config files
+[12.163s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab4_image_receiver', 'cmake_prefix_path')
+[12.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/hook/cmake_prefix_path.ps1'
+[12.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/hook/cmake_prefix_path.dsv'
+[12.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/hook/cmake_prefix_path.sh'
+[12.167s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver/lib'
+[12.167s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver/bin'
+[12.167s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver/lib/pkgconfig/lab4_image_receiver.pc'
+[12.167s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver/lib/python3.10/site-packages'
+[12.168s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver/bin'
+[12.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.ps1'
+[12.169s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.dsv'
+[12.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.sh'
+[12.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.bash'
+[12.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.zsh'
+[12.172s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/lab4_image_receiver/share/colcon-core/packages/lab4_image_receiver)
+[12.173s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab4_image_receiver)
+[12.173s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver' for CMake module files
+[12.174s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver' for CMake config files
+[12.175s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab4_image_receiver', 'cmake_prefix_path')
+[12.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/hook/cmake_prefix_path.ps1'
+[12.176s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/hook/cmake_prefix_path.dsv'
+[12.178s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/hook/cmake_prefix_path.sh'
+[12.180s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver/lib'
+[12.181s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver/bin'
+[12.181s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver/lib/pkgconfig/lab4_image_receiver.pc'
+[12.182s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver/lib/python3.10/site-packages'
+[12.182s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/lab4_image_receiver/bin'
+[12.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.ps1'
+[12.184s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.dsv'
+[12.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.sh'
+[12.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.bash'
+[12.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.zsh'
+[12.189s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/lab4_image_receiver/share/colcon-core/packages/lab4_image_receiver)
+[12.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.191s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.191s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.191s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.207s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.207s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.207s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.208s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.BadAddress: '=' character not found or has no value following it
+[12.208s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.208s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/ArUco/install/local_setup.ps1'
+[12.211s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eragon/ArUco/install/_local_setup_util_ps1.py'
+[12.216s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/ArUco/install/setup.ps1'
+[12.219s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/ArUco/install/local_setup.sh'
+[12.221s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eragon/ArUco/install/_local_setup_util_sh.py'
+[12.223s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/ArUco/install/setup.sh'
+[12.226s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/ArUco/install/local_setup.bash'
+[12.227s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/ArUco/install/setup.bash'
+[12.231s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/ArUco/install/local_setup.zsh'
+[12.232s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/ArUco/install/setup.zsh'

@@ -1,0 +1,17 @@
+/home/eragon/ArUco/install/lab4_image_receiver/lib/lab4_image_receiver/lab4_image_receiver_node
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/launch/image_launch.py
+/home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/package_run_dependencies/lab4_image_receiver
+/home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/parent_prefix_path/lab4_image_receiver
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/ament_prefix_path.sh
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/ament_prefix_path.dsv
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/path.sh
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/path.dsv
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.bash
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.sh
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.zsh
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.dsv
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.dsv
+/home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/packages/lab4_image_receiver
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/cmake/lab4_image_receiverConfig.cmake
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/cmake/lab4_image_receiverConfig-version.cmake
+/home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.xml

@@ -1,0 +1,27 @@
+[0.074s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.244s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[14.047s] [100%] Linking CXX executable lab4_image_receiver_node
+[15.043s] [100%] Built target lab4_image_receiver_node
+[15.073s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[15.075s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_receiver
+[15.090s] -- Install configuration: "Debug"
+[15.090s] -- Installing: /home/eragon/ArUco/install/lab4_image_receiver/lib/lab4_image_receiver/lab4_image_receiver_node
+[15.101s] -- Set runtime path of "/home/eragon/ArUco/install/lab4_image_receiver/lib/lab4_image_receiver/lab4_image_receiver_node" to ""
+[15.101s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/launch
+[15.101s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/launch/image_launch.py
+[15.102s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/package_run_dependencies/lab4_image_receiver
+[15.102s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/parent_prefix_path/lab4_image_receiver
+[15.102s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/ament_prefix_path.sh
+[15.102s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/ament_prefix_path.dsv
+[15.103s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/path.sh
+[15.103s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/path.dsv
+[15.103s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.bash
+[15.103s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.sh
+[15.103s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.zsh
+[15.103s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.dsv
+[15.103s] -- Installing: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.dsv
+[15.103s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/packages/lab4_image_receiver
+[15.104s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/cmake/lab4_image_receiverConfig.cmake
+[15.104s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/cmake/lab4_image_receiverConfig-version.cmake
+[15.104s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.xml
+[15.107s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_receiver

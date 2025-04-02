@@ -1,0 +1,26 @@
+[0.043s] Invoking command in '/home/eragon/ArUco/build/lab4_image_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_sender -- -j8 -l8
+[0.166s] Consolidate compiler generated dependencies of target lab4_image_sender_node
+[0.203s] [ 50%] Building CXX object CMakeFiles/lab4_image_sender_node.dir/src/lab4_image_sender_node.cpp.o
+[0.889s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:73:31: error: stray ‘#’ in program
+[0.889s]    73 |         cv_ptr->image = image;#include <rclcpp/rclcpp.hpp>
+[0.889s]       |                               ^
+[6.608s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp: In member function ‘void ArUcoDetector::image_callback(const ConstSharedPtr&)’:
+[6.608s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:73:32: error: ‘include’ was not declared in this scope
+[6.609s]    73 |         cv_ptr->image = image;#include <rclcpp/rclcpp.hpp>
+[6.609s]       |                                ^~~~~~~
+[6.609s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:73:47: error: expected primary-expression before ‘/’ token
+[6.609s]    73 |         cv_ptr->image = image;#include <rclcpp/rclcpp.hpp>
+[6.609s]       |                                               ^
+[6.610s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:73:54: error: expected primary-expression before ‘.’ token
+[6.610s]    73 |         cv_ptr->image = image;#include <rclcpp/rclcpp.hpp>
+[6.610s]       |                                                      ^
+[6.610s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:80:1: error: expected primary-expression before ‘using’
+[6.610s]    80 | using namespace std::chrono_literals;
+[6.610s]       | ^~~~~
+[6.637s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:147:41: error: a function-definition is not allowed here before ‘{’ token
+[6.637s]   147 |         int main(int argc, char **argv) {
+[6.638s]       |                                         ^
+[9.199s] gmake[2]: *** [CMakeFiles/lab4_image_sender_node.dir/build.make:76: CMakeFiles/lab4_image_sender_node.dir/src/lab4_image_sender_node.cpp.o] Ошибка 1
+[9.199s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_sender_node.dir/all] Ошибка 2
+[9.200s] gmake: *** [Makefile:146: all] Ошибка 2
+[9.204s] Invoked command in '/home/eragon/ArUco/build/lab4_image_sender' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_sender -- -j8 -l8
