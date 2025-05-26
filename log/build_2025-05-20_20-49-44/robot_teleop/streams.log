@@ -1,0 +1,72 @@
+[0.034s] Invoking command in '/home/eragon/ArUco/build/robot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eragon/ArUco/src/robot_teleop -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/robot_teleop
+[0.172s] -- The C compiler identification is GNU 11.4.0
+[0.302s] -- The CXX compiler identification is GNU 11.4.0
+[0.380s] -- Detecting C compiler ABI info
+[0.525s] -- Detecting C compiler ABI info - done
+[0.540s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.540s] -- Detecting C compile features
+[0.542s] -- Detecting C compile features - done
+[0.549s] -- Detecting CXX compiler ABI info
+[0.703s] -- Detecting CXX compiler ABI info - done
+[0.719s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.720s] -- Detecting CXX compile features
+[0.721s] -- Detecting CXX compile features - done
+[0.726s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.015s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.218s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.306s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.319s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.340s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.370s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.396s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.480s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.483s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.644s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.688s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.752s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.767s] -- Looking for pthread.h
+[1.895s] -- Looking for pthread.h - found
+[1.896s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.036s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.038s] -- Found Threads: TRUE  
+[2.153s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.175s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.176s] -- Checking for module 'libevdev'
+[2.200s] --   Found libevdev, version 1.12.1
+[2.271s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.408s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.408s] -- Configured cppcheck include dirs: 
+[2.408s] -- Configured cppcheck exclude dirs and/or files: 
+[2.410s] -- Added test 'lint_cmake' to check CMake code style
+[2.414s] -- Added test 'uncrustify' to check C / C++ code style
+[2.414s] -- Configured uncrustify additional arguments: 
+[2.416s] -- Added test 'xmllint' to check XML markup files
+[2.419s] -- Configuring done
+[2.444s] -- Generating done
+[2.449s] -- Build files have been written to: /home/eragon/ArUco/build/robot_teleop
+[2.465s] Invoked command in '/home/eragon/ArUco/build/robot_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eragon/ArUco/src/robot_teleop -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/robot_teleop
+[2.467s] Invoking command in '/home/eragon/ArUco/build/robot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_teleop -- -j8 -l8
+[2.541s] [ 50%] Building CXX object CMakeFiles/robot_teleop_node.dir/src/robot_teleop_node.cpp.o
+[10.903s] [100%] Linking CXX executable robot_teleop_node
+[11.351s] [100%] Built target robot_teleop_node
+[11.369s] Invoked command in '/home/eragon/ArUco/build/robot_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_teleop -- -j8 -l8
+[11.372s] Invoking command in '/home/eragon/ArUco/build/robot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_teleop
+[11.383s] -- Install configuration: "Debug"
+[11.384s] -- Installing: /home/eragon/ArUco/install/robot_teleop/lib/robot_teleop/robot_teleop_node
+[11.391s] -- Set runtime path of "/home/eragon/ArUco/install/robot_teleop/lib/robot_teleop/robot_teleop_node" to ""
+[11.391s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/ament_index/resource_index/package_run_dependencies/robot_teleop
+[11.391s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/ament_index/resource_index/parent_prefix_path/robot_teleop
+[11.392s] -- Up-to-date: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/ament_prefix_path.sh
+[11.392s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/ament_prefix_path.dsv
+[11.392s] -- Up-to-date: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/path.sh
+[11.392s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/path.dsv
+[11.393s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.bash
+[11.393s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.sh
+[11.394s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.zsh
+[11.394s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.dsv
+[11.394s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.dsv
+[11.395s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/ament_index/resource_index/packages/robot_teleop
+[11.395s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/cmake/robot_teleopConfig.cmake
+[11.396s] -- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/cmake/robot_teleopConfig-version.cmake
+[11.396s] -- Up-to-date: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.xml
+[11.400s] Invoked command in '/home/eragon/ArUco/build/robot_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_teleop

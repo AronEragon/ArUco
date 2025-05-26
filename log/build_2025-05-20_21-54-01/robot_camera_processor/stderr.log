@@ -1,0 +1,10 @@
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor.cpp:126:52: error: ‘toMsg’ is not a member of ‘tf2’
+  126 |                     marker.pose.orientation = tf2::toMsg(q);
+      |                                                    ^~~~~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor.cpp:149:57: error: ‘toMsg’ is not a member of ‘tf2’
+  149 |                     transform.transform.rotation = tf2::toMsg(q);
+      |                                                         ^~~~~
+gmake[2]: *** [CMakeFiles/robot_camera_processor.dir/build.make:76: CMakeFiles/robot_camera_processor.dir/src/robot_camera_processor.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_camera_processor.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

@@ -1,0 +1,37 @@
+Consolidate compiler generated dependencies of target robot_camera_processor_node
+[ 50%] Building CXX object CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:112:42: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  112 |                         {0, -marker_size_/2, -marker_size_/2},
+      |                             ~~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:112:59: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  112 |                         {0, -marker_size_/2, -marker_size_/2},
+      |                                              ~~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:113:42: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  113 |                         {0,  marker_size_/2, -marker_size_/2},
+      |                              ~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:113:59: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  113 |                         {0,  marker_size_/2, -marker_size_/2},
+      |                                              ~~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:114:42: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  114 |                         {0,  marker_size_/2,  marker_size_/2},
+      |                              ~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:114:59: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  114 |                         {0,  marker_size_/2,  marker_size_/2},
+      |                                               ~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:115:42: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  115 |                         {0, -marker_size_/2,  marker_size_/2}
+      |                             ~~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:115:59: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  115 |                         {0, -marker_size_/2,  marker_size_/2}
+      |                                               ~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:134:62: error: ‘corrected_tvec’ was not declared in this scope
+  134 |                     publish_marker_pose(marker_ids[i], rvec, corrected_tvec);
+      |                                                              ^~~~~~~~~~~~~~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void RobotCameraProcessor::publish_marker_pose(int, const Vec3d&, const Vec3d&)’:
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:161:34: warning: unused parameter ‘marker_id’ [-Wunused-parameter]
+  161 |     void publish_marker_pose(int marker_id, const cv::Vec3d& rvec, const cv::Vec3d& corrected_tvec) {
+      |                              ~~~~^~~~~~~~~
+gmake[2]: *** [CMakeFiles/robot_camera_processor_node.dir/build.make:76: CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_camera_processor_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

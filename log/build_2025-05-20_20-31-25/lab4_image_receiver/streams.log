@@ -1,0 +1,14 @@
+[0.053s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.152s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[0.191s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[5.692s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+[5.692s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:94:21: error: ‘Eigen’ has not been declared
+[5.693s]    94 |                     Eigen::Matrix3x3 tf_rotation(
+[5.693s]       |                     ^~~~~
+[5.705s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:99:21: error: ‘tf_rotation’ was not declared in this scope
+[5.706s]    99 |                     tf_rotation.getRotation(q);
+[5.706s]       |                     ^~~~~~~~~~~
+[7.518s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[7.518s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[7.519s] gmake: *** [Makefile:146: all] Ошибка 2
+[7.524s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

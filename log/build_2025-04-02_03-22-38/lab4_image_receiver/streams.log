@@ -1,0 +1,53 @@
+[0.060s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.187s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[0.228s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[8.925s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In member function ‘void ArUcoDetector::image_callback(const ConstSharedPtr&)’:
+[8.925s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:62:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[8.926s]    62 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+[8.926s]       |                      ~~~~~~~~~~~~~^~~
+[8.926s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:62:52: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[8.926s]    62 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+[8.926s]       |                                        ~~~~~~~~~~~~^~~
+[8.927s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:63:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[8.927s]    63 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+[8.927s]       |                      ~~~~~~~~~~~~^~~
+[8.927s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:63:51: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[8.927s]    63 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+[8.927s]       |                                       ~~~~~~~~~~~~^~~
+[8.928s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:64:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[8.928s]    64 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+[8.928s]       |                      ~~~~~~~~~~~~^~~
+[8.928s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:64:52: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[8.928s]    64 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+[8.928s]       |                                       ~~~~~~~~~~~~~^~~
+[8.929s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:65:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[8.929s]    65 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+[8.929s]       |                      ~~~~~~~~~~~~~^~~
+[8.929s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:65:53: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[8.929s]    65 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+[8.929s]       |                                        ~~~~~~~~~~~~~^~~
+[11.609s] [100%] Linking CXX executable lab4_image_receiver_node
+[12.276s] [100%] Built target lab4_image_receiver_node
+[12.297s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[12.298s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_receiver
+[12.311s] -- Install configuration: "Debug"
+[12.311s] -- Installing: /home/eragon/ArUco/install/lab4_image_receiver/lib/lab4_image_receiver/lab4_image_receiver_node
+[12.315s] -- Set runtime path of "/home/eragon/ArUco/install/lab4_image_receiver/lib/lab4_image_receiver/lab4_image_receiver_node" to ""
+[12.315s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/launch
+[12.315s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/launch/image_launch.py
+[12.316s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/package_run_dependencies/lab4_image_receiver
+[12.316s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/parent_prefix_path/lab4_image_receiver
+[12.316s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/ament_prefix_path.sh
+[12.316s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/ament_prefix_path.dsv
+[12.316s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/path.sh
+[12.316s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/path.dsv
+[12.316s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.bash
+[12.317s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.sh
+[12.317s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.zsh
+[12.317s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.dsv
+[12.317s] -- Installing: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.dsv
+[12.317s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/packages/lab4_image_receiver
+[12.317s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/cmake/lab4_image_receiverConfig.cmake
+[12.318s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/cmake/lab4_image_receiverConfig-version.cmake
+[12.321s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.xml
+[12.321s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_receiver

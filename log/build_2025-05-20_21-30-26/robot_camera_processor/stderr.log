@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/eragon/ArUco/src/robot_camera_processor/robot_camera_processor": No
+  such file or directory.
+
+

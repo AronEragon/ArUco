@@ -1,0 +1,41 @@
+[0.031s] Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[0.085s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.286s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.338s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.341s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.347s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.359s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.373s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.410s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.411s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.557s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.612s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.643s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.658s] -- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)
+[0.685s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.690s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.774s] -- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.802s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.932s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.932s] -- Configured cppcheck include dirs: 
+[0.932s] -- Configured cppcheck exclude dirs and/or files: 
+[0.933s] -- Added test 'lint_cmake' to check CMake code style
+[0.935s] -- Added test 'uncrustify' to check C / C++ code style
+[0.935s] -- Configured uncrustify additional arguments: 
+[0.936s] -- Added test 'xmllint' to check XML markup files
+[0.938s] -- Configuring done
+[0.978s] -- Generating done
+[0.985s] -- Build files have been written to: /home/eragon/ArUco/build/robot_camera_processor
+[1.049s] Consolidate compiler generated dependencies of target robot_camera_processor
+[1.080s] [ 50%] Building CXX object CMakeFiles/robot_camera_processor.dir/src/robot_camera_processor.cpp.o
+[5.476s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+[5.477s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor.cpp:126:52: error: ‘toMsg’ is not a member of ‘tf2’
+[5.477s]   126 |                     marker.pose.orientation = tf2::toMsg(q);
+[5.477s]       |                                                    ^~~~~
+[5.479s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor.cpp:149:57: error: ‘toMsg’ is not a member of ‘tf2’
+[5.480s]   149 |                     transform.transform.rotation = tf2::toMsg(q);
+[5.480s]       |                                                         ^~~~~
+[7.071s] gmake[2]: *** [CMakeFiles/robot_camera_processor.dir/build.make:76: CMakeFiles/robot_camera_processor.dir/src/robot_camera_processor.cpp.o] Ошибка 1
+[7.072s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_camera_processor.dir/all] Ошибка 2
+[7.072s] gmake: *** [Makefile:146: all] Ошибка 2
+[7.078s] Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8

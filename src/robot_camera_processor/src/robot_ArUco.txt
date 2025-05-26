@@ -1,0 +1,694 @@
+// рабочий не правильно сделана метка
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/image.hpp>
+#include <cv_bridge/cv_bridge.h>
+#include <opencv2/opencv.hpp>
+#include <image_transport/image_transport.hpp>
+#include <geometry_msgs/msg/pose_stamped.hpp>
+#include <opencv2/aruco.hpp>
+#include <tf2/LinearMath/Matrix3x3.h>
+#include <tf2/LinearMath/Quaternion.h>
+#include <tf2_ros/transform_broadcaster.h>
+#include <geometry_msgs/msg/transform_stamped.hpp>
+
+using namespace std::chrono_literals;
+
+class RobotCameraProcessor : public rclcpp::Node {
+public:
+    RobotCameraProcessor() : Node("robot_camera_processor") {
+        // Инициализируем TransformBroadcaster через make_unique
+        tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(this);
+
+        // Параметры узла
+        this->declare_parameter<double>("marker_size", 0.05);
+        this->declare_parameter<std::string>("camera_topic", "/textured_camera/image_raw");
+        this->declare_parameter<std::string>("output_topic", "/processed_image");
+        this->declare_parameter<std::string>("pose_topic", "/marker_pose");
+        this->declare_parameter<std::string>("camera_frame", "camera_link");
+        this->declare_parameter<std::string>("marker_frame_prefix", "marker_");
+
+        // Получение параметров
+        marker_size_ = this->get_parameter("marker_size").as_double();
+        std::string camera_topic = this->get_parameter("camera_topic").as_string();
+        std::string output_topic = this->get_parameter("output_topic").as_string();
+        std::string pose_topic = this->get_parameter("pose_topic").as_string();
+        camera_frame_ = this->get_parameter("camera_frame").as_string();
+        marker_frame_prefix_ = this->get_parameter("marker_frame_prefix").as_string();
+
+        // Подписка на изображения с камеры
+        sub_ = image_transport::create_subscription(
+            this,
+            camera_topic,
+            std::bind(&RobotCameraProcessor::image_callback, this, std::placeholders::_1),
+            "raw",
+            rmw_qos_profile_sensor_data
+            );
+
+        // Публикация обработанных изображений
+        pub_image_ = image_transport::create_publisher(this, output_topic);
+
+        // Публикация позиций маркеров
+        pub_markers_ = this->create_publisher<geometry_msgs::msg::PoseStamped>(pose_topic, 10);
+
+        // Инициализация словаря ArUco маркеров (6x6, 250 вариантов)
+        dictionary_ = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_250);
+
+        // Параметры камеры (можно загружать из файла)
+        camera_matrix_ = (cv::Mat_<double>(3, 3) <<
+                              600, 0, 320,   // fx, 0, cx
+                          0, 600, 240,   // 0, fy, cy
+                          0, 0, 1);      // 0, 0, 1
+
+        dist_coeffs_ = cv::Mat::zeros(5, 1, CV_64F);  // Коэффициенты дисторсии
+
+        RCLCPP_INFO(this->get_logger(), "Узел обработки изображений инициализирован");
+        RCLCPP_INFO(this->get_logger(), "Размер маркера: %.3f м", marker_size_);
+    }
+
+private:
+    image_transport::Subscriber sub_;
+    image_transport::Publisher pub_image_;
+    rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pub_markers_;
+    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+    cv::Ptr<cv::aruco::Dictionary> dictionary_;
+    cv::Mat camera_matrix_;
+    cv::Mat dist_coeffs_;
+    double marker_size_;
+    std::string camera_frame_;
+    std::string marker_frame_prefix_;
+
+    void image_callback(const sensor_msgs::msg::Image::ConstSharedPtr &msg) {
+        cv_bridge::CvImagePtr cv_ptr;
+        try {
+            // Конвертация ROS сообщения в OpenCV изображение
+            cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
+            // Если изображение не в BGR, конвертируем
+            if (msg->encoding != "bgr8") {
+                cv::cvtColor(cv_ptr->image, cv_ptr->image, cv::COLOR_RGB2BGR);
+            }
+            cv::Mat image = cv_ptr->image;
+
+            // Обнаружение ArUco маркеров
+            std::vector<int> marker_ids;
+            std::vector<std::vector<cv::Point2f>> marker_corners;
+            cv::aruco::detectMarkers(image, dictionary_, marker_corners, marker_ids);
+
+            if (!marker_ids.empty()) {
+                // Рисуем обнаруженные маркеры
+                cv::aruco::drawDetectedMarkers(image, marker_corners, marker_ids);
+
+                // Оценка позы маркеров
+                std::vector<cv::Vec3d> rvecs, tvecs;
+
+                // Вариант 1: для всех маркеров сразу (быстрее)
+                cv::aruco::estimatePoseSingleMarkers(
+                    marker_corners, marker_size_, camera_matrix_, dist_coeffs_, rvecs, tvecs);
+
+                // Обработка каждого маркера
+                for (size_t i = 0; i < marker_ids.size(); ++i) {
+                    // Вариант 2: индивидуальная оценка (точнее для отдельных маркеров)
+                    std::vector<cv::Point3f> object_points = {
+                        {-marker_size_/2, marker_size_/2, 0},   // Верхний левый
+                        {marker_size_/2, marker_size_/2, 0},    // Верхний правый
+                        {marker_size_/2, -marker_size_/2, 0},   // Нижний правый
+                        {-marker_size_/2, -marker_size_/2, 0}   // Нижний левый
+                    };
+                    cv::Vec3d rvec, tvec;
+                    cv::solvePnP(object_points, marker_corners[i], camera_matrix_, dist_coeffs_, rvec, tvec);
+
+                    // Используем результаты индивидуальной оценки
+                    rvecs[i] = rvec;
+                    tvecs[i] = tvec;
+
+                    // Рисуем оси координат маркера
+                    cv::drawFrameAxes(
+                        image, camera_matrix_, dist_coeffs_,
+                        rvecs[i], tvecs[i], marker_size_ * 0.5f);
+
+                    // Публикация позиции маркера
+                    publish_marker_pose(marker_ids[i], rvecs[i], tvecs[i]);
+
+                    // Публикация трансформации в tf2
+                    publish_marker_tf(marker_ids[i], rvecs[i], tvecs[i]);
+                }
+            }
+
+            // Добавляем информационный текст
+            cv::putText(image,
+                        "Камера робота | Обнаружено маркеров: " + std::to_string(marker_ids.size()),
+                        cv::Point(10, 30),
+                        cv::FONT_HERSHEY_SIMPLEX,
+                        0.8,
+                        cv::Scalar(0, 255, 0),
+                        2);
+
+            // Публикация обработанного изображения
+            cv_ptr->image = image;
+            pub_image_.publish(cv_ptr->toImageMsg());
+
+        } catch (cv_bridge::Exception &e) {
+            RCLCPP_ERROR(this->get_logger(), "Ошибка cv_bridge: %s", e.what());
+        } catch (cv::Exception &e) {
+            RCLCPP_ERROR(this->get_logger(), "Ошибка OpenCV: %s", e.what());
+        }
+    }
+
+    void publish_marker_pose(int marker_id, const cv::Vec3d& rvec, const cv::Vec3d& tvec) {
+        geometry_msgs::msg::PoseStamped pose_msg;
+        pose_msg.header.stamp = this->now();
+        pose_msg.header.frame_id = camera_frame_;
+
+        // Позиция маркера
+        pose_msg.pose.position.x = tvec[0];
+        pose_msg.pose.position.y = tvec[1];
+        pose_msg.pose.position.z = tvec[2];
+
+        // Конвертация вращения в кватернион
+        cv::Mat rotation_matrix;
+        cv::Rodrigues(rvec, rotation_matrix);
+        tf2::Matrix3x3 tf_rotation(
+            rotation_matrix.at<double>(0, 0), rotation_matrix.at<double>(0, 1), rotation_matrix.at<double>(0, 2),
+            rotation_matrix.at<double>(1, 0), rotation_matrix.at<double>(1, 1), rotation_matrix.at<double>(1, 2),
+            rotation_matrix.at<double>(2, 0), rotation_matrix.at<double>(2, 1), rotation_matrix.at<double>(2, 2));
+        tf2::Quaternion q;
+        tf_rotation.getRotation(q);
+        pose_msg.pose.orientation.x = q.x();
+        pose_msg.pose.orientation.y = q.y();
+        pose_msg.pose.orientation.z = q.z();
+        pose_msg.pose.orientation.w = q.w();
+
+        // Публикация
+        pub_markers_->publish(pose_msg);
+        RCLCPP_INFO(this->get_logger(),
+                    "Маркер ID: %d | Позиция: (%.3f, %.3f, %.3f) м | Ориентация: (%.3f, %.3f, %.3f, %.3f)",
+                    marker_id,
+                    tvec[0], tvec[1], tvec[2],
+                    q.x(), q.y(), q.z(), q.w());
+    }
+
+    void publish_marker_tf(int marker_id, const cv::Vec3d& rvec, const cv::Vec3d& tvec) {
+        geometry_msgs::msg::TransformStamped transform_stamped;
+
+        // Заполняем заголовок трансформации
+        transform_stamped.header.stamp = this->now();
+        transform_stamped.header.frame_id = camera_frame_;
+        transform_stamped.child_frame_id = marker_frame_prefix_ + std::to_string(marker_id);
+
+        // Позиция маркера
+        transform_stamped.transform.translation.x = tvec[0];
+        transform_stamped.transform.translation.y = tvec[1];
+        transform_stamped.transform.translation.z = tvec[2];
+
+        // Конвертация вращения в кватернион
+        cv::Mat rotation_matrix;
+        cv::Rodrigues(rvec, rotation_matrix);
+        tf2::Matrix3x3 tf_rotation(
+            rotation_matrix.at<double>(0, 0), rotation_matrix.at<double>(0, 1), rotation_matrix.at<double>(0, 2),
+            rotation_matrix.at<double>(1, 0), rotation_matrix.at<double>(1, 1), rotation_matrix.at<double>(1, 2),
+            rotation_matrix.at<double>(2, 0), rotation_matrix.at<double>(2, 1), rotation_matrix.at<double>(2, 2));
+        tf2::Quaternion q;
+        tf_rotation.getRotation(q);
+        transform_stamped.transform.rotation.x = q.x();
+        transform_stamped.transform.rotation.y = q.y();
+        transform_stamped.transform.rotation.z = q.z();
+        transform_stamped.transform.rotation.w = q.w();
+
+        // Публикация трансформации
+        tf_broadcaster_->sendTransform(transform_stamped);
+    }
+};
+
+int main(int argc, char **argv) {
+    rclcpp::init(argc, argv);
+    auto node = std::make_shared<RobotCameraProcessor>();
+    rclcpp::spin(node);
+    rclcpp::shutdown();
+    return 0;
+}
+
+
+
+
+// //...........
+// #include <cv_bridge/cv_bridge.h>
+// #include <opencv2/opencv.hpp>
+// #include <opencv2/aruco.hpp>
+// #include <image_transport/image_transport.hpp>
+// #include <geometry_msgs/msg/pose_stamped.hpp>
+// #include <tf2/LinearMath/Matrix3x3.h>
+// #include <tf2/LinearMath/Quaternion.h>
+// #include <visualization_msgs/msg/marker_array.hpp>
+// #include <visualization_msgs/msg/marker.hpp>
+// #include <rclcpp/rclcpp.hpp>
+
+// using namespace std::chrono_literals;
+
+// class ArUcoDetector : public rclcpp::Node {
+// public:
+//     ArUcoDetector() : Node("aruco_detector") {
+//         // Подписка на топик камеры
+//         image_sub_ = image_transport::create_subscription(
+//             this,
+//             "/robot_camera/image_raw",
+//             std::bind(&ArUcoDetector::imageCallback, this, std::placeholders::_1),
+//             "raw",
+//             rmw_qos_profile_sensor_data
+//             );
+
+//         // Публикация изображения с маркерами
+//         image_pub_ = image_transport::create_publisher(this, "/aruco_detection/image");
+
+//         // Публикация поз маркеров
+//         pose_pub_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("/aruco_detection/marker_pose", 10);
+
+//         // Публикация маркеров для RViz2
+//         marker_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("/aruco_detection/markers", 10);
+
+//         // Инициализация ArUco
+//         dictionary_ = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_250);
+//         parameters_ = cv::aruco::DetectorParameters::create();
+
+//         // Параметры камеры (замените на калибровочные значения вашей камеры)
+//         camera_matrix_ = (cv::Mat_<double>(3, 3) <<
+//                               700.0, 0.0, 400.0,  // fx, 0, cx
+//                           0.0, 700.0, 300.0,   // 0, fy, cy
+//                           0.0, 0.0, 1.0);       // 0, 0, 1
+
+//         dist_coeffs_ = cv::Mat::zeros(5, 1, CV_64F);  // Предполагаем отсутствие дисторсии
+
+//         marker_length_ = 0.1;  // Размер маркера в метрах (10 см)
+//     }
+
+// private:
+//     image_transport::Subscriber image_sub_;
+//     image_transport::Publisher image_pub_;
+//     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pose_pub_;
+//     rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr marker_pub_;
+
+//     cv::Ptr<cv::aruco::Dictionary> dictionary_;
+//     cv::Ptr<cv::aruco::DetectorParameters> parameters_;
+//     cv::Mat camera_matrix_;
+//     cv::Mat dist_coeffs_;
+//     double marker_length_;
+
+//     void imageCallback(const sensor_msgs::msg::Image::ConstSharedPtr& msg) {
+//         try {
+//             // Конвертация ROS Image в OpenCV
+//             cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, "bgr8");
+//             cv::Mat image = cv_ptr->image;
+
+//             // Обнаружение маркеров
+//             std::vector<int> ids;
+//             std::vector<std::vector<cv::Point2f>> corners;
+//             cv::aruco::detectMarkers(image, dictionary_, corners, ids, parameters_);
+
+//             visualization_msgs::msg::MarkerArray marker_array;
+
+//             if (!ids.empty()) {
+//                 // Отрисовка обнаруженных маркеров
+//                 cv::aruco::drawDetectedMarkers(image, corners, ids);
+
+//                 // Оценка позы для каждого маркера
+//                 std::vector<cv::Vec3d> rvecs, tvecs;
+//                 cv::aruco::estimatePoseSingleMarkers(
+//                     corners, marker_length_, camera_matrix_, dist_coeffs_, rvecs, tvecs);
+
+//                 for (size_t i = 0; i < ids.size(); ++i) {
+//                     // Отрисовка осей координат
+//                     cv::drawFrameAxes(
+//                         image, camera_matrix_, dist_coeffs_,
+//                         rvecs[i], tvecs[i], marker_length_ * 0.5);
+
+//                     // Публикация позы маркера
+//                     geometry_msgs::msg::PoseStamped pose_msg;
+//                     pose_msg.header.stamp = msg->header.stamp;
+//                     pose_msg.header.frame_id = "camera_link";  // Используем frame_id камеры
+
+//                     // Позиция
+//                     pose_msg.pose.position.x = tvecs[i][0];
+//                     pose_msg.pose.position.y = tvecs[i][1];
+//                     pose_msg.pose.position.z = tvecs[i][2];
+
+//                     // Ориентация (конвертация из Rodrigues в кватернион)
+//                     cv::Mat rot_mat;
+//                     cv::Rodrigues(rvecs[i], rot_mat);
+//                     tf2::Matrix3x3 tf_rot(
+//                         rot_mat.at<double>(0, 0), rot_mat.at<double>(0, 1), rot_mat.at<double>(0, 2),
+//                         rot_mat.at<double>(1, 0), rot_mat.at<double>(1, 1), rot_mat.at<double>(1, 2),
+//                         rot_mat.at<double>(2, 0), rot_mat.at<double>(2, 1), rot_mat.at<double>(2, 2)
+//                         );
+//                     tf2::Quaternion q;
+//                     tf_rot.getRotation(q);
+//                     pose_msg.pose.orientation.x = q.x();
+//                     pose_msg.pose.orientation.y = q.y();
+//                     pose_msg.pose.orientation.z = q.z();
+//                     pose_msg.pose.orientation.w = q.w();
+
+//                     pose_pub_->publish(pose_msg);
+
+//                     // Создание маркера для RViz2
+//                     visualization_msgs::msg::Marker marker;
+//                     marker.header = pose_msg.header;
+//                     marker.ns = "aruco_markers";
+//                     marker.id = ids[i];
+//                     marker.type = visualization_msgs::msg::Marker::CUBE;
+//                     marker.action = visualization_msgs::msg::Marker::ADD;
+//                     marker.pose = pose_msg.pose;
+//                     marker.scale.x = marker_length_;
+//                     marker.scale.y = marker_length_;
+//                     marker.scale.z = 0.01;  // Тонкий куб
+//                     marker.color.r = 0.0f;
+//                     marker.color.g = 1.0f;
+//                     marker.color.b = 0.0f;
+//                     marker.color.a = 0.7f;  // Полупрозрачный
+//                     marker.lifetime = rclcpp::Duration::from_seconds(0.1);  // Автоматическое удаление, если не обновляется
+
+//                     // Текст с ID маркера
+//                     visualization_msgs::msg::Marker text_marker;
+//                     text_marker.header = pose_msg.header;
+//                     text_marker.ns = "aruco_markers_text";
+//                     text_marker.id = ids[i] + 1000;  // Уникальный ID для текстовых маркеров
+//                     text_marker.type = visualization_msgs::msg::Marker::TEXT_VIEW_FACING;
+//                     text_marker.action = visualization_msgs::msg::Marker::ADD;
+//                     text_marker.pose = pose_msg.pose;
+//                     text_marker.pose.position.z += 0.05;  // Поднять текст немного над маркером
+//                     text_marker.scale.z = 0.1;  // Размер текста
+//                     text_marker.color.r = 1.0f;
+//                     text_marker.color.g = 1.0f;
+//                     text_marker.color.b = 1.0f;
+//                     text_marker.color.a = 1.0f;
+//                     text_marker.text = "ID: " + std::to_string(ids[i]);
+//                     text_marker.lifetime = rclcpp::Duration::from_seconds(0.1);
+
+//                     marker_array.markers.push_back(marker);
+//                     marker_array.markers.push_back(text_marker);
+
+//                     RCLCPP_INFO(this->get_logger(),
+//                                 "Detected marker %d at position (%.2f, %.2f, %.2f)",
+//                                 ids[i], tvecs[i][0], tvecs[i][1], tvecs[i][2]);
+//                 }
+
+//                 // Публикация маркеров
+//                 marker_pub_->publish(marker_array);
+//             }
+
+//             // Публикация изображения с результатами
+//             image_pub_.publish(cv_ptr->toImageMsg());
+
+//         } catch (const cv_bridge::Exception& e) {
+//             RCLCPP_ERROR(this->get_logger(), "CV bridge error: %s", e.what());
+//         } catch (const cv::Exception& e) {
+//             RCLCPP_ERROR(this->get_logger(), "OpenCV error: %s", e.what());
+//         }
+//     }
+// };
+
+// int main(int argc, char** argv) {
+//     rclcpp::init(argc, argv);
+//     auto node = std::make_shared<ArUcoDetector>();
+//     rclcpp::spin(node);
+//     rclcpp::shutdown();
+//     return 0;
+// }
+
+
+
+
+
+
+
+// код для камеры робота #####################################
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/image.hpp>
+#include <cv_bridge/cv_bridge.h>
+#include <opencv2/opencv.hpp>
+#include <opencv2/aruco.hpp>
+#include <image_transport/image_transport.hpp>
+#include <geometry_msgs/msg/pose_stamped.hpp>
+#include <tf2/LinearMath/Matrix3x3.h>  // Для tf2::Matrix3x3
+#include <tf2/LinearMath/Quaternion.h> // Для tf2::Quaternion
+
+using namespace std::chrono_literals;
+
+class ArUcoDetector : public rclcpp::Node {
+public:
+    ArUcoDetector() : Node("aruco_detector_node") {
+        // Подписываемся на топик с изображениями от камеры робота
+        sub = image_transport::create_subscription(
+            this, "/robot/image_raw", std::bind(&ArUcoDetector::image_callback, this, std::placeholders::_1), "raw"
+            );
+
+        // Публикуем изображение с обнаруженными маркерами
+        pub_image = image_transport::create_publisher(this, "/image_with_markers");
+
+        // Публикуем позы обнаруженных маркеров
+        pub_pose = this->create_publisher<geometry_msgs::msg::PoseStamped>("/marker_pose", 10);
+
+        // Инициализация словаря ArUco
+        dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_250);
+
+        // Параметры камеры (замените на реальные значения)
+        camera_matrix = (cv::Mat_<double>(3, 3) << 600, 0, 320, 0, 600, 240, 0, 0, 1);
+        dist_coeffs = cv::Mat::zeros(5, 1, CV_64F); // Коэффициенты искажения
+
+        // Размер маркера в метрах (например, 0.05 м = 5 см)
+        marker_size = 0.05;
+    }
+
+private:
+    cv::Mat image;
+    image_transport::Subscriber sub;
+    image_transport::Publisher pub_image;
+    rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pub_pose;
+    cv::Ptr<cv::aruco::Dictionary> dictionary;
+
+    cv::Mat camera_matrix; // Матрица внутренних параметров камеры
+    cv::Mat dist_coeffs;   // Коэффициенты искажения
+    double marker_size;    // Размер стороны маркера в метрах
+
+    void image_callback(const sensor_msgs::msg::Image::ConstSharedPtr &msg) {
+        cv_bridge::CvImagePtr cv_ptr;
+        try {
+            // Преобразуем сообщение ROS в изображение OpenCV
+            cv_ptr = cv_bridge::toCvCopy(msg, msg->encoding);
+            if (msg->encoding != "bgr8") {
+                cv::cvtColor(cv_ptr->image, cv_ptr->image, cv::COLOR_RGB2BGR);
+            }
+            image = cv_ptr->image;
+        } catch (cv_bridge::Exception &e) {
+            RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
+            return;
+        }
+
+        // Обнаружение ArUco-маркеров
+        std::vector<int> marker_ids;
+        std::vector<std::vector<cv::Point2f>> marker_corners;
+        cv::aruco::detectMarkers(image, dictionary, marker_corners, marker_ids);
+
+        if (!marker_ids.empty()) {
+            // Рисуем рамки вокруг маркеров
+            cv::aruco::drawDetectedMarkers(image, marker_corners, marker_ids);
+
+            for (size_t i = 0; i < marker_ids.size(); ++i) {
+                int marker_id = marker_ids[i];
+                std::vector<cv::Point2f> corners = marker_corners[i];
+
+                // Подготовка 3D-координат углов маркера
+                std::vector<cv::Point3f> object_points = {
+                    {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+                    {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+                    {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+                    {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+                };
+
+                // Вычисление позы камеры относительно маркера
+                cv::Vec3d rvec, tvec;
+                cv::solvePnP(object_points, corners, camera_matrix, dist_coeffs, rvec, tvec);
+
+                // Рисуем оси координат на изображении
+                cv::drawFrameAxes(image, camera_matrix, dist_coeffs, rvec, tvec, marker_size / 2);
+
+                // Публикуем позу маркера
+                geometry_msgs::msg::PoseStamped pose_msg;
+                pose_msg.header.stamp = this->now();
+                pose_msg.header.frame_id = "camera_link";
+                pose_msg.pose.position.x = tvec[0];
+                pose_msg.pose.position.y = tvec[1];
+                pose_msg.pose.position.z = tvec[2];
+
+                // Преобразование вращения из rvec в кватернион
+                cv::Mat rotation_matrix;
+                cv::Rodrigues(rvec, rotation_matrix);
+                tf2::Matrix3x3 tf_rotation(
+                    rotation_matrix.at<double>(0, 0), rotation_matrix.at<double>(0, 1), rotation_matrix.at<double>(0, 2),
+                    rotation_matrix.at<double>(1, 0), rotation_matrix.at<double>(1, 1), rotation_matrix.at<double>(1, 2),
+                    rotation_matrix.at<double>(2, 0), rotation_matrix.at<double>(2, 1), rotation_matrix.at<double>(2, 2)
+                    );
+                tf2::Quaternion q;
+                tf_rotation.getRotation(q);
+                pose_msg.pose.orientation.x = q.x();
+                pose_msg.pose.orientation.y = q.y();
+                pose_msg.pose.orientation.z = q.z();
+                pose_msg.pose.orientation.w = q.w();
+
+                pub_pose->publish(pose_msg);
+
+                // Выводим информацию о маркере в лог
+                RCLCPP_INFO_STREAM(this->get_logger(),
+                                   "Detected ArUco marker ID: " << marker_id
+                                                                << " Translation: (" << tvec[0] << ", " << tvec[1] << ", " << tvec[2]
+                                                                << ") Rotation: (" << rvec[0] << ", " << rvec[1] << ", " << rvec[2] << ")");
+            }
+        } else {
+            RCLCPP_INFO(this->get_logger(), "No ArUco markers detected.");
+        }
+
+        // Публикуем изображение с рамками и осями
+        cv_ptr->image = image;
+        pub_image.publish(cv_ptr->toImageMsg());
+    }
+};
+
+int main(int argc, char **argv) {
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<ArUcoDetector>());
+    rclcpp::shutdown();
+    return 0;
+}
+
+
+
+
+
+
+//#######################################################
+// код для картинки
+// #include <rclcpp/rclcpp.hpp>
+// #include <sensor_msgs/msg/image.hpp>
+// #include <cv_bridge/cv_bridge.h>
+// #include <image_transport/image_transport.hpp>
+// #include <opencv2/opencv.hpp>
+// #include <opencv2/aruco.hpp>
+// #include <geometry_msgs/msg/pose_stamped.hpp>
+// #include <tf2/LinearMath/Matrix3x3.h>  // Для tf2::Matrix3x3
+// #include <tf2/LinearMath/Quaternion.h> // Для tf2::Quaternion
+
+// using namespace std::chrono_literals;
+
+// class ArUcoDetector : public rclcpp::Node {
+// public:
+//     ArUcoDetector() : Node("aruco_detector_node") {
+//         sub = image_transport::create_subscription(this, "/camera", std::bind(&ArUcoDetector::image_callback, this, std::placeholders::_1), "raw");
+//         pub_image = image_transport::create_publisher(this, "/image_with_markers");
+//         pub_pose = this->create_publisher<geometry_msgs::msg::PoseStamped>("/marker_pose", 10);
+
+//         // Инициализация словаря ArUco
+//         dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_250);
+
+//         // Параметры камеры (замените на реальные значения)
+//         camera_matrix = (cv::Mat_<double>(3, 3) << 600, 0, 320, 0, 600, 240, 0, 0, 1);
+//         dist_coeffs = cv::Mat::zeros(5, 1, CV_64F); // Коэффициенты искажения
+
+//         // Размер маркера в метрах (например, 0.05 м = 5 см)
+//         marker_size = 0.05;
+//     }
+
+// private:
+//     cv::Mat image;
+//     image_transport::Subscriber sub;
+//     image_transport::Publisher pub_image;
+//     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr pub_pose;
+//     cv::Ptr<cv::aruco::Dictionary> dictionary;
+
+//     cv::Mat camera_matrix; // Матрица внутренних параметров камеры
+//     cv::Mat dist_coeffs;   // Коэффициенты искажения
+//     double marker_size;    // Размер стороны маркера в метрах
+
+//     void image_callback(const sensor_msgs::msg::Image::ConstSharedPtr &msg) {
+//         cv_bridge::CvImagePtr cv_ptr;
+//         try {
+//             cv_ptr = cv_bridge::toCvCopy(msg, msg->encoding);
+//             if (msg->encoding != "bgr8") {
+//                 cv::cvtColor(cv_ptr->image, cv_ptr->image, cv::COLOR_RGB2BGR);
+//             }
+//             image = cv_ptr->image;
+//         } catch (cv_bridge::Exception &e) {
+//             RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
+//             return;
+//         }
+
+//         // Обнаружение ArUco-маркеров
+//         std::vector<int> marker_ids;
+//         std::vector<std::vector<cv::Point2f>> marker_corners;
+//         cv::aruco::detectMarkers(image, dictionary, marker_corners, marker_ids);
+
+//         if (!marker_ids.empty()) {
+//             // Рисуем рамки вокруг маркеров
+//             cv::aruco::drawDetectedMarkers(image, marker_corners, marker_ids);
+
+//             for (size_t i = 0; i < marker_ids.size(); ++i) {
+//                 int marker_id = marker_ids[i];
+//                 std::vector<cv::Point2f> corners = marker_corners[i];
+
+//                 // Подготовка 3D-координат углов маркера
+//                 std::vector<cv::Point3f> object_points = {
+//                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+//                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+//                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+//                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+//                 };
+
+//                 // Вычисление позы камеры относительно маркера
+//                 cv::Vec3d rvec, tvec;
+//                 cv::solvePnP(object_points, corners, camera_matrix, dist_coeffs, rvec, tvec);
+
+//                 // Рисуем оси координат на изображении
+//                 cv::drawFrameAxes(image, camera_matrix, dist_coeffs, rvec, tvec, marker_size / 2);
+
+//                 // Публикуем позу маркера
+//                 geometry_msgs::msg::PoseStamped pose_msg;
+//                 pose_msg.header.stamp = this->now();
+//                 pose_msg.header.frame_id = "camera_link";
+//                 pose_msg.pose.position.x = tvec[0];
+//                 pose_msg.pose.position.y = tvec[1];
+//                 pose_msg.pose.position.z = tvec[2];
+
+//                 // Преобразование вращения из rvec в кватернион
+//                 cv::Mat rotation_matrix;
+//                 cv::Rodrigues(rvec, rotation_matrix);
+//                 tf2::Matrix3x3 tf_rotation(
+//                     rotation_matrix.at<double>(0, 0), rotation_matrix.at<double>(0, 1), rotation_matrix.at<double>(0, 2),
+//                     rotation_matrix.at<double>(1, 0), rotation_matrix.at<double>(1, 1), rotation_matrix.at<double>(1, 2),
+//                     rotation_matrix.at<double>(2, 0), rotation_matrix.at<double>(2, 1), rotation_matrix.at<double>(2, 2)
+//                     );
+//                 tf2::Quaternion q;
+//                 tf_rotation.getRotation(q);
+//                 pose_msg.pose.orientation.x = q.x();
+//                 pose_msg.pose.orientation.y = q.y();
+//                 pose_msg.pose.orientation.z = q.z();
+//                 pose_msg.pose.orientation.w = q.w();
+
+//                 pub_pose->publish(pose_msg);
+
+//                 // Выводим информацию о маркере в лог
+//                 RCLCPP_INFO_STREAM(this->get_logger(),
+//                                    "Detected ArUco marker ID: " << marker_id
+//                                                                 << " Translation: (" << tvec[0] << ", " << tvec[1] << ", " << tvec[2]
+//                                                                 << ") Rotation: (" << rvec[0] << ", " << rvec[1] << ", " << rvec[2] << ")");
+//             }
+//         } else {
+//             RCLCPP_INFO(this->get_logger(), "No ArUco markers detected.");
+//         }
+
+//         // Публикуем изображение с рамками и осями
+//         cv_ptr->image = image;
+//         pub_image.publish(cv_ptr->toImageMsg());
+//     }
+// };
+
+// int main(int argc, char **argv) {
+//     rclcpp::init(argc, argv);
+//     rclcpp::spin(std::make_shared<ArUcoDetector>());
+//     rclcpp::shutdown();
+//     return 0;
+// }

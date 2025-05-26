@@ -1,0 +1,64 @@
+[0.039s] Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[0.133s] Consolidate compiler generated dependencies of target robot_camera_processor_node
+[0.190s] [ 50%] Building CXX object CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o
+[6.099s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+[6.099s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:111:39: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.099s]   111 |                         {-marker_size_/2, marker_size_/2, 0},   // Верхний левый
+[6.099s]       |                          ~~~~~~~~~~~~~^~
+[6.099s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:111:55: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.099s]   111 |                         {-marker_size_/2, marker_size_/2, 0},   // Верхний левый
+[6.100s]       |                                           ~~~~~~~~~~~~^~
+[6.100s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:112:38: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.100s]   112 |                         {marker_size_/2, marker_size_/2, 0},    // Верхний правый
+[6.100s]       |                          ~~~~~~~~~~~~^~
+[6.100s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:112:54: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.100s]   112 |                         {marker_size_/2, marker_size_/2, 0},    // Верхний правый
+[6.100s]       |                                          ~~~~~~~~~~~~^~
+[6.100s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:113:38: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.101s]   113 |                         {marker_size_/2, -marker_size_/2, 0},   // Нижний правый
+[6.101s]       |                          ~~~~~~~~~~~~^~
+[6.101s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:113:55: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.101s]   113 |                         {marker_size_/2, -marker_size_/2, 0},   // Нижний правый
+[6.101s]       |                                          ~~~~~~~~~~~~~^~
+[6.101s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:114:39: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.101s]   114 |                         {-marker_size_/2, -marker_size_/2, 0}   // Нижний левый
+[6.102s]       |                          ~~~~~~~~~~~~~^~
+[6.102s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:114:56: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.102s]   114 |                         {-marker_size_/2, -marker_size_/2, 0}   // Нижний левый
+[6.102s]       |                                           ~~~~~~~~~~~~~^~
+[6.142s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void ArUcoDetector::image_callback(const ConstSharedPtr&)’:
+[6.142s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:498:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.142s]   498 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+[6.143s]       |                      ~~~~~~~~~~~~~^~~
+[6.143s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:498:52: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.143s]   498 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+[6.143s]       |                                        ~~~~~~~~~~~~^~~
+[6.143s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:499:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.143s]   499 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+[6.143s]       |                      ~~~~~~~~~~~~^~~
+[6.143s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:499:51: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.144s]   499 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+[6.144s]       |                                       ~~~~~~~~~~~~^~~
+[6.144s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:500:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.144s]   500 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+[6.144s]       |                      ~~~~~~~~~~~~^~~
+[6.144s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:500:52: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.144s]   500 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+[6.144s]       |                                       ~~~~~~~~~~~~~^~~
+[6.145s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:501:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.145s]   501 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+[6.145s]       |                      ~~~~~~~~~~~~~^~~
+[6.145s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:501:53: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[6.145s]   501 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+[6.145s]       |                                        ~~~~~~~~~~~~~^~~
+[6.148s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: At global scope:
+[6.148s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:552:5: error: redefinition of ‘int main(int, char**)’
+[6.148s]   552 | int main(int argc, char **argv) {
+[6.148s]       |     ^~~~
+[6.149s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:221:5: note: ‘int main(int, char**)’ previously defined here
+[6.149s]   221 | int main(int argc, char **argv) {
+[6.149s]       |     ^~~~
+[8.315s] gmake[2]: *** [CMakeFiles/robot_camera_processor_node.dir/build.make:76: CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o] Ошибка 1
+[8.315s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_camera_processor_node.dir/all] Ошибка 2
+[8.315s] gmake: *** [Makefile:146: all] Ошибка 2
+[8.320s] Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8

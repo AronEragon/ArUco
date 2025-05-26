@@ -1,0 +1,34 @@
+[0.045s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.117s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.420s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.488s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.494s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.505s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.525s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.547s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.609s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.611s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.821s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.904s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.972s] -- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)
+[1.040s] CMake Error at CMakeLists.txt:15 (find_package):
+[1.041s]   By not providing "Findmarker_array.cmake" in CMAKE_MODULE_PATH this project
+[1.041s]   has asked CMake to find a package configuration file provided by
+[1.041s]   "marker_array", but CMake did not find one.
+[1.041s] 
+[1.042s]   Could not find a package configuration file provided by "marker_array" with
+[1.042s]   any of the following names:
+[1.042s] 
+[1.042s]     marker_arrayConfig.cmake
+[1.042s]     marker_array-config.cmake
+[1.042s] 
+[1.042s]   Add the installation prefix of "marker_array" to CMAKE_PREFIX_PATH or set
+[1.042s]   "marker_array_DIR" to a directory containing one of the above files.  If
+[1.043s]   "marker_array" provides a separate development package or SDK, be sure it
+[1.043s]   has been installed.
+[1.043s] 
+[1.043s] 
+[1.043s] -- Configuring incomplete, errors occurred!
+[1.043s] See also "/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/CMakeOutput.log".
+[1.053s] gmake: *** [Makefile:267: cmake_check_build_system] Ошибка 1
+[1.059s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

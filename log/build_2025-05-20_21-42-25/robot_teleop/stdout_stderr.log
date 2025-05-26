@@ -1,0 +1,21 @@
+[ 50%] Building CXX object CMakeFiles/robot_teleop_node.dir/src/robot_teleop_node.cpp.o
+[100%] Linking CXX executable robot_teleop_node
+[100%] Built target robot_teleop_node
+-- Install configuration: "Debug"
+-- Installing: /home/eragon/ArUco/install/robot_teleop/lib/robot_teleop/robot_teleop_node
+-- Set runtime path of "/home/eragon/ArUco/install/robot_teleop/lib/robot_teleop/robot_teleop_node" to ""
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/ament_index/resource_index/package_run_dependencies/robot_teleop
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/ament_index/resource_index/parent_prefix_path/robot_teleop
+-- Up-to-date: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/ament_prefix_path.sh
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/path.sh
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/path.dsv
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.bash
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.sh
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.zsh
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.dsv
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.dsv
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/ament_index/resource_index/packages/robot_teleop
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/cmake/robot_teleopConfig.cmake
+-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/cmake/robot_teleopConfig-version.cmake
+-- Up-to-date: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.xml

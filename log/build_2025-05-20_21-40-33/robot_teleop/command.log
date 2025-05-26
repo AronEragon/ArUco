@@ -1,0 +1,1 @@
+Invoking command in '/home/eragon/ArUco/build/robot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eragon/ArUco/src/robot_teleop -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/robot_teleop

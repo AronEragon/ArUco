@@ -1,0 +1,4 @@
+Invoking command in '/home/eragon/ArUco/build/data_with_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/data_with_camera_pkg -- -j8 -l8
+Invoked command in '/home/eragon/ArUco/build/data_with_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/data_with_camera_pkg -- -j8 -l8
+Invoking command in '/home/eragon/ArUco/build/data_with_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/data_with_camera_pkg
+Invoked command in '/home/eragon/ArUco/build/data_with_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/data_with_camera_pkg

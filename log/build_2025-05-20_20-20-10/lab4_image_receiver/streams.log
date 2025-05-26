@@ -1,0 +1,28 @@
+[0.051s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.115s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.404s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.448s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.451s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.459s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.472s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.489s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.534s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.536s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.704s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.771s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.809s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.827s] -- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)
+[0.858s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.118s] -- Configuring done
+[1.169s] -- Generating done
+[1.178s] -- Build files have been written to: /home/eragon/ArUco/build/lab4_image_receiver
+[1.232s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[1.255s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[1.755s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:8:10: fatal error: tf2_ros/transform_broadcaster.h: Нет такого файла или каталога
+[1.756s]     8 | #include <tf2_ros/transform_broadcaster.h>
+[1.756s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[1.756s] compilation terminated.
+[1.770s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[1.771s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[1.771s] gmake: *** [Makefile:146: all] Ошибка 2
+[1.775s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

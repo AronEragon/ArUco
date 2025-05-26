@@ -1,0 +1,9 @@
+[0.038s] Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[0.082s] CMake Error at CMakeLists.txt:23:
+[0.083s]   Parse error.  Function missing ending ")".  End of file reached.
+[0.083s] 
+[0.083s] 
+[0.083s] -- Configuring incomplete, errors occurred!
+[0.083s] See also "/home/eragon/ArUco/build/robot_camera_processor/CMakeFiles/CMakeOutput.log".
+[0.086s] gmake: *** [Makefile:267: cmake_check_build_system] Ошибка 1
+[0.090s] Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8

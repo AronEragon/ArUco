@@ -1,0 +1,22 @@
+[0.036s] Invoking command in '/home/eragon/ArUco/build/test_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_image_receiver -- -j8 -l8
+[0.167s] [100%] Built target test_image_receiver_node
+[0.173s] Invoked command in '/home/eragon/ArUco/build/test_image_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_image_receiver -- -j8 -l8
+[0.174s] Invoking command in '/home/eragon/ArUco/build/test_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_image_receiver
+[0.224s] -- Install configuration: "Debug"
+[0.225s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/lib/test_image_receiver/test_image_receiver_node
+[0.225s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/ament_index/resource_index/package_run_dependencies/test_image_receiver
+[0.225s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/ament_index/resource_index/parent_prefix_path/test_image_receiver
+[0.226s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/environment/ament_prefix_path.sh
+[0.226s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/environment/ament_prefix_path.dsv
+[0.227s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/environment/path.sh
+[0.227s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/environment/path.dsv
+[0.227s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/local_setup.bash
+[0.227s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/local_setup.sh
+[0.228s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/local_setup.zsh
+[0.228s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/local_setup.dsv
+[0.228s] -- Installing: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.dsv
+[0.228s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/ament_index/resource_index/packages/test_image_receiver
+[0.228s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/cmake/test_image_receiverConfig.cmake
+[0.230s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/cmake/test_image_receiverConfig-version.cmake
+[0.231s] -- Up-to-date: /home/eragon/ArUco/install/test_image_receiver/share/test_image_receiver/package.xml
+[0.256s] Invoked command in '/home/eragon/ArUco/build/test_image_receiver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_image_receiver

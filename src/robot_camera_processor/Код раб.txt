@@ -1,0 +1,90 @@
+#include <rclcpp/rclcpp.hpp>
+#include <sensor_msgs/msg/image.hpp>
+#include <cv_bridge/cv_bridge.h>
+#include <image_transport/image_transport.hpp>
+#include <opencv2/opencv.hpp>
+#include <opencv2/aruco.hpp>
+#include <geometry_msgs/msg/point.hpp>
+
+using namespace std::chrono_literals;
+
+class ArUcoDetector : public rclcpp::Node {
+public:
+    ArUcoDetector() : Node("aruco_detector_node") {
+        sub = image_transport::create_subscription(this, "/camera", std::bind(&ArUcoDetector::image_callback, this, std::placeholders::_1), "raw");
+        pub = this->create_publisher<geometry_msgs::msg::Point>("/aruco_detected", 8);
+
+        // Инициализация словаря ArUco
+        dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_250);
+    }
+
+private:
+    cv::Mat image;
+    image_transport::Subscriber sub;
+    rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr pub;
+    cv::Ptr<cv::aruco::Dictionary> dictionary;
+
+    void image_callback(const sensor_msgs::msg::Image::ConstSharedPtr &msg) {
+        cv_bridge::CvImagePtr cv_ptr;
+        try {
+            cv_ptr = cv_bridge::toCvCopy(msg, msg->encoding);
+            image = cv_ptr->image;
+        } catch (cv_bridge::Exception &e) {
+            RCLCPP_ERROR(this->get_logger(), "cv_bridge exception: %s", e.what());
+            return;
+        }
+
+        // Обнаружение ArUco-маркеров
+        std::vector<int> marker_ids;
+        std::vector<std::vector<cv::Point2f>> marker_corners;
+        cv::aruco::detectMarkers(image, dictionary, marker_corners, marker_ids);
+
+        if (!marker_ids.empty()) {
+            // Рисуем рамку вокруг маркеров
+            cv::aruco::drawDetectedMarkers(image, marker_corners, marker_ids);
+
+            // Публикуем информацию о каждом маркере и добавляем текст на изображение
+            for (size_t i = 0; i < marker_ids.size(); ++i) {
+                int marker_id = marker_ids[i];
+                std::vector<cv::Point2f> corners = marker_corners[i];
+
+                // Вычисляем центр маркера
+                cv::Point2f center;
+                for (const auto &corner : corners) {
+                    center += corner;
+                }
+                center /= 4.0;
+
+                geometry_msgs::msg::Point aruco_point;
+                aruco_point.x = center.x;
+                aruco_point.y = center.y;
+                aruco_point.z = marker_id; // ID маркера используется как z-координата
+
+                // Публикуем координаты центра маркера
+                pub->publish(aruco_point);
+
+                // Добавляем текст с ID маркера на изображение
+                std::string id_text = "ID: " + std::to_string(marker_id);
+                cv::putText(image, id_text, cv::Point(center.x - 20, center.y - 20),
+                            cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 255, 0), 2);
+
+                // Выводим информацию о маркере в лог
+                RCLCPP_INFO_STREAM(this->get_logger(), "Detected ArUco marker ID: " << aruco_point.z
+                                    << " Center: (" << aruco_point.x << ", " << aruco_point.y << ")");
+            }
+        } else {
+            RCLCPP_INFO(this->get_logger(), "No ArUco markers detected.");
+        }
+
+        // Отображаем изображение с найденными маркерами
+        cv::imshow("ArUco Markers", image);
+        cv::waitKey(1);
+    }
+};
+
+int main(int argc, char **argv) {
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<ArUcoDetector>());
+    rclcpp::shutdown();
+    return 0;
+}

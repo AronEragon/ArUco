@@ -1,0 +1,25 @@
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:111:39: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  111 |                         {-marker_size_/2, marker_size_/2, 0},
+      |                          ~~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:111:55: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  111 |                         {-marker_size_/2, marker_size_/2, 0},
+      |                                           ~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:112:38: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  112 |                         {marker_size_/2, marker_size_/2, 0},
+      |                          ~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:112:54: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  112 |                         {marker_size_/2, marker_size_/2, 0},
+      |                                          ~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:113:38: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  113 |                         {marker_size_/2, -marker_size_/2, 0},
+      |                          ~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:113:55: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  113 |                         {marker_size_/2, -marker_size_/2, 0},
+      |                                          ~~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:114:39: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  114 |                         {-marker_size_/2, -marker_size_/2, 0}
+      |                          ~~~~~~~~~~~~~^~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:114:56: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+  114 |                         {-marker_size_/2, -marker_size_/2, 0}
+      |                                           ~~~~~~~~~~~~~^~

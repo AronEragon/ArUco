@@ -1,0 +1,17 @@
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:63:16: error: ‘ArucoDetector’ in namespace ‘cv::aruco’ does not name a type
+   63 |     cv::aruco::ArucoDetector detector_;
+      |                ^~~~~~~~~~~~~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In constructor ‘RobotCameraProcessor::RobotCameraProcessor()’:
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:34:9: error: ‘detector_’ was not declared in this scope
+   34 |         detector_ = cv::aruco::ArucoDetector(dictionary_, detector_params_);
+      |         ^~~~~~~~~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:34:32: error: ‘ArucoDetector’ is not a member of ‘cv::aruco’
+   34 |         detector_ = cv::aruco::ArucoDetector(dictionary_, detector_params_);
+      |                                ^~~~~~~~~~~~~
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+/home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:79:13: error: ‘detector_’ was not declared in this scope
+   79 |             detector_.detectMarkers(image, marker_corners, marker_ids, rejected);
+      |             ^~~~~~~~~
+gmake[2]: *** [CMakeFiles/robot_camera_processor_node.dir/build.make:76: CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_camera_processor_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

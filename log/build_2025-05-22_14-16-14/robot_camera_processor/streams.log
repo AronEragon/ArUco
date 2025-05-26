@@ -1,0 +1,125 @@
+[0.054s] Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[0.176s] Consolidate compiler generated dependencies of target robot_camera_processor_node
+[0.268s] [ 50%] Building CXX object CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o
+[7.572s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In constructor ‘RobotCameraProcessor::RobotCameraProcessor()’:
+[7.572s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:226:62: error: no matching function for call to ‘std::unique_ptr<tf2_ros::TransformBroadcaster>::unique_ptr(RobotCameraProcessor*)’
+[7.572s]   226 |     RobotCameraProcessor() : Node("robot_camera_processor"), tf_broadcaster_(this) {
+[7.572s]       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+[7.573s] In file included from /usr/include/c++/11/memory:76,
+[7.573s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[7.573s]                  from /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:210:
+[7.573s] /usr/include/c++/11/bits/unique_ptr.h:350:9: note: candidate: ‘template<class _Up, class> std::unique_ptr<_Tp, _Dp>::unique_ptr(std::auto_ptr<_Up>&&) [with _Up = _Up; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = tf2_ros::TransformBroadcaster; _Dp = std::default_delete<tf2_ros::TransformBroadcaster>]’
+[7.573s]   350 |         unique_ptr(auto_ptr<_Up>&& __u) noexcept;
+[7.573s]       |         ^~~~~~~~~~
+[7.574s] /usr/include/c++/11/bits/unique_ptr.h:350:9: note:   template argument deduction/substitution failed:
+[7.574s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:226:62: note:   mismatched types ‘std::auto_ptr<_Up>’ and ‘RobotCameraProcessor*’
+[7.574s]   226 |     RobotCameraProcessor() : Node("robot_camera_processor"), tf_broadcaster_(this) {
+[7.574s]       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+[7.574s] In file included from /usr/include/c++/11/memory:76,
+[7.574s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[7.575s]                  from /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:210:
+[7.575s] /usr/include/c++/11/bits/unique_ptr.h:340:9: note: candidate: ‘template<class _Up, class _Ep, class> std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; <template-parameter-2-3> = <template-parameter-1-3>; _Tp = tf2_ros::TransformBroadcaster; _Dp = std::default_delete<tf2_ros::TransformBroadcaster>]’
+[7.575s]   340 |         unique_ptr(unique_ptr<_Up, _Ep>&& __u) noexcept
+[7.575s]       |         ^~~~~~~~~~
+[7.575s] /usr/include/c++/11/bits/unique_ptr.h:340:9: note:   template argument deduction/substitution failed:
+[7.575s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:226:62: note:   mismatched types ‘std::unique_ptr<_Tp, _Dp>’ and ‘RobotCameraProcessor*’
+[7.576s]   226 |     RobotCameraProcessor() : Node("robot_camera_processor"), tf_broadcaster_(this) {
+[7.576s]       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+[7.576s] In file included from /usr/include/c++/11/memory:76,
+[7.576s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[7.576s]                  from /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:210:
+[7.576s] /usr/include/c++/11/bits/unique_ptr.h:320:19: note: candidate: ‘template<class _Del, class> constexpr std::unique_ptr<_Tp, _Dp>::unique_ptr(std::nullptr_t) [with _Del = _Del; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = tf2_ros::TransformBroadcaster; _Dp = std::default_delete<tf2_ros::TransformBroadcaster>]’
+[7.576s]   320 |         constexpr unique_ptr(nullptr_t) noexcept
+[7.577s]       |                   ^~~~~~~~~~
+[7.577s] /usr/include/c++/11/bits/unique_ptr.h:320:19: note:   template argument deduction/substitution failed:
+[7.577s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:226:78: note:   cannot convert ‘(RobotCameraProcessor*)this’ (type ‘RobotCameraProcessor*’) to type ‘std::nullptr_t’
+[7.577s]   226 |     RobotCameraProcessor() : Node("robot_camera_processor"), tf_broadcaster_(this) {
+[7.577s]       |                                                                              ^~~~
+[7.577s] In file included from /usr/include/c++/11/memory:76,
+[7.577s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[7.578s]                  from /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:210:
+[7.578s] /usr/include/c++/11/bits/unique_ptr.h:314:9: note: candidate: ‘template<class _Del, class _DelUnref> std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer, std::__enable_if_t<std::is_lvalue_reference<_Del>::value, _DelUnref&&>) [with _Del = _Del; _DelUnref = _DelUnref; _Tp = tf2_ros::TransformBroadcaster; _Dp = std::default_delete<tf2_ros::TransformBroadcaster>]’ (deleted)
+[7.578s]   314 |         unique_ptr(pointer,
+[7.578s]       |         ^~~~~~~~~~
+[7.578s] /usr/include/c++/11/bits/unique_ptr.h:314:9: note:   template argument deduction/substitution failed:
+[7.578s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:226:62: note:   candidate expects 2 arguments, 1 provided
+[7.579s]   226 |     RobotCameraProcessor() : Node("robot_camera_processor"), tf_broadcaster_(this) {
+[7.579s]       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+[7.579s] In file included from /usr/include/c++/11/memory:76,
+[7.579s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[7.579s]                  from /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:210:
+[7.579s] /usr/include/c++/11/bits/unique_ptr.h:306:9: note: candidate: ‘template<class _Del, class> std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer, std::__enable_if_t<(! std::is_lvalue_reference<_Del>::value), _Del&&>) [with _Del = _Del; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = tf2_ros::TransformBroadcaster; _Dp = std::default_delete<tf2_ros::TransformBroadcaster>]’
+[7.579s]   306 |         unique_ptr(pointer __p,
+[7.580s]       |         ^~~~~~~~~~
+[7.580s] /usr/include/c++/11/bits/unique_ptr.h:306:9: note:   template argument deduction/substitution failed:
+[7.580s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:226:62: note:   candidate expects 2 arguments, 1 provided
+[7.580s]   226 |     RobotCameraProcessor() : Node("robot_camera_processor"), tf_broadcaster_(this) {
+[7.580s]       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+[7.580s] In file included from /usr/include/c++/11/memory:76,
+[7.581s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[7.581s]                  from /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:210:
+[7.581s] /usr/include/c++/11/bits/unique_ptr.h:294:9: note: candidate: ‘template<class _Del, class> std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer, const deleter_type&) [with _Del = _Del; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = tf2_ros::TransformBroadcaster; _Dp = std::default_delete<tf2_ros::TransformBroadcaster>]’
+[7.581s]   294 |         unique_ptr(pointer __p, const deleter_type& __d) noexcept
+[7.581s]       |         ^~~~~~~~~~
+[7.581s] /usr/include/c++/11/bits/unique_ptr.h:294:9: note:   template argument deduction/substitution failed:
+[7.581s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:226:62: note:   candidate expects 2 arguments, 1 provided
+[7.582s]   226 |     RobotCameraProcessor() : Node("robot_camera_processor"), tf_broadcaster_(this) {
+[7.582s]       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+[7.582s] In file included from /usr/include/c++/11/memory:76,
+[7.582s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[7.582s]                  from /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:210:
+[7.582s] /usr/include/c++/11/bits/unique_ptr.h:281:9: note: candidate: ‘template<class _Del, class> std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>::pointer) [with _Del = _Del; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = tf2_ros::TransformBroadcaster; _Dp = std::default_delete<tf2_ros::TransformBroadcaster>]’
+[7.582s]   281 |         unique_ptr(pointer __p) noexcept
+[7.583s]       |         ^~~~~~~~~~
+[7.583s] /usr/include/c++/11/bits/unique_ptr.h:281:9: note:   template argument deduction/substitution failed:
+[7.583s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:226:78: note:   cannot convert ‘(RobotCameraProcessor*)this’ (type ‘RobotCameraProcessor*’) to type ‘std::unique_ptr<tf2_ros::TransformBroadcaster>::pointer’ {aka ‘tf2_ros::TransformBroadcaster*’}
+[7.583s]   226 |     RobotCameraProcessor() : Node("robot_camera_processor"), tf_broadcaster_(this) {
+[7.583s]       |                                                                              ^~~~
+[7.583s] In file included from /usr/include/c++/11/memory:76,
+[7.583s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[7.584s]                  from /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:210:
+[7.584s] /usr/include/c++/11/bits/unique_ptr.h:269:19: note: candidate: ‘template<class _Del, class> constexpr std::unique_ptr<_Tp, _Dp>::unique_ptr() [with _Del = _Del; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = tf2_ros::TransformBroadcaster; _Dp = std::default_delete<tf2_ros::TransformBroadcaster>]’
+[7.584s]   269 |         constexpr unique_ptr() noexcept
+[7.584s]       |                   ^~~~~~~~~~
+[7.584s] /usr/include/c++/11/bits/unique_ptr.h:269:19: note:   template argument deduction/substitution failed:
+[7.584s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:226:62: note:   candidate expects 0 arguments, 1 provided
+[7.584s]   226 |     RobotCameraProcessor() : Node("robot_camera_processor"), tf_broadcaster_(this) {
+[7.585s]       |                                                              ^~~~~~~~~~~~~~~~~~~~~
+[7.585s] In file included from /usr/include/c++/11/memory:76,
+[7.585s]                  from /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153,
+[7.585s]                  from /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:210:
+[7.585s] /usr/include/c++/11/bits/unique_ptr.h:327:7: note: candidate: ‘std::unique_ptr<_Tp, _Dp>::unique_ptr(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = tf2_ros::TransformBroadcaster; _Dp = std::default_delete<tf2_ros::TransformBroadcaster>]’
+[7.586s]   327 |       unique_ptr(unique_ptr&&) = default;
+[7.586s]       |       ^~~~~~~~~~
+[7.586s] /usr/include/c++/11/bits/unique_ptr.h:327:18: note:   no known conversion for argument 1 from ‘RobotCameraProcessor*’ to ‘std::unique_ptr<tf2_ros::TransformBroadcaster>&&’
+[7.586s]   327 |       unique_ptr(unique_ptr&&) = default;
+[7.586s]       |                  ^~~~~~~~~~~~
+[7.636s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+[7.637s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:318:39: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.637s]   318 |                         {-marker_size_/2, marker_size_/2, 0},   // Верхний левый
+[7.637s]       |                          ~~~~~~~~~~~~~^~
+[7.637s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:318:55: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.637s]   318 |                         {-marker_size_/2, marker_size_/2, 0},   // Верхний левый
+[7.637s]       |                                           ~~~~~~~~~~~~^~
+[7.638s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:319:38: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.638s]   319 |                         {marker_size_/2, marker_size_/2, 0},    // Верхний правый
+[7.638s]       |                          ~~~~~~~~~~~~^~
+[7.638s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:319:54: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.638s]   319 |                         {marker_size_/2, marker_size_/2, 0},    // Верхний правый
+[7.638s]       |                                          ~~~~~~~~~~~~^~
+[7.639s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:320:38: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.639s]   320 |                         {marker_size_/2, -marker_size_/2, 0},   // Нижний правый
+[7.639s]       |                          ~~~~~~~~~~~~^~
+[7.639s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:320:55: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.639s]   320 |                         {marker_size_/2, -marker_size_/2, 0},   // Нижний правый
+[7.639s]       |                                          ~~~~~~~~~~~~~^~
+[7.639s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:321:39: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.639s]   321 |                         {-marker_size_/2, -marker_size_/2, 0}   // Нижний левый
+[7.640s]       |                          ~~~~~~~~~~~~~^~
+[7.640s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:321:56: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.640s]   321 |                         {-marker_size_/2, -marker_size_/2, 0}   // Нижний левый
+[7.640s]       |                                           ~~~~~~~~~~~~~^~
+[9.863s] gmake[2]: *** [CMakeFiles/robot_camera_processor_node.dir/build.make:76: CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o] Ошибка 1
+[9.864s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_camera_processor_node.dir/all] Ошибка 2
+[9.864s] gmake: *** [Makefile:146: all] Ошибка 2
+[9.870s] Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8

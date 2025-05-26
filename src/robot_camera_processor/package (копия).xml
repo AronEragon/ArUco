@@ -1,0 +1,73 @@
+
+1.3
+
+<depend>rclcpp</depend>
+<depend>sensor_msgs</depend>
+<depend>cv_bridge</depend>
+<depend>OpenCV</depend>
+<depend>image_transport</depend>
+<depend>geometry_msgs</depend>
+<depend>tf2</depend>
+<depend>tf2_ros</depend>
+
+
+1.2
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<package format="3">
+  <name>robot_camera_processor</name>
+  <version>0.0.0</version>
+  <description>ROS 2 package for detecting ArUco markers and publishing their positions to RViz2.</description>
+  <maintainer email="eragonaron@gmail.com">ivan</maintainer>
+  <license>Apache 2.0</license>
+
+  <!-- Build tool dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+<depend>rclcpp</depend>
+<depend>sensor_msgs</depend>
+<depend>cv_bridge</depend>
+<depend>OpenCV</depend>
+<depend>image_transport</depend>
+<depend>geometry_msgs</depend>
+<depend>tf2</depend>
+<depend>tf2_ros</depend>
+<depend>visualization_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
+
+
+
+
+1.1
+
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<package format="3">
+  <name>robot_camera_processor</name>
+  <version>0.0.0</version>
+  <description>ROS 2 package for detecting ArUco markers and publishing their positions to RViz2.</description>
+  <maintainer email="eragonaron@gmail.com">ivan</maintainer>
+  <license>Apache 2.0</license>
+
+  <!-- Build tool dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>OpenCV</depend>
+  <depend>image_transport</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

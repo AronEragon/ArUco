@@ -1,0 +1,25 @@
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In member function ‘void ArUcoDetector::image_callback(const ConstSharedPtr&)’:
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:70:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   70 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+      |                      ~~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:70:52: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   70 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+      |                                        ~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:71:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   71 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+      |                      ~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:71:51: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   71 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+      |                                       ~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:72:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   72 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+      |                      ~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:72:52: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   72 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+      |                                       ~~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:73:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   73 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+      |                      ~~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:73:53: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   73 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+      |                                        ~~~~~~~~~~~~~^~~

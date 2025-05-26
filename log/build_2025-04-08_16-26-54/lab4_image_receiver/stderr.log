@@ -1,0 +1,40 @@
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In member function ‘void ArUcoDetector::image_callback(const ConstSharedPtr&)’:
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:76:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   76 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+      |                      ~~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:76:52: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   76 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+      |                                        ~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:77:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   77 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+      |                      ~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:77:51: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   77 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+      |                                       ~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:78:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   78 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+      |                      ~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:78:52: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   78 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+      |                                       ~~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:79:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   79 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+      |                      ~~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:79:53: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+   79 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+      |                                        ~~~~~~~~~~~~~^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:100:17: error: ‘tf2’ has not been declared
+  100 |                 tf2::Matrix3x3 tf_rotation(
+      |                 ^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:105:17: error: ‘tf2’ has not been declared
+  105 |                 tf2::Quaternion q;
+      |                 ^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:106:17: error: ‘tf_rotation’ was not declared in this scope
+  106 |                 tf_rotation.getRotation(q);
+      |                 ^~~~~~~~~~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:106:41: error: ‘q’ was not declared in this scope
+  106 |                 tf_rotation.getRotation(q);
+      |                                         ^
+gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

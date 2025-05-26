@@ -1,0 +1,22 @@
+[0.046s] Invoking command in '/home/eragon/ArUco/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot -- -j8 -l8
+[0.128s] Invoked command in '/home/eragon/ArUco/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot -- -j8 -l8
+[0.149s] Invoking command in '/home/eragon/ArUco/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot
+[0.168s] -- Install configuration: "Debug"
+[0.168s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/launch
+[0.169s] -- Installing: /home/eragon/ArUco/install/robot/share/robot/launch/robot_launch.py
+[0.169s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
+[0.169s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
+[0.169s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/environment/ament_prefix_path.sh
+[0.169s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/environment/ament_prefix_path.dsv
+[0.169s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/environment/path.sh
+[0.170s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/environment/path.dsv
+[0.170s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/local_setup.bash
+[0.170s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/local_setup.sh
+[0.170s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/local_setup.zsh
+[0.172s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/local_setup.dsv
+[0.173s] -- Installing: /home/eragon/ArUco/install/robot/share/robot/package.dsv
+[0.173s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/ament_index/resource_index/packages/robot
+[0.174s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/cmake/robotConfig.cmake
+[0.174s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/cmake/robotConfig-version.cmake
+[0.174s] -- Up-to-date: /home/eragon/ArUco/install/robot/share/robot/package.xml
+[0.174s] Invoked command in '/home/eragon/ArUco/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot

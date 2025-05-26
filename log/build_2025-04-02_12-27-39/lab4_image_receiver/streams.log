@@ -1,0 +1,35 @@
+[0.063s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.201s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[0.238s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[7.921s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In member function ‘void ArUcoDetector::image_callback(const ConstSharedPtr&)’:
+[7.921s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:62:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.921s]    62 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+[7.922s]       |                      ~~~~~~~~~~~~~^~~
+[7.922s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:62:52: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.922s]    62 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+[7.923s]       |                                        ~~~~~~~~~~~~^~~
+[7.923s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:63:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.923s]    63 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+[7.923s]       |                      ~~~~~~~~~~~~^~~
+[7.923s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:63:51: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.924s]    63 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+[7.924s]       |                                       ~~~~~~~~~~~~^~~
+[7.924s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:64:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.924s]    64 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+[7.924s]       |                      ~~~~~~~~~~~~^~~
+[7.924s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:64:52: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.925s]    64 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+[7.925s]       |                                       ~~~~~~~~~~~~~^~~
+[7.925s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:65:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.925s]    65 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+[7.926s]       |                      ~~~~~~~~~~~~~^~~
+[7.926s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:65:53: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.926s]    65 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+[7.926s]       |                                        ~~~~~~~~~~~~~^~~
+[7.955s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:85:9: error: ‘Публикуем’ was not declared in this scope
+[7.955s]    85 |         Публикуем изображение с рамками и осями
+[7.956s]       |         ^~~~~~~~~
+[9.663s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[9.664s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[9.664s] gmake: *** [Makefile:146: all] Ошибка 2
+[9.667s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

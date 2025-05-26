@@ -1,0 +1,38 @@
+[0.045s] Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[0.181s] [ 50%] Building CXX object CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o
+[7.239s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+[7.240s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:112:42: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.240s]   112 |                         {0, -marker_size_/2, -marker_size_/2},
+[7.240s]       |                             ~~~~~~~~~~~~~^~
+[7.240s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:112:59: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.241s]   112 |                         {0, -marker_size_/2, -marker_size_/2},
+[7.241s]       |                                              ~~~~~~~~~~~~~^~
+[7.241s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:113:42: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.241s]   113 |                         {0,  marker_size_/2, -marker_size_/2},
+[7.241s]       |                              ~~~~~~~~~~~~^~
+[7.241s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:113:59: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.241s]   113 |                         {0,  marker_size_/2, -marker_size_/2},
+[7.242s]       |                                              ~~~~~~~~~~~~~^~
+[7.242s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:114:42: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.242s]   114 |                         {0,  marker_size_/2,  marker_size_/2},
+[7.242s]       |                              ~~~~~~~~~~~~^~
+[7.242s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:114:59: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.242s]   114 |                         {0,  marker_size_/2,  marker_size_/2},
+[7.242s]       |                                               ~~~~~~~~~~~~^~
+[7.243s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:115:42: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.243s]   115 |                         {0, -marker_size_/2,  marker_size_/2}
+[7.243s]       |                             ~~~~~~~~~~~~~^~
+[7.243s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:115:59: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.243s]   115 |                         {0, -marker_size_/2,  marker_size_/2}
+[7.243s]       |                                               ~~~~~~~~~~~~^~
+[7.246s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:125:53: error: ‘cv::Vec3d’ {aka ‘class cv::Vec<double, 3>’} has no member named ‘clone’
+[7.246s]   125 |                     cv::Vec3d corrected_tvec = tvec.clone();
+[7.246s]       |                                                     ^~~~~
+[7.260s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void RobotCameraProcessor::publish_marker_pose(int, const Vec3d&, const Vec3d&)’:
+[7.260s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:161:34: warning: unused parameter ‘marker_id’ [-Wunused-parameter]
+[7.261s]   161 |     void publish_marker_pose(int marker_id, const cv::Vec3d& rvec, const cv::Vec3d& corrected_tvec) {
+[7.261s]       |                              ~~~~^~~~~~~~~
+[9.500s] gmake[2]: *** [CMakeFiles/robot_camera_processor_node.dir/build.make:76: CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o] Ошибка 1
+[9.500s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_camera_processor_node.dir/all] Ошибка 2
+[9.501s] gmake: *** [Makefile:146: all] Ошибка 2
+[9.505s] Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8

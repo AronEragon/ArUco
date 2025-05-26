@@ -1,0 +1,2 @@
+Consolidate compiler generated dependencies of target data_with_camera_pkg_node
+[ 50%] Building CXX object CMakeFiles/data_with_camera_pkg_node.dir/src/data_with_camera_pkg_node.cpp.o

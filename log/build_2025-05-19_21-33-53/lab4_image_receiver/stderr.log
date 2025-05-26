@@ -1,0 +1,34 @@
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In constructor ‘ArUcoDetector::ArUcoDetector()’:
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:38:14: warning: left operand of comma operator has no effect [-Wunused-value]
+   38 |             (700.0, 0.0, 400.0,  // fx, 0, cx
+      |              ^~~~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:38:26: warning: right operand of comma operator has no effect [-Wunused-value]
+   38 |             (700.0, 0.0, 400.0,  // fx, 0, cx
+      |                          ^~~~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:39:13: warning: right operand of comma operator has no effect [-Wunused-value]
+   39 |             0.0, 700.0, 300.0,   // 0, fy, cy
+      |             ^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:39:18: warning: right operand of comma operator has no effect [-Wunused-value]
+   39 |             0.0, 700.0, 300.0,   // 0, fy, cy
+      |                  ^~~~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:39:25: warning: right operand of comma operator has no effect [-Wunused-value]
+   39 |             0.0, 700.0, 300.0,   // 0, fy, cy
+      |                         ^~~~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:40:13: warning: right operand of comma operator has no effect [-Wunused-value]
+   40 |             0.0, 0.0, 1.0);       // 0, 0, 1
+      |             ^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:40:18: warning: right operand of comma operator has no effect [-Wunused-value]
+   40 |             0.0, 0.0, 1.0);       // 0, 0, 1
+      |                  ^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:40:23: warning: right operand of comma operator has no effect [-Wunused-value]
+   40 |             0.0, 0.0, 1.0);       // 0, 0, 1
+      |                       ^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:40:27: error: expected ‘)’ before ‘;’ token
+   40 |             0.0, 0.0, 1.0);       // 0, 0, 1
+      |                           ^
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:37:26: note: to match this ‘(’
+   37 |         camera_matrix_ = (cv::Mat_<double>(3, 3) <<
+      |                          ^
+gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

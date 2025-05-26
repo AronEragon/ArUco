@@ -1,0 +1,5 @@
+CMake Error at CMakeLists.txt:27 (message):
+  Missing source file: src/robot_camera_processor.cpp
+
+
+gmake: *** [Makefile:267: cmake_check_build_system] Ошибка 1

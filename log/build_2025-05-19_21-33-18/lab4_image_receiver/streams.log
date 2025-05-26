@@ -1,0 +1,14 @@
+[0.056s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.195s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[0.270s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[6.326s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In constructor ‘ArUcoDetector::ArUcoDetector()’:
+[6.326s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:40:26: error: expected ‘)’ before ‘;’ token
+[6.327s]    40 |             0.0, 0.0, 1.0;       // 0, 0, 1
+[6.327s]       |                          ^
+[6.327s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:37:26: note: to match this ‘(’
+[6.327s]    37 |         camera_matrix_ = (cv::Mat_<double>(3, 3) <<
+[6.327s]       |                          ^
+[8.414s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[8.414s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[8.415s] gmake: *** [Makefile:146: all] Ошибка 2
+[8.420s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

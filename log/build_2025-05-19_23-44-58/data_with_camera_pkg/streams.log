@@ -1,0 +1,22 @@
+[0.057s] Invoking command in '/home/eragon/ArUco/build/data_with_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/data_with_camera_pkg -- -j8 -l8
+[0.258s] [100%] Built target data_with_camera_pkg_node
+[0.276s] Invoked command in '/home/eragon/ArUco/build/data_with_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/data_with_camera_pkg -- -j8 -l8
+[0.277s] Invoking command in '/home/eragon/ArUco/build/data_with_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/data_with_camera_pkg
+[0.361s] -- Install configuration: "Debug"
+[0.361s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/lib/data_with_camera_pkg/data_with_camera_pkg_node
+[0.362s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/ament_index/resource_index/package_run_dependencies/data_with_camera_pkg
+[0.362s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/ament_index/resource_index/parent_prefix_path/data_with_camera_pkg
+[0.362s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/environment/ament_prefix_path.sh
+[0.362s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/environment/ament_prefix_path.dsv
+[0.362s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/environment/path.sh
+[0.362s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/environment/path.dsv
+[0.362s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/local_setup.bash
+[0.362s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/local_setup.sh
+[0.363s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/local_setup.zsh
+[0.363s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/local_setup.dsv
+[0.363s] -- Installing: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/package.dsv
+[0.363s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/ament_index/resource_index/packages/data_with_camera_pkg
+[0.363s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/cmake/data_with_camera_pkgConfig.cmake
+[0.363s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/cmake/data_with_camera_pkgConfig-version.cmake
+[0.363s] -- Up-to-date: /home/eragon/ArUco/install/data_with_camera_pkg/share/data_with_camera_pkg/package.xml
+[0.397s] Invoked command in '/home/eragon/ArUco/build/data_with_camera_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/data_with_camera_pkg

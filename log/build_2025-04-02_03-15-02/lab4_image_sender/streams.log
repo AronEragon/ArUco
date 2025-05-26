@@ -1,0 +1,51 @@
+[0.045s] Invoking command in '/home/eragon/ArUco/build/lab4_image_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_sender -- -j8 -l8
+[0.164s] Consolidate compiler generated dependencies of target lab4_image_sender_node
+[0.206s] [ 50%] Building CXX object CMakeFiles/lab4_image_sender_node.dir/src/lab4_image_sender_node.cpp.o
+[7.389s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp: In member function ‘void ArUcoDetector::image_callback(const ConstSharedPtr&)’:
+[7.389s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:62:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.389s]    62 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+[7.389s]       |                      ~~~~~~~~~~~~~^~~
+[7.389s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:62:52: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.390s]    62 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+[7.390s]       |                                        ~~~~~~~~~~~~^~~
+[7.390s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:63:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.390s]    63 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+[7.390s]       |                      ~~~~~~~~~~~~^~~
+[7.390s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:63:51: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.390s]    63 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+[7.390s]       |                                       ~~~~~~~~~~~~^~~
+[7.391s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:64:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.391s]    64 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+[7.391s]       |                      ~~~~~~~~~~~~^~~
+[7.391s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:64:52: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.391s]    64 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+[7.391s]       |                                       ~~~~~~~~~~~~~^~~
+[7.391s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:65:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.391s]    65 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+[7.391s]       |                      ~~~~~~~~~~~~~^~~
+[7.391s] /home/eragon/ArUco/src/lab4_image_sender/src/lab4_image_sender_node.cpp:65:53: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[7.392s]    65 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+[7.392s]       |                                        ~~~~~~~~~~~~~^~~
+[9.760s] [100%] Linking CXX executable lab4_image_sender_node
+[10.562s] [100%] Built target lab4_image_sender_node
+[10.593s] Invoked command in '/home/eragon/ArUco/build/lab4_image_sender' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_sender -- -j8 -l8
+[10.595s] Invoking command in '/home/eragon/ArUco/build/lab4_image_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_sender
+[10.612s] -- Install configuration: "Debug"
+[10.613s] -- Installing: /home/eragon/ArUco/install/lab4_image_sender/lib/lab4_image_sender/lab4_image_sender_node
+[10.618s] -- Set runtime path of "/home/eragon/ArUco/install/lab4_image_sender/lib/lab4_image_sender/lab4_image_sender_node" to ""
+[10.619s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/ament_index/resource_index/package_run_dependencies/lab4_image_sender
+[10.619s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/ament_index/resource_index/parent_prefix_path/lab4_image_sender
+[10.619s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/ament_prefix_path.sh
+[10.619s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/ament_prefix_path.dsv
+[10.620s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/path.sh
+[10.620s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/path.dsv
+[10.620s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.bash
+[10.620s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.sh
+[10.620s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.zsh
+[10.620s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.dsv
+[10.620s] -- Installing: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.dsv
+[10.621s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/ament_index/resource_index/packages/lab4_image_sender
+[10.621s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/cmake/lab4_image_senderConfig.cmake
+[10.621s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/cmake/lab4_image_senderConfig-version.cmake
+[10.621s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.xml
+[10.624s] Invoked command in '/home/eragon/ArUco/build/lab4_image_sender' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_sender

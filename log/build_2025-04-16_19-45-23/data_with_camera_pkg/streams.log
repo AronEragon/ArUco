@@ -1,0 +1,47 @@
+[0.100s] Invoking command in '/home/eragon/ArUco/build/data_with_camera_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/data_with_camera_pkg -- -j8 -l8
+[0.316s] Consolidate compiler generated dependencies of target data_with_camera_pkg_node
+[0.422s] [ 50%] Building CXX object CMakeFiles/data_with_camera_pkg_node.dir/src/data_with_camera_pkg_node.cpp.o
+[22.191s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp: In constructor ‘Obrabotchik_data::Obrabotchik_data()’:
+[22.191s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:25:9: error: ‘camera_pub’ was not declared in this scope
+[22.191s]    25 |         camera_pub = this->create_publisher<sensor_msgs::msg::Image>("/data_with_camera", 10);
+[22.192s]       |         ^~~~~~~~~~
+[22.232s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:28:9: error: ‘camera_sub’ was not declared in this scope; did you mean ‘timersub’?
+[22.232s]    28 |         camera_sub = this->create_subscription<sensor_msgs::msg::Image>(
+[22.232s]       |         ^~~~~~~~~~
+[22.232s]       |         timersub
+[22.391s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:34:9: error: ‘marker_pub’ was not declared in this scope
+[22.391s]    34 |         marker_pub = this->create_publisher<visualization_msgs::msg::Marker>("/detected_objects", 10);
+[22.391s]       |         ^~~~~~~~~~
+[22.421s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:37:9: error: ‘timer’ was not declared in this scope; did you mean ‘timex’?
+[22.422s]    37 |         timer = this->create_wall_timer(5ms, std::bind(&Obrabotchik_data::timer_callback, this));
+[22.422s]       |         ^~~~~
+[22.423s]       |         timex
+[22.423s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:37:75: error: ‘timer_callback’ is not a member of ‘Obrabotchik_data’
+[22.423s]    37 |         timer = this->create_wall_timer(5ms, std::bind(&Obrabotchik_data::timer_callback, this));
+[22.423s]       |                                                                           ^~~~~~~~~~~~~~
+[22.462s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:40:9: error: ‘focal_length_px’ was not declared in this scope
+[22.462s]    40 |         focal_length_px = 13.92261; // Фокусное расстояние в пикселях
+[22.462s]       |         ^~~~~~~~~~~~~~~
+[22.503s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:41:9: error: ‘image_width’ was not declared in this scope
+[22.503s]    41 |         image_width = 1280;         // Ширина изображения
+[22.503s]       |         ^~~~~~~~~~~
+[22.542s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:42:9: error: ‘image_height’ was not declared in this scope
+[22.542s]    42 |         image_height = 720;         // Высота изображения
+[22.542s]       |         ^~~~~~~~~~~~
+[22.580s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:45:9: error: ‘camera_offset_x’ was not declared in this scope
+[22.580s]    45 |         camera_offset_x = -0.000133; // в метрах
+[22.580s]       |         ^~~~~~~~~~~~~~~
+[22.613s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:46:9: error: ‘camera_offset_y’ was not declared in this scope
+[22.614s]    46 |         camera_offset_y = 0.144819;
+[22.614s]       |         ^~~~~~~~~~~~~~~
+[22.680s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp: In member function ‘void Obrabotchik_data::camera_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr, const string&)’:
+[22.681s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:79:13: error: ‘detect_sign’ was not declared in this scope
+[22.681s]    79 |             detect_sign(image);
+[22.681s]       |             ^~~~~~~~~~~
+[22.714s] /home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:82:13: error: ‘latest_image’ was not declared in this scope
+[22.714s]    82 |             latest_image = image.clone();
+[22.714s]       |             ^~~~~~~~~~~~
+[31.369s] gmake[2]: *** [CMakeFiles/data_with_camera_pkg_node.dir/build.make:76: CMakeFiles/data_with_camera_pkg_node.dir/src/data_with_camera_pkg_node.cpp.o] Ошибка 1
+[31.370s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/data_with_camera_pkg_node.dir/all] Ошибка 2
+[31.370s] gmake: *** [Makefile:146: all] Ошибка 2
+[31.377s] Invoked command in '/home/eragon/ArUco/build/data_with_camera_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/data_with_camera_pkg -- -j8 -l8

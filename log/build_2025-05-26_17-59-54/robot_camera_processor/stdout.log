@@ -1,0 +1,2 @@
+Consolidate compiler generated dependencies of target robot_camera_processor_node
+[ 50%] Building CXX object CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o

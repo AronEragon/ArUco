@@ -1,0 +1,4 @@
+/home/eragon/ArUco/src/robot_odometry/src/robot_odometry_node.cpp: In member function ‘void RobotOdometry::publishOdom(double, double, double)’:
+/home/eragon/ArUco/src/robot_odometry/src/robot_odometry_node.cpp:103:56: warning: unused parameter ‘delta_theta’ [-Wunused-parameter]
+  103 |     void publishOdom(double dt, double delta_s, double delta_theta) {
+      |                                                 ~~~~~~~^~~~~~~~~~~

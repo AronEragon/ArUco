@@ -1,0 +1,781 @@
+[0.000000] (-) TimerEvent: {}
+[0.000766] (lab4_image_receiver) JobQueued: {'identifier': 'lab4_image_receiver', 'dependencies': OrderedDict()}
+[0.001350] (lab4_image_sender) JobQueued: {'identifier': 'lab4_image_sender', 'dependencies': OrderedDict()}
+[0.001629] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict()}
+[0.001679] (robot_odometry) JobQueued: {'identifier': 'robot_odometry', 'dependencies': OrderedDict()}
+[0.001711] (robot_teleop) JobQueued: {'identifier': 'robot_teleop', 'dependencies': OrderedDict()}
+[0.001747] (test_robot_plugin) JobQueued: {'identifier': 'test_robot_plugin', 'dependencies': OrderedDict()}
+[0.001785] (lab4_image_receiver) JobStarted: {'identifier': 'lab4_image_receiver'}
+[0.011201] (lab4_image_sender) JobStarted: {'identifier': 'lab4_image_sender'}
+[0.017559] (robot) JobStarted: {'identifier': 'robot'}
+[0.023910] (robot_odometry) JobStarted: {'identifier': 'robot_odometry'}
+[0.031909] (robot_teleop) JobStarted: {'identifier': 'robot_teleop'}
+[0.036925] (test_robot_plugin) JobStarted: {'identifier': 'test_robot_plugin'}
+[0.046028] (lab4_image_receiver) JobProgress: {'identifier': 'lab4_image_receiver', 'progress': 'cmake'}
+[0.047919] (lab4_image_receiver) JobProgress: {'identifier': 'lab4_image_receiver', 'progress': 'build'}
+[0.048016] (lab4_image_receiver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eragon/ArUco/build/lab4_image_receiver', '--', '-j8', '-l8'], 'cwd': '/home/eragon/ArUco/build/lab4_image_receiver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/lab4_image_receiver'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[0.050989] (lab4_image_sender) JobProgress: {'identifier': 'lab4_image_sender', 'progress': 'cmake'}
+[0.051804] (lab4_image_sender) JobProgress: {'identifier': 'lab4_image_sender', 'progress': 'build'}
+[0.051932] (lab4_image_sender) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eragon/ArUco/build/lab4_image_sender', '--', '-j8', '-l8'], 'cwd': '/home/eragon/ArUco/build/lab4_image_sender', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/lab4_image_sender'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[0.054967] (robot) JobProgress: {'identifier': 'robot', 'progress': 'cmake'}
+[0.055696] (robot) Command: {'cmd': ['/usr/bin/cmake', '/home/eragon/ArUco/src/robot', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/robot'], 'cwd': '/home/eragon/ArUco/build/robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/robot'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[0.058878] (robot_odometry) JobProgress: {'identifier': 'robot_odometry', 'progress': 'cmake'}
+[0.060093] (robot_odometry) Command: {'cmd': ['/usr/bin/cmake', '/home/eragon/ArUco/src/robot_odometry', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/robot_odometry'], 'cwd': '/home/eragon/ArUco/build/robot_odometry', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/robot_odometry'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[0.068677] (robot_teleop) JobProgress: {'identifier': 'robot_teleop', 'progress': 'cmake'}
+[0.068792] (robot_teleop) Command: {'cmd': ['/usr/bin/cmake', '/home/eragon/ArUco/src/robot_teleop', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/robot_teleop'], 'cwd': '/home/eragon/ArUco/build/robot_teleop', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/robot_teleop'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[0.079205] (test_robot_plugin) JobProgress: {'identifier': 'test_robot_plugin', 'progress': 'cmake'}
+[0.079333] (test_robot_plugin) Command: {'cmd': ['/usr/bin/cmake', '/home/eragon/ArUco/src/test_robot_plugin', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug', '-DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/test_robot_plugin'], 'cwd': '/home/eragon/ArUco/build/test_robot_plugin', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/test_robot_plugin'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[0.099707] (-) TimerEvent: {}
+[0.149501] (lab4_image_sender) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target lab4_image_sender_node\n'}
+[0.168337] (lab4_image_receiver) StdoutLine: {'line': b'[100%] Built target lab4_image_receiver_node\n'}
+[0.190519] (lab4_image_sender) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/lab4_image_sender_node.dir/src/lab4_image_sender_node.cpp.o\n'}
+[0.200343] (lab4_image_receiver) CommandEnded: {'returncode': 0}
+[0.201116] (-) TimerEvent: {}
+[0.201346] (lab4_image_receiver) JobProgress: {'identifier': 'lab4_image_receiver', 'progress': 'install'}
+[0.217081] (lab4_image_receiver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eragon/ArUco/build/lab4_image_receiver'], 'cwd': '/home/eragon/ArUco/build/lab4_image_receiver', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/lab4_image_receiver'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[0.221312] (robot) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.221651] (robot_odometry) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.227732] (test_robot_plugin) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.228016] (robot_teleop) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.234508] (lab4_image_receiver) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[0.234788] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/lib/lab4_image_receiver/lab4_image_receiver_node\n'}
+[0.234944] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/launch\n'}
+[0.235047] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/launch/image_launch.py\n'}
+[0.235179] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/package_run_dependencies/lab4_image_receiver\n'}
+[0.235289] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/parent_prefix_path/lab4_image_receiver\n'}
+[0.235384] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/ament_prefix_path.sh\n'}
+[0.235481] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/ament_prefix_path.dsv\n'}
+[0.235587] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/path.sh\n'}
+[0.235682] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/environment/path.dsv\n'}
+[0.235775] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.bash\n'}
+[0.235869] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.sh\n'}
+[0.235982] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.zsh\n'}
+[0.236083] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/local_setup.dsv\n'}
+[0.236207] (lab4_image_receiver) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.dsv\n'}
+[0.236309] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/ament_index/resource_index/packages/lab4_image_receiver\n'}
+[0.236409] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/cmake/lab4_image_receiverConfig.cmake\n'}
+[0.236509] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/cmake/lab4_image_receiverConfig-version.cmake\n'}
+[0.236605] (lab4_image_receiver) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_receiver/share/lab4_image_receiver/package.xml\n'}
+[0.244249] (lab4_image_receiver) CommandEnded: {'returncode': 0}
+[0.292541] (lab4_image_receiver) JobEnded: {'identifier': 'lab4_image_receiver', 'rc': 0}
+[0.301262] (-) TimerEvent: {}
+[0.347688] (robot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.356910] (robot_teleop) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.357215] (robot_odometry) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.366395] (test_robot_plugin) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.401402] (-) TimerEvent: {}
+[0.442464] (robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.442778] (robot_odometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.450500] (robot_teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.450768] (test_robot_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.501519] (-) TimerEvent: {}
+[0.593708] (robot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.594003] (robot_odometry) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.597082] (robot_teleop) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.602276] (-) TimerEvent: {}
+[0.603852] (test_robot_plugin) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.608113] (robot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.609044] (robot_odometry) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.609310] (robot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.611799] (robot_odometry) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.612363] (robot_odometry) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.612529] (robot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.612971] (robot_teleop) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.613472] (robot_teleop) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.614277] (robot_teleop) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.617325] (robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.617574] (robot_odometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.620522] (robot_teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.620981] (test_robot_plugin) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.621505] (test_robot_plugin) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.622368] (test_robot_plugin) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.630593] (test_robot_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.705220] (-) TimerEvent: {}
+[0.795379] (robot_teleop) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.799570] (robot_odometry) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.805933] (robot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.806230] (-) TimerEvent: {}
+[0.812528] (test_robot_plugin) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.813418] (robot_teleop) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.813891] (robot_teleop) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.814849] (robot_teleop) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.815332] (robot_odometry) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.815923] (robot_odometry) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.816758] (robot_odometry) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.821735] (robot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.822216] (robot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.823203] (robot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.825409] (test_robot_plugin) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.825722] (test_robot_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.826372] (test_robot_plugin) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.829762] (robot_teleop) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.830069] (robot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.830277] (robot_odometry) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.830745] (test_robot_plugin) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.907387] (-) TimerEvent: {}
+[1.008809] (-) TimerEvent: {}
+[1.109928] (-) TimerEvent: {}
+[1.206385] (robot) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.210183] (-) TimerEvent: {}
+[1.216276] (robot_odometry) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.219146] (robot_teleop) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.228193] (test_robot_plugin) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.312190] (-) TimerEvent: {}
+[1.412639] (-) TimerEvent: {}
+[1.461130] (robot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.461731] (robot_odometry) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.462012] (robot_teleop) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.471215] (test_robot_plugin) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.512763] (-) TimerEvent: {}
+[1.560840] (robot_teleop) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.567764] (robot_odometry) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.574328] (robot_teleop) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.578289] (robot_odometry) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.584297] (test_robot_plugin) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.593574] (robot_odometry) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.596011] (robot_teleop) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.597841] (test_robot_plugin) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.613043] (-) TimerEvent: {}
+[1.623343] (test_robot_plugin) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.628406] (robot_teleop) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.628659] (robot_odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.650691] (test_robot_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.662093] (robot) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.662433] (robot) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.664291] (robot) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.666794] (robot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.667813] (robot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.670634] (robot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.673954] (robot_teleop) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.674201] (robot_odometry) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.674392] (robot) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.674544] (robot) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.677991] (robot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.680848] (robot) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.682453] (test_robot_plugin) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.696497] (robot) StdoutLine: {'line': b'-- Generating done\n'}
+[1.702026] (robot) StdoutLine: {'line': b'-- Build files have been written to: /home/eragon/ArUco/build/robot\n'}
+[1.713239] (robot) CommandEnded: {'returncode': 0}
+[1.714181] (-) TimerEvent: {}
+[1.714432] (robot) JobProgress: {'identifier': 'robot', 'progress': 'build'}
+[1.714495] (robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eragon/ArUco/build/robot', '--', '-j8', '-l8'], 'cwd': '/home/eragon/ArUco/build/robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/robot'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[1.780423] (test_robot_plugin) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.783892] (robot_teleop) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.784221] (robot_odometry) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.789526] (robot_odometry) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.789797] (robot_teleop) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.789945] (test_robot_plugin) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.802056] (robot) CommandEnded: {'returncode': 0}
+[1.806129] (robot) JobProgress: {'identifier': 'robot', 'progress': 'install'}
+[1.806256] (robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eragon/ArUco/build/robot'], 'cwd': '/home/eragon/ArUco/build/robot', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/robot'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[1.815523] (-) TimerEvent: {}
+[1.828656] (robot) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[1.828931] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/launch\n'}
+[1.829078] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/launch/robot_launch.py\n'}
+[1.829236] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/ament_index/resource_index/package_run_dependencies/robot\n'}
+[1.830825] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/ament_index/resource_index/parent_prefix_path/robot\n'}
+[1.831919] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/environment/ament_prefix_path.sh\n'}
+[1.832150] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/environment/ament_prefix_path.dsv\n'}
+[1.832338] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/environment/path.sh\n'}
+[1.832496] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/environment/path.dsv\n'}
+[1.832621] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/local_setup.bash\n'}
+[1.832749] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/local_setup.sh\n'}
+[1.833226] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/local_setup.zsh\n'}
+[1.833513] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/local_setup.dsv\n'}
+[1.834049] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/package.dsv\n'}
+[1.834509] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/ament_index/resource_index/packages/robot\n'}
+[1.834700] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/cmake/robotConfig.cmake\n'}
+[1.834850] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/cmake/robotConfig-version.cmake\n'}
+[1.834993] (robot) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot/share/robot/package.xml\n'}
+[1.839212] (robot) CommandEnded: {'returncode': 0}
+[1.866129] (robot) JobEnded: {'identifier': 'robot', 'rc': 0}
+[1.914952] (-) TimerEvent: {}
+[2.003115] (robot_teleop) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.003428] (test_robot_plugin) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.015088] (-) TimerEvent: {}
+[2.027155] (robot_odometry) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.065752] (test_robot_plugin) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.069992] (robot_teleop) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.101952] (robot_odometry) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.115221] (-) TimerEvent: {}
+[2.143780] (robot_teleop) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.155607] (test_robot_plugin) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.162773] (robot_teleop) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.176388] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.203438] (robot_odometry) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.215365] (-) TimerEvent: {}
+[2.229811] (robot_odometry) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[2.315513] (-) TimerEvent: {}
+[2.324868] (robot_teleop) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.326398] (robot_teleop) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.334283] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.336201] (test_robot_plugin) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.388225] (robot_odometry) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[2.389575] (robot_odometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.415653] (-) TimerEvent: {}
+[2.491270] (test_robot_plugin) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.493639] (test_robot_plugin) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.496946] (robot_teleop) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.499414] (robot_teleop) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.515795] (-) TimerEvent: {}
+[2.550448] (robot_odometry) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.550682] (robot_odometry) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.615934] (-) TimerEvent: {}
+[2.631946] (robot_odometry) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.634756] (robot_teleop) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.637403] (test_robot_plugin) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[2.664805] (test_robot_plugin) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[2.667476] (test_robot_plugin) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[2.674012] (robot_teleop) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[2.675836] (robot_teleop) StdoutLine: {'line': b"-- Checking for module 'libevdev'\n"}
+[2.695387] (robot_odometry) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.700089] (test_robot_plugin) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[2.707554] (robot_teleop) StdoutLine: {'line': b'--   Found libevdev, version 1.12.1\n'}
+[2.716392] (-) TimerEvent: {}
+[2.742558] (robot_odometry) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.785553] (robot_teleop) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.817847] (-) TimerEvent: {}
+[2.918593] (-) TimerEvent: {}
+[2.965522] (robot_teleop) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.965966] (robot_teleop) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.966206] (robot_teleop) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.967526] (robot_teleop) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.970063] (robot_teleop) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.970363] (robot_teleop) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.971481] (robot_teleop) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.971766] (test_robot_plugin) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[2.975256] (robot_teleop) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.016719] (robot_teleop) StdoutLine: {'line': b'-- Generating done\n'}
+[3.018732] (-) TimerEvent: {}
+[3.026358] (robot_teleop) StdoutLine: {'line': b'-- Build files have been written to: /home/eragon/ArUco/build/robot_teleop\n'}
+[3.033347] (robot_odometry) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.049980] (robot_teleop) CommandEnded: {'returncode': 0}
+[3.051587] (robot_teleop) JobProgress: {'identifier': 'robot_teleop', 'progress': 'build'}
+[3.051697] (robot_teleop) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eragon/ArUco/build/robot_teleop', '--', '-j8', '-l8'], 'cwd': '/home/eragon/ArUco/build/robot_teleop', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/robot_teleop'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[3.098992] (test_robot_plugin) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[3.118946] (-) TimerEvent: {}
+[3.151369] (robot_teleop) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/robot_teleop_node.dir/src/robot_teleop_node.cpp.o\n'}
+[3.168623] (test_robot_plugin) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[3.205405] (robot_odometry) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.205966] (robot_odometry) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.206252] (robot_odometry) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.207163] (robot_odometry) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.209261] (robot_odometry) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.209547] (robot_odometry) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.210389] (robot_odometry) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.213153] (robot_odometry) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.219095] (-) TimerEvent: {}
+[3.249865] (test_robot_plugin) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[3.262431] (robot_odometry) StdoutLine: {'line': b'-- Generating done\n'}
+[3.272841] (robot_odometry) StdoutLine: {'line': b'-- Build files have been written to: /home/eragon/ArUco/build/robot_odometry\n'}
+[3.294984] (test_robot_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[3.299251] (robot_odometry) CommandEnded: {'returncode': 0}
+[3.300377] (robot_odometry) JobProgress: {'identifier': 'robot_odometry', 'progress': 'build'}
+[3.300791] (robot_odometry) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eragon/ArUco/build/robot_odometry', '--', '-j8', '-l8'], 'cwd': '/home/eragon/ArUco/build/robot_odometry', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/robot_odometry'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[3.309285] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.320234] (-) TimerEvent: {}
+[3.339721] (test_robot_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[3.344722] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[3.345688] (test_robot_plugin) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[3.357296] (test_robot_plugin) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[3.388505] (test_robot_plugin) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[3.408469] (robot_odometry) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/robot_odometry_node.dir/src/robot_odometry_node.cpp.o\n'}
+[3.420976] (-) TimerEvent: {}
+[3.471611] (test_robot_plugin) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[3.491695] (test_robot_plugin) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[3.512152] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[3.521099] (-) TimerEvent: {}
+[3.529673] (test_robot_plugin) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[3.529933] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[3.546016] (test_robot_plugin) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[3.546287] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[3.563123] (test_robot_plugin) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[3.563407] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[3.579244] (test_robot_plugin) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[3.579595] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[3.595904] (test_robot_plugin) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[3.596210] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[3.612539] (test_robot_plugin) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[3.621251] (-) TimerEvent: {}
+[3.721740] (-) TimerEvent: {}
+[3.822208] (-) TimerEvent: {}
+[3.922624] (-) TimerEvent: {}
+[3.938293] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.943791] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[3.944912] (test_robot_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[3.983314] (test_robot_plugin) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[4.006497] (test_robot_plugin) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[4.018073] (test_robot_plugin) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[4.022765] (-) TimerEvent: {}
+[4.052026] (test_robot_plugin) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[4.122912] (-) TimerEvent: {}
+[4.136956] (test_robot_plugin) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[4.147102] (test_robot_plugin) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[4.172698] (test_robot_plugin) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[4.224221] (-) TimerEvent: {}
+[4.252578] (test_robot_plugin) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[4.258541] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.259484] (test_robot_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[4.293627] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.303798] (test_robot_plugin) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[4.324371] (-) TimerEvent: {}
+[4.333061] (test_robot_plugin) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[4.410449] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.417314] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[4.417810] (test_robot_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[4.418563] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[4.420087] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[4.422318] (test_robot_plugin) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[4.424495] (-) TimerEvent: {}
+[4.442469] (test_robot_plugin) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[4.444112] (test_robot_plugin) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[4.449671] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[4.450645] (test_robot_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[4.451360] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.457460] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[4.458410] (test_robot_plugin) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[4.524657] (-) TimerEvent: {}
+[4.625139] (-) TimerEvent: {}
+[4.627033] (test_robot_plugin) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[4.651299] (test_robot_plugin) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[4.680746] (test_robot_plugin) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[4.725941] (-) TimerEvent: {}
+[4.763813] (test_robot_plugin) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[4.787673] (test_robot_plugin) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[4.822963] (test_robot_plugin) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[4.826067] (-) TimerEvent: {}
+[4.900084] (test_robot_plugin) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[4.900662] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[4.901675] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.903318] (test_robot_plugin) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[4.920660] (test_robot_plugin) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[4.921364] (test_robot_plugin) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[4.926841] (-) TimerEvent: {}
+[4.954529] (test_robot_plugin) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[5.026971] (-) TimerEvent: {}
+[5.044122] (test_robot_plugin) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[5.127160] (-) TimerEvent: {}
+[5.180735] (test_robot_plugin) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.227566] (-) TimerEvent: {}
+[5.242217] (test_robot_plugin) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.327902] (-) TimerEvent: {}
+[5.428369] (-) TimerEvent: {}
+[5.462131] (test_robot_plugin) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[5.462688] (test_robot_plugin) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[5.462939] (test_robot_plugin) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[5.464688] (test_robot_plugin) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.467526] (test_robot_plugin) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[5.467805] (test_robot_plugin) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[5.468992] (test_robot_plugin) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.473204] (test_robot_plugin) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.528505] (-) TimerEvent: {}
+[5.614612] (test_robot_plugin) StdoutLine: {'line': b'-- Generating done\n'}
+[5.628662] (-) TimerEvent: {}
+[5.629387] (test_robot_plugin) StdoutLine: {'line': b'-- Build files have been written to: /home/eragon/ArUco/build/test_robot_plugin\n'}
+[5.674081] (test_robot_plugin) CommandEnded: {'returncode': 0}
+[5.677621] (test_robot_plugin) JobProgress: {'identifier': 'test_robot_plugin', 'progress': 'build'}
+[5.677747] (test_robot_plugin) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/eragon/ArUco/build/test_robot_plugin', '--', '-j8', '-l8'], 'cwd': '/home/eragon/ArUco/build/test_robot_plugin', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/test_robot_plugin'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[5.728806] (-) TimerEvent: {}
+[5.813150] (test_robot_plugin) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/wheel_robot_controller.dir/src/wheel_robot_controller.cpp.o\n'}
+[5.829264] (-) TimerEvent: {}
+[5.929703] (-) TimerEvent: {}
+[6.030151] (-) TimerEvent: {}
+[6.130593] (-) TimerEvent: {}
+[6.231034] (-) TimerEvent: {}
+[6.331486] (-) TimerEvent: {}
+[6.432394] (-) TimerEvent: {}
+[6.534897] (-) TimerEvent: {}
+[6.635410] (-) TimerEvent: {}
+[6.735899] (-) TimerEvent: {}
+[6.836343] (-) TimerEvent: {}
+[6.938361] (-) TimerEvent: {}
+[7.038892] (-) TimerEvent: {}
+[7.139494] (-) TimerEvent: {}
+[7.239916] (-) TimerEvent: {}
+[7.340400] (-) TimerEvent: {}
+[7.440847] (-) TimerEvent: {}
+[7.541427] (-) TimerEvent: {}
+[7.642059] (-) TimerEvent: {}
+[7.742541] (-) TimerEvent: {}
+[7.843002] (-) TimerEvent: {}
+[7.943536] (-) TimerEvent: {}
+[8.044217] (-) TimerEvent: {}
+[8.144691] (-) TimerEvent: {}
+[8.245242] (-) TimerEvent: {}
+[8.345765] (-) TimerEvent: {}
+[8.446239] (-) TimerEvent: {}
+[8.546850] (-) TimerEvent: {}
+[8.648036] (-) TimerEvent: {}
+[8.748526] (-) TimerEvent: {}
+[8.849232] (-) TimerEvent: {}
+[8.949735] (-) TimerEvent: {}
+[9.050214] (-) TimerEvent: {}
+[9.150657] (-) TimerEvent: {}
+[9.251145] (-) TimerEvent: {}
+[9.351633] (-) TimerEvent: {}
+[9.452154] (-) TimerEvent: {}
+[9.552728] (-) TimerEvent: {}
+[9.653338] (-) TimerEvent: {}
+[9.753839] (-) TimerEvent: {}
+[9.856007] (-) TimerEvent: {}
+[9.956441] (-) TimerEvent: {}
+[10.056801] (-) TimerEvent: {}
+[10.157417] (-) TimerEvent: {}
+[10.257932] (-) TimerEvent: {}
+[10.359100] (-) TimerEvent: {}
+[10.459546] (-) TimerEvent: {}
+[10.561196] (-) TimerEvent: {}
+[10.661768] (-) TimerEvent: {}
+[10.762419] (-) TimerEvent: {}
+[10.785994] (robot_odometry) StderrLine: {'line': b'/home/eragon/ArUco/src/robot_odometry/src/robot_odometry_node.cpp: In member function \xe2\x80\x98void RobotOdometry::publishOdom(double, double, double)\xe2\x80\x99:\n'}
+[10.787344] (robot_odometry) StderrLine: {'line': b'/home/eragon/ArUco/src/robot_odometry/src/robot_odometry_node.cpp:103:56: warning: unused parameter \xe2\x80\x98delta_theta\xe2\x80\x99 [-Wunused-parameter]\n'}
+[10.787698] (robot_odometry) StderrLine: {'line': b'  103 |     void publishOdom(double dt, double delta_s, double delta_theta) {\n'}
+[10.787926] (robot_odometry) StderrLine: {'line': b'      |                                                 ~~~~~~~^~~~~~~~~~~\n'}
+[10.862551] (-) TimerEvent: {}
+[10.965252] (-) TimerEvent: {}
+[11.065712] (-) TimerEvent: {}
+[11.166214] (-) TimerEvent: {}
+[11.266715] (-) TimerEvent: {}
+[11.367179] (-) TimerEvent: {}
+[11.468289] (-) TimerEvent: {}
+[11.571315] (-) TimerEvent: {}
+[11.671751] (-) TimerEvent: {}
+[11.772201] (-) TimerEvent: {}
+[11.872748] (-) TimerEvent: {}
+[11.973281] (-) TimerEvent: {}
+[12.073814] (-) TimerEvent: {}
+[12.174474] (-) TimerEvent: {}
+[12.275144] (-) TimerEvent: {}
+[12.375605] (-) TimerEvent: {}
+[12.476427] (-) TimerEvent: {}
+[12.576844] (-) TimerEvent: {}
+[12.677294] (-) TimerEvent: {}
+[12.777748] (-) TimerEvent: {}
+[12.878213] (-) TimerEvent: {}
+[12.979208] (-) TimerEvent: {}
+[13.079930] (-) TimerEvent: {}
+[13.180541] (-) TimerEvent: {}
+[13.281043] (-) TimerEvent: {}
+[13.381681] (-) TimerEvent: {}
+[13.482152] (-) TimerEvent: {}
+[13.582620] (-) TimerEvent: {}
+[13.683081] (-) TimerEvent: {}
+[13.783569] (-) TimerEvent: {}
+[13.884163] (-) TimerEvent: {}
+[13.984707] (-) TimerEvent: {}
+[14.085414] (-) TimerEvent: {}
+[14.185908] (-) TimerEvent: {}
+[14.287729] (-) TimerEvent: {}
+[14.388203] (-) TimerEvent: {}
+[14.488651] (-) TimerEvent: {}
+[14.589438] (-) TimerEvent: {}
+[14.692755] (-) TimerEvent: {}
+[14.793298] (-) TimerEvent: {}
+[14.893688] (-) TimerEvent: {}
+[14.994072] (-) TimerEvent: {}
+[15.094510] (-) TimerEvent: {}
+[15.194951] (-) TimerEvent: {}
+[15.295441] (-) TimerEvent: {}
+[15.300324] (robot_teleop) StdoutLine: {'line': b'[100%] Linking CXX executable robot_teleop_node\n'}
+[15.395584] (-) TimerEvent: {}
+[15.496148] (-) TimerEvent: {}
+[15.596615] (-) TimerEvent: {}
+[15.697029] (-) TimerEvent: {}
+[15.797470] (-) TimerEvent: {}
+[15.817380] (robot_teleop) StdoutLine: {'line': b'[100%] Built target robot_teleop_node\n'}
+[15.841019] (robot_teleop) CommandEnded: {'returncode': 0}
+[15.842953] (robot_teleop) JobProgress: {'identifier': 'robot_teleop', 'progress': 'install'}
+[15.843063] (robot_teleop) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eragon/ArUco/build/robot_teleop'], 'cwd': '/home/eragon/ArUco/build/robot_teleop', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/robot_teleop'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[15.860157] (robot_teleop) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[15.860685] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/lib/robot_teleop/robot_teleop_node\n'}
+[15.867430] (robot_teleop) StdoutLine: {'line': b'-- Set runtime path of "/home/eragon/ArUco/install/robot_teleop/lib/robot_teleop/robot_teleop_node" to ""\n'}
+[15.867993] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/ament_index/resource_index/package_run_dependencies/robot_teleop\n'}
+[15.868582] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/ament_index/resource_index/parent_prefix_path/robot_teleop\n'}
+[15.869362] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/ament_prefix_path.sh\n'}
+[15.870225] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/ament_prefix_path.dsv\n'}
+[15.871171] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/path.sh\n'}
+[15.871856] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/environment/path.dsv\n'}
+[15.872820] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.bash\n'}
+[15.873331] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.sh\n'}
+[15.873857] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.zsh\n'}
+[15.874345] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/local_setup.dsv\n'}
+[15.874800] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.dsv\n'}
+[15.875454] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/ament_index/resource_index/packages/robot_teleop\n'}
+[15.875964] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/cmake/robot_teleopConfig.cmake\n'}
+[15.876414] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/cmake/robot_teleopConfig-version.cmake\n'}
+[15.876878] (robot_teleop) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.xml\n'}
+[15.881046] (robot_teleop) CommandEnded: {'returncode': 0}
+[15.897775] (-) TimerEvent: {}
+[15.915952] (robot_teleop) JobEnded: {'identifier': 'robot_teleop', 'rc': 0}
+[15.997924] (-) TimerEvent: {}
+[16.098435] (-) TimerEvent: {}
+[16.198937] (-) TimerEvent: {}
+[16.299517] (-) TimerEvent: {}
+[16.400069] (-) TimerEvent: {}
+[16.500539] (-) TimerEvent: {}
+[16.600907] (-) TimerEvent: {}
+[16.701323] (-) TimerEvent: {}
+[16.801758] (-) TimerEvent: {}
+[16.902205] (-) TimerEvent: {}
+[17.002607] (-) TimerEvent: {}
+[17.102993] (-) TimerEvent: {}
+[17.203412] (-) TimerEvent: {}
+[17.303803] (-) TimerEvent: {}
+[17.404224] (-) TimerEvent: {}
+[17.504738] (-) TimerEvent: {}
+[17.605226] (-) TimerEvent: {}
+[17.705669] (-) TimerEvent: {}
+[17.806160] (-) TimerEvent: {}
+[17.906629] (-) TimerEvent: {}
+[18.007037] (-) TimerEvent: {}
+[18.107462] (-) TimerEvent: {}
+[18.207892] (-) TimerEvent: {}
+[18.308370] (-) TimerEvent: {}
+[18.408835] (-) TimerEvent: {}
+[18.509480] (-) TimerEvent: {}
+[18.610090] (-) TimerEvent: {}
+[18.710719] (-) TimerEvent: {}
+[18.811381] (-) TimerEvent: {}
+[18.911900] (-) TimerEvent: {}
+[19.012570] (-) TimerEvent: {}
+[19.113314] (-) TimerEvent: {}
+[19.213778] (-) TimerEvent: {}
+[19.314222] (-) TimerEvent: {}
+[19.414657] (-) TimerEvent: {}
+[19.515072] (-) TimerEvent: {}
+[19.615640] (-) TimerEvent: {}
+[19.716431] (-) TimerEvent: {}
+[19.817345] (-) TimerEvent: {}
+[19.917753] (-) TimerEvent: {}
+[20.018163] (-) TimerEvent: {}
+[20.118590] (-) TimerEvent: {}
+[20.219020] (-) TimerEvent: {}
+[20.319574] (-) TimerEvent: {}
+[20.420934] (-) TimerEvent: {}
+[20.521353] (-) TimerEvent: {}
+[20.621754] (-) TimerEvent: {}
+[20.722186] (-) TimerEvent: {}
+[20.822649] (-) TimerEvent: {}
+[20.923167] (-) TimerEvent: {}
+[21.023751] (-) TimerEvent: {}
+[21.124204] (-) TimerEvent: {}
+[21.224599] (-) TimerEvent: {}
+[21.325002] (-) TimerEvent: {}
+[21.425441] (-) TimerEvent: {}
+[21.525818] (-) TimerEvent: {}
+[21.627398] (-) TimerEvent: {}
+[21.727884] (-) TimerEvent: {}
+[21.828354] (-) TimerEvent: {}
+[21.928738] (-) TimerEvent: {}
+[22.029136] (-) TimerEvent: {}
+[22.129536] (-) TimerEvent: {}
+[22.229953] (-) TimerEvent: {}
+[22.330384] (-) TimerEvent: {}
+[22.430985] (-) TimerEvent: {}
+[22.531552] (-) TimerEvent: {}
+[22.632013] (-) TimerEvent: {}
+[22.732453] (-) TimerEvent: {}
+[22.832889] (-) TimerEvent: {}
+[22.933299] (-) TimerEvent: {}
+[22.945046] (lab4_image_sender) StdoutLine: {'line': b'[100%] Linking CXX executable lab4_image_sender_node\n'}
+[23.033444] (-) TimerEvent: {}
+[23.133916] (-) TimerEvent: {}
+[23.234369] (-) TimerEvent: {}
+[23.334760] (-) TimerEvent: {}
+[23.435205] (-) TimerEvent: {}
+[23.535629] (-) TimerEvent: {}
+[23.636022] (-) TimerEvent: {}
+[23.736387] (-) TimerEvent: {}
+[23.836797] (-) TimerEvent: {}
+[23.937216] (-) TimerEvent: {}
+[24.037640] (-) TimerEvent: {}
+[24.138071] (-) TimerEvent: {}
+[24.238529] (-) TimerEvent: {}
+[24.339001] (-) TimerEvent: {}
+[24.439458] (-) TimerEvent: {}
+[24.539905] (-) TimerEvent: {}
+[24.640393] (-) TimerEvent: {}
+[24.646647] (lab4_image_sender) StdoutLine: {'line': b'[100%] Built target lab4_image_sender_node\n'}
+[24.665775] (lab4_image_sender) CommandEnded: {'returncode': 0}
+[24.667229] (lab4_image_sender) JobProgress: {'identifier': 'lab4_image_sender', 'progress': 'install'}
+[24.667345] (lab4_image_sender) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eragon/ArUco/build/lab4_image_sender'], 'cwd': '/home/eragon/ArUco/build/lab4_image_sender', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/lab4_image_sender'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[24.680640] (lab4_image_sender) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[24.681781] (lab4_image_sender) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/lab4_image_sender/lib/lab4_image_sender/lab4_image_sender_node\n'}
+[24.701249] (lab4_image_sender) StdoutLine: {'line': b'-- Set runtime path of "/home/eragon/ArUco/install/lab4_image_sender/lib/lab4_image_sender/lab4_image_sender_node" to ""\n'}
+[24.701983] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/ament_index/resource_index/package_run_dependencies/lab4_image_sender\n'}
+[24.702680] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/ament_index/resource_index/parent_prefix_path/lab4_image_sender\n'}
+[24.703171] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/ament_prefix_path.sh\n'}
+[24.703934] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/ament_prefix_path.dsv\n'}
+[24.704322] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/path.sh\n'}
+[24.704641] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/path.dsv\n'}
+[24.704852] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.bash\n'}
+[24.705034] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.sh\n'}
+[24.705568] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.zsh\n'}
+[24.706884] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.dsv\n'}
+[24.707284] (lab4_image_sender) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.dsv\n'}
+[24.707559] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/ament_index/resource_index/packages/lab4_image_sender\n'}
+[24.707835] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/cmake/lab4_image_senderConfig.cmake\n'}
+[24.708136] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/cmake/lab4_image_senderConfig-version.cmake\n'}
+[24.708401] (lab4_image_sender) StdoutLine: {'line': b'-- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.xml\n'}
+[24.708648] (lab4_image_sender) CommandEnded: {'returncode': 0}
+[24.729273] (lab4_image_sender) JobEnded: {'identifier': 'lab4_image_sender', 'rc': 0}
+[24.740553] (-) TimerEvent: {}
+[24.841027] (-) TimerEvent: {}
+[24.941450] (-) TimerEvent: {}
+[25.041861] (-) TimerEvent: {}
+[25.142294] (-) TimerEvent: {}
+[25.242746] (-) TimerEvent: {}
+[25.343250] (-) TimerEvent: {}
+[25.443802] (-) TimerEvent: {}
+[25.544212] (-) TimerEvent: {}
+[25.644681] (-) TimerEvent: {}
+[25.745071] (-) TimerEvent: {}
+[25.845511] (-) TimerEvent: {}
+[25.945929] (-) TimerEvent: {}
+[26.046420] (-) TimerEvent: {}
+[26.146956] (-) TimerEvent: {}
+[26.247393] (-) TimerEvent: {}
+[26.347803] (-) TimerEvent: {}
+[26.448247] (-) TimerEvent: {}
+[26.548652] (-) TimerEvent: {}
+[26.649082] (-) TimerEvent: {}
+[26.749568] (-) TimerEvent: {}
+[26.850025] (-) TimerEvent: {}
+[26.950511] (-) TimerEvent: {}
+[27.050973] (-) TimerEvent: {}
+[27.151462] (-) TimerEvent: {}
+[27.217703] (robot_odometry) StdoutLine: {'line': b'[100%] Linking CXX executable robot_odometry_node\n'}
+[27.251572] (-) TimerEvent: {}
+[27.351954] (-) TimerEvent: {}
+[27.452386] (-) TimerEvent: {}
+[27.552796] (-) TimerEvent: {}
+[27.653254] (-) TimerEvent: {}
+[27.753824] (-) TimerEvent: {}
+[27.854733] (-) TimerEvent: {}
+[27.955211] (-) TimerEvent: {}
+[28.056100] (-) TimerEvent: {}
+[28.156658] (-) TimerEvent: {}
+[28.257080] (-) TimerEvent: {}
+[28.291888] (robot_odometry) StdoutLine: {'line': b'[100%] Built target robot_odometry_node\n'}
+[28.313054] (robot_odometry) CommandEnded: {'returncode': 0}
+[28.314514] (robot_odometry) JobProgress: {'identifier': 'robot_odometry', 'progress': 'install'}
+[28.314578] (robot_odometry) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/eragon/ArUco/build/robot_odometry'], 'cwd': '/home/eragon/ArUco/build/robot_odometry', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LANGUAGE', 'ru'), ('LC_TIME', 'ru_RU.UTF-8'), ('USER', 'eragon'), ('XDG_SESSION_TYPE', 'wayland'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('SHLVL', '1'), ('HOME', '/home/eragon'), ('DESKTOP_SESSION', 'ubuntu'), ('QTDIR', '/usr/lib/x86_64-linux-gnu/qt5'), ('GIO_LAUNCHED_DESKTOP_FILE', '/home/eragon/.local/share/applications/org.qt-project.qtcreator.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'ru_RU.UTF-8'), ('MANAGERPID', '925'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path'), ('SYSTEMD_EXEC_PID', '1106'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2099'), ('COLCON_PREFIX_PATH', '/home/eragon/ArUco/install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('WAYLAND_DISPLAY', 'wayland-0'), ('LOGNAME', 'eragon'), ('JOURNAL_STREAM', '8:10683'), ('_', '/usr/bin/env'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('QSG_RHI_BACKEND', 'opengl'), ('USERNAME', 'eragon'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/eragon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('INVOCATION_ID', '27b4ce4bc6524958a15c3c78079a64af'), ('PAPERSIZE', 'a4'), ('SESSION_MANAGER', 'local/eragon-KPL-W0X:@/tmp/.ICE-unix/1080,unix/eragon-KPL-W0X:/tmp/.ICE-unix/1080'), ('GNOME_SETUP_DISPLAY', ':1'), ('LC_ADDRESS', 'ru_RU.UTF-8'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'ru_RU.UTF-8'), ('LC_TELEPHONE', 'ru_RU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y89K42'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im'), ('AMENT_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'ru_RU.UTF-8'), ('SHELL', '/bin/bash'), ('GDMSESSION', 'ubuntu'), ('QT_ACCESSIBILITY', '1'), ('LC_MEASUREMENT', 'ru_RU.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ru_RU.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/eragon/ArUco/build/robot_odometry'), ('QT_QPA_PLATFORM', 'xcb'), ('DBUS_STARTER_ADDRESS', 'unix:path'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/home/eragon/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'ru_RU.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'ru_RU.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/opt/ros/humble')]), 'shell': False}
+[28.333683] (robot_odometry) StdoutLine: {'line': b'-- Install configuration: "Debug"\n'}
+[28.334134] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/lib/robot_odometry/robot_odometry_node\n'}
+[28.356842] (robot_odometry) StdoutLine: {'line': b'-- Set runtime path of "/home/eragon/ArUco/install/robot_odometry/lib/robot_odometry/robot_odometry_node" to ""\n'}
+[28.357310] (-) TimerEvent: {}
+[28.357524] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/ament_index/resource_index/package_run_dependencies/robot_odometry\n'}
+[28.357987] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/ament_index/resource_index/parent_prefix_path/robot_odometry\n'}
+[28.358442] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/environment/ament_prefix_path.sh\n'}
+[28.358790] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/environment/ament_prefix_path.dsv\n'}
+[28.359094] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/environment/path.sh\n'}
+[28.359311] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/environment/path.dsv\n'}
+[28.359498] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/local_setup.bash\n'}
+[28.359920] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/local_setup.sh\n'}
+[28.360279] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/local_setup.zsh\n'}
+[28.360584] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/local_setup.dsv\n'}
+[28.360865] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.dsv\n'}
+[28.361163] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/ament_index/resource_index/packages/robot_odometry\n'}
+[28.361466] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/cmake/robot_odometryConfig.cmake\n'}
+[28.361620] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/cmake/robot_odometryConfig-version.cmake\n'}
+[28.361769] (robot_odometry) StdoutLine: {'line': b'-- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.xml\n'}
+[28.364241] (robot_odometry) CommandEnded: {'returncode': 0}
+[28.398529] (robot_odometry) JobEnded: {'identifier': 'robot_odometry', 'rc': 0}
+[28.457492] (-) TimerEvent: {}
+[28.557874] (-) TimerEvent: {}
+[28.658301] (-) TimerEvent: {}
+[28.758931] (-) TimerEvent: {}
+[28.859390] (-) TimerEvent: {}
+[28.959902] (-) TimerEvent: {}
+[29.060452] (-) TimerEvent: {}
+[29.160839] (-) TimerEvent: {}
+[29.261250] (-) TimerEvent: {}
+[29.361655] (-) TimerEvent: {}
+[29.462039] (-) TimerEvent: {}
+[29.562462] (-) TimerEvent: {}
+[29.662983] (-) TimerEvent: {}
+[29.763458] (-) TimerEvent: {}
+[29.863835] (-) TimerEvent: {}
+[29.964245] (-) TimerEvent: {}
+[30.065067] (-) TimerEvent: {}
+[30.165689] (-) TimerEvent: {}
+[30.266140] (-) TimerEvent: {}
+[30.366573] (-) TimerEvent: {}
+[30.467100] (-) TimerEvent: {}
+[30.567548] (-) TimerEvent: {}
+[30.667934] (-) TimerEvent: {}
+[30.768383] (-) TimerEvent: {}
+[30.868764] (-) TimerEvent: {}
+[30.969196] (-) TimerEvent: {}
+[31.069724] (-) TimerEvent: {}
+[31.170152] (-) TimerEvent: {}
+[31.270546] (-) TimerEvent: {}
+[31.370916] (-) TimerEvent: {}
+[31.471344] (-) TimerEvent: {}
+[31.571717] (-) TimerEvent: {}
+[31.672140] (-) TimerEvent: {}
+[31.772532] (-) TimerEvent: {}
+[31.872925] (-) TimerEvent: {}
+[31.973383] (-) TimerEvent: {}
+[32.073788] (-) TimerEvent: {}
+[32.174209] (-) TimerEvent: {}
+[32.274622] (-) TimerEvent: {}
+[32.375024] (-) TimerEvent: {}
+[32.475622] (-) TimerEvent: {}
+[32.576022] (-) TimerEvent: {}
+[32.676428] (-) TimerEvent: {}
+[32.776809] (-) TimerEvent: {}
+[32.877205] (-) TimerEvent: {}
+[32.977618] (-) TimerEvent: {}
+[33.078136] (-) TimerEvent: {}
+[33.178696] (-) TimerEvent: {}
+[33.279080] (-) TimerEvent: {}
+[33.379545] (-) TimerEvent: {}
+[33.479948] (-) TimerEvent: {}
+[33.580451] (-) TimerEvent: {}
+[33.680821] (-) TimerEvent: {}
+[33.781298] (-) TimerEvent: {}
+[33.881691] (-) TimerEvent: {}
+[33.982067] (-) TimerEvent: {}
+[34.082477] (-) TimerEvent: {}
+[34.182885] (-) TimerEvent: {}
+[34.283281] (-) TimerEvent: {}
+[34.383671] (-) TimerEvent: {}
+[34.484095] (-) TimerEvent: {}
+[34.584529] (-) TimerEvent: {}
+[34.684928] (-) TimerEvent: {}
+[34.785384] (-) TimerEvent: {}
+[34.885780] (-) TimerEvent: {}
+[34.986182] (-) TimerEvent: {}
+[35.086571] (-) TimerEvent: {}
+[35.186964] (-) TimerEvent: {}
+[35.287394] (-) TimerEvent: {}
+[35.387829] (-) TimerEvent: {}
+[35.488208] (-) TimerEvent: {}
+[35.588591] (-) TimerEvent: {}
+[35.688976] (-) TimerEvent: {}
+[35.789381] (-) TimerEvent: {}
+[35.889899] (-) TimerEvent: {}
+[35.990466] (-) TimerEvent: {}
+[36.090846] (-) TimerEvent: {}
+[36.191373] (-) TimerEvent: {}
+[36.291822] (-) TimerEvent: {}
+[36.392230] (-) TimerEvent: {}
+[36.492697] (-) TimerEvent: {}
+[36.593095] (-) TimerEvent: {}
+[36.693725] (-) TimerEvent: {}
+[36.794140] (-) TimerEvent: {}
+[36.831668] (test_robot_plugin) StdoutLine: {'line': b'[100%] Linking CXX shared library libwheel_robot_controller.so\n'}
+[36.894308] (-) TimerEvent: {}
+[36.994842] (-) TimerEvent: {}
+[37.095217] (-) TimerEvent: {}
+[37.195649] (-) TimerEvent: {}
+[37.296100] (-) TimerEvent: {}
+[37.396574] (-) TimerEvent: {}
+[37.497001] (-) TimerEvent: {}
+[37.597409] (-) TimerEvent: {}
+[37.697787] (-) TimerEvent: {}
+[37.798148] (-) TimerEvent: {}
+[37.898452] (-) TimerEvent: {}
+[37.998757] (-) TimerEvent: {}
+[38.099171] (-) TimerEvent: {}

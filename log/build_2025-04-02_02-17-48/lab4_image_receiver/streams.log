@@ -1,0 +1,11 @@
+[0.064s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.189s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[0.225s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[0.998s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:7:10: fatal error: visualization_msgs/msg/marker_array.hpp: Нет такого файла или каталога
+[0.998s]     7 | #include <visualization_msgs/msg/marker_array.hpp>
+[0.998s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.999s] compilation terminated.
+[1.010s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[1.010s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[1.011s] gmake: *** [Makefile:146: all] Ошибка 2
+[1.017s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

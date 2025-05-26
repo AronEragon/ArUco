@@ -1,0 +1,11 @@
+[0.039s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.088s] CMake Error at CMakeLists.txt:21:
+[0.089s]   Parse error.  Expected "(", got newline with text "
+[0.089s] 
+[0.089s]   ".
+[0.089s] 
+[0.089s] 
+[0.089s] -- Configuring incomplete, errors occurred!
+[0.089s] See also "/home/eragon/ArUco/build/lab4_image_receiver/CMakeFiles/CMakeOutput.log".
+[0.093s] gmake: *** [Makefile:267: cmake_check_build_system] Ошибка 1
+[0.097s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

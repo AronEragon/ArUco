@@ -1,0 +1,11 @@
+[0.053s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.173s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[0.223s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[3.505s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In function ‘int main(int, char**)’:
+[3.505s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:177:13: error: ‘spin’ is not a member of ‘rclcpp’
+[3.505s]   177 |     rclcpp::spin(node);
+[3.505s]       |             ^~~~
+[5.217s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[5.218s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[5.219s] gmake: *** [Makefile:146: all] Ошибка 2
+[5.224s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

@@ -1,0 +1,25 @@
+[0.043s] Invoking command in '/home/eragon/ArUco/build/lab4_image_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_sender -- -j8 -l8
+[0.163s] [ 50%] Building CXX object CMakeFiles/lab4_image_sender_node.dir/src/lab4_image_sender_node.cpp.o
+[6.055s] [100%] Linking CXX executable lab4_image_sender_node
+[6.571s] [100%] Built target lab4_image_sender_node
+[6.590s] Invoked command in '/home/eragon/ArUco/build/lab4_image_sender' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_sender -- -j8 -l8
+[6.593s] Invoking command in '/home/eragon/ArUco/build/lab4_image_sender': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_sender
+[6.604s] -- Install configuration: "Debug"
+[6.604s] -- Installing: /home/eragon/ArUco/install/lab4_image_sender/lib/lab4_image_sender/lab4_image_sender_node
+[6.608s] -- Set runtime path of "/home/eragon/ArUco/install/lab4_image_sender/lib/lab4_image_sender/lab4_image_sender_node" to ""
+[6.608s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/ament_index/resource_index/package_run_dependencies/lab4_image_sender
+[6.608s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/ament_index/resource_index/parent_prefix_path/lab4_image_sender
+[6.608s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/ament_prefix_path.sh
+[6.608s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/ament_prefix_path.dsv
+[6.608s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/path.sh
+[6.608s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/environment/path.dsv
+[6.608s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.bash
+[6.609s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.sh
+[6.609s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.zsh
+[6.609s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/local_setup.dsv
+[6.609s] -- Installing: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.dsv
+[6.609s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/ament_index/resource_index/packages/lab4_image_sender
+[6.609s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/cmake/lab4_image_senderConfig.cmake
+[6.609s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/cmake/lab4_image_senderConfig-version.cmake
+[6.609s] -- Up-to-date: /home/eragon/ArUco/install/lab4_image_sender/share/lab4_image_sender/package.xml
+[6.612s] Invoked command in '/home/eragon/ArUco/build/lab4_image_sender' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/lab4_image_sender

@@ -1,0 +1,4 @@
+/home/eragon/ArUco/src/test_image_processing/src/test_image_processing_node.cpp: In constructor ‘TestImageSender::TestImageSender()’:
+/home/eragon/ArUco/src/test_image_processing/src/test_image_processing_node.cpp:22:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<cv::Vec<float, 3> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   22 |         for (int i = 0; i < circles.size();i++){
+      |                         ~~^~~~~~~~~~~~~~~~

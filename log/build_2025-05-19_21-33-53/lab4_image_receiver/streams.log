@@ -1,0 +1,38 @@
+[0.074s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.231s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[0.291s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[6.523s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In constructor ‘ArUcoDetector::ArUcoDetector()’:
+[6.524s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:38:14: warning: left operand of comma operator has no effect [-Wunused-value]
+[6.524s]    38 |             (700.0, 0.0, 400.0,  // fx, 0, cx
+[6.524s]       |              ^~~~~
+[6.524s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:38:26: warning: right operand of comma operator has no effect [-Wunused-value]
+[6.524s]    38 |             (700.0, 0.0, 400.0,  // fx, 0, cx
+[6.524s]       |                          ^~~~~
+[6.524s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:39:13: warning: right operand of comma operator has no effect [-Wunused-value]
+[6.524s]    39 |             0.0, 700.0, 300.0,   // 0, fy, cy
+[6.525s]       |             ^~~
+[6.525s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:39:18: warning: right operand of comma operator has no effect [-Wunused-value]
+[6.525s]    39 |             0.0, 700.0, 300.0,   // 0, fy, cy
+[6.526s]       |                  ^~~~~
+[6.526s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:39:25: warning: right operand of comma operator has no effect [-Wunused-value]
+[6.526s]    39 |             0.0, 700.0, 300.0,   // 0, fy, cy
+[6.526s]       |                         ^~~~~
+[6.526s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:40:13: warning: right operand of comma operator has no effect [-Wunused-value]
+[6.526s]    40 |             0.0, 0.0, 1.0);       // 0, 0, 1
+[6.526s]       |             ^~~
+[6.526s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:40:18: warning: right operand of comma operator has no effect [-Wunused-value]
+[6.527s]    40 |             0.0, 0.0, 1.0);       // 0, 0, 1
+[6.527s]       |                  ^~~
+[6.527s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:40:23: warning: right operand of comma operator has no effect [-Wunused-value]
+[6.527s]    40 |             0.0, 0.0, 1.0);       // 0, 0, 1
+[6.527s]       |                       ^~~
+[6.527s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:40:27: error: expected ‘)’ before ‘;’ token
+[6.527s]    40 |             0.0, 0.0, 1.0);       // 0, 0, 1
+[6.527s]       |                           ^
+[6.527s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:37:26: note: to match this ‘(’
+[6.528s]    37 |         camera_matrix_ = (cv::Mat_<double>(3, 3) <<
+[6.528s]       |                          ^
+[8.618s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[8.619s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[8.619s] gmake: *** [Makefile:146: all] Ошибка 2
+[8.624s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

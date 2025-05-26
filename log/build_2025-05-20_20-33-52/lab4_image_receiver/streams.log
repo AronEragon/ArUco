@@ -1,0 +1,20 @@
+[0.049s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.172s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[0.240s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[6.567s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+[6.568s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:92:21: error: ‘tf2’ has not been declared
+[6.568s]    92 |                     tf2::Matrix3x3 tf_rotation(
+[6.568s]       |                     ^~~
+[6.568s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:96:21: error: ‘tf2’ has not been declared
+[6.568s]    96 |                     tf2::Quaternion q;
+[6.568s]       |                     ^~~
+[6.588s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:97:21: error: ‘tf_rotation’ was not declared in this scope
+[6.588s]    97 |                     tf_rotation.getRotation(q);
+[6.588s]       |                     ^~~~~~~~~~~
+[6.600s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:97:45: error: ‘q’ was not declared in this scope
+[6.600s]    97 |                     tf_rotation.getRotation(q);
+[6.600s]       |                                             ^
+[8.801s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[8.802s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[8.802s] gmake: *** [Makefile:146: all] Ошибка 2
+[8.806s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

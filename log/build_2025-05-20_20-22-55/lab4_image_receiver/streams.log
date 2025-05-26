@@ -1,0 +1,14 @@
+[0.049s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.174s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[0.190s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[5.444s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+[5.445s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:94:26: error: ‘Matrix3x3’ is not a member of ‘tf2’
+[5.445s]    94 |                     tf2::Matrix3x3 tf_rotation(
+[5.445s]       |                          ^~~~~~~~~
+[5.456s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:99:21: error: ‘tf_rotation’ was not declared in this scope
+[5.456s]    99 |                     tf_rotation.getRotation(q);
+[5.456s]       |                     ^~~~~~~~~~~
+[6.991s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[6.991s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[6.991s] gmake: *** [Makefile:146: all] Ошибка 2
+[6.994s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

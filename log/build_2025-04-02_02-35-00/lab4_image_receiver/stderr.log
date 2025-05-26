@@ -1,0 +1,18 @@
+CMake Error at CMakeLists.txt:15 (find_package):
+  By not providing "Findmarker_array.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "marker_array", but CMake did not find one.
+
+  Could not find a package configuration file provided by "marker_array" with
+  any of the following names:
+
+    marker_arrayConfig.cmake
+    marker_array-config.cmake
+
+  Add the installation prefix of "marker_array" to CMAKE_PREFIX_PATH or set
+  "marker_array_DIR" to a directory containing one of the above files.  If
+  "marker_array" provides a separate development package or SDK, be sure it
+  has been installed.
+
+
+gmake: *** [Makefile:267: cmake_check_build_system] Ошибка 1

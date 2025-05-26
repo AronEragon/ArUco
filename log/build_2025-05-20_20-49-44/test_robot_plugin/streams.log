@@ -1,0 +1,141 @@
+[0.030s] Invoking command in '/home/eragon/ArUco/build/test_robot_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eragon/ArUco/src/test_robot_plugin -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/test_robot_plugin
+[0.162s] -- The C compiler identification is GNU 11.4.0
+[0.286s] -- The CXX compiler identification is GNU 11.4.0
+[0.366s] -- Detecting C compiler ABI info
+[0.517s] -- Detecting C compiler ABI info - done
+[0.533s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.534s] -- Detecting C compile features
+[0.535s] -- Detecting C compile features - done
+[0.540s] -- Detecting CXX compiler ABI info
+[0.698s] -- Detecting CXX compiler ABI info - done
+[0.711s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.711s] -- Detecting CXX compile features
+[0.712s] -- Detecting CXX compile features - done
+[0.717s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.024s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.232s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.304s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.316s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.334s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.360s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.396s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.475s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.482s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.636s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.680s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.745s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.761s] -- Looking for pthread.h
+[1.875s] -- Looking for pthread.h - found
+[1.875s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.022s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.026s] -- Found Threads: TRUE  
+[2.143s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[2.169s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[2.171s] -- Checking for module 'bullet>=2.82'
+[2.200s] --   Found bullet, version 3.05
+[2.446s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[2.539s] -- Found assimp: /usr/include (found version "5.2.0") 
+[2.590s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[2.646s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[2.674s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[2.686s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.701s] -- Searching for dependencies of ignition-math6
+[2.705s] -- Looking for OGRE...
+[2.705s] -- OGRE_PREFIX_WATCH changed.
+[2.717s] -- Checking for module 'OGRE'
+[2.752s] --   Found OGRE, version 1.9.0
+[2.836s] -- Found Ogre Ghadamon (1.9.0)
+[2.854s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[2.871s] -- Looking for OGRE_Paging...
+[2.884s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[2.884s] -- Looking for OGRE_Terrain...
+[2.897s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[2.898s] -- Looking for OGRE_Property...
+[2.909s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[2.910s] -- Looking for OGRE_RTShaderSystem...
+[2.922s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[2.922s] -- Looking for OGRE_Volume...
+[2.935s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[2.935s] -- Looking for OGRE_Overlay...
+[2.949s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[3.224s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.229s] -- Looking for ignition-transport8 -- found version 8.2.1
+[3.230s] -- Searching for dependencies of ignition-transport8
+[3.259s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[3.278s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[3.286s] -- Checking for module 'libzmq >= 4'
+[3.318s] --   Found libzmq , version 4.3.4
+[3.389s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[3.400s] -- Checking for module 'uuid'
+[3.426s] --   Found uuid, version 2.37.2
+[3.499s] -- Found UUID: TRUE  
+[3.506s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.507s] -- Searching for dependencies of ignition-msgs5
+[3.553s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.566s] -- Checking for module 'tinyxml2'
+[3.601s] --   Found tinyxml2, version 9.0.0
+[3.703s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[3.711s] -- Looking for ignition-common3 -- found version 3.14.0
+[3.712s] -- Searching for dependencies of ignition-common3
+[3.713s] -- Looking for dlfcn.h - found
+[3.715s] -- Looking for libdl - found
+[3.718s] -- Found DL: TRUE  
+[3.740s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[3.742s] -- Searching for <ignition-common3> component [graphics]
+[3.747s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[3.748s] -- Searching for dependencies of ignition-common3-graphics
+[3.748s] -- Looking for ignition-math6 -- found version 6.15.1
+[3.755s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[3.756s] -- Searching for dependencies of ignition-fuel_tools4
+[3.903s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[3.919s] -- Checking for module 'jsoncpp'
+[3.946s] --   Found jsoncpp, version 1.9.5
+[4.031s] -- Found JSONCPP: TRUE  
+[4.055s] -- Checking for module 'libzip'
+[4.102s] --   Found libzip, version 1.7.3
+[4.216s] -- Found ZIP: TRUE  
+[4.217s] -- Looking for ignition-common3 -- found version 3.14.0
+[4.218s] -- Looking for ignition-math6 -- found version 6.15.1
+[4.220s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[4.246s] -- Gazebo version: 11.10
+[4.247s] -- Checking for module 'tbb'
+[4.292s] --   Found tbb, version 2021.5.0
+[4.414s] -- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[4.530s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.557s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.700s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.701s] -- Configured cppcheck include dirs: 
+[4.701s] -- Configured cppcheck exclude dirs and/or files: 
+[4.702s] -- Added test 'lint_cmake' to check CMake code style
+[4.704s] -- Added test 'uncrustify' to check C / C++ code style
+[4.704s] -- Configured uncrustify additional arguments: 
+[4.705s] -- Added test 'xmllint' to check XML markup files
+[4.708s] -- Configuring done
+[4.763s] -- Generating done
+[4.772s] -- Build files have been written to: /home/eragon/ArUco/build/test_robot_plugin
+[4.795s] Invoked command in '/home/eragon/ArUco/build/test_robot_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eragon/ArUco/src/test_robot_plugin -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/test_robot_plugin
+[4.798s] Invoking command in '/home/eragon/ArUco/build/test_robot_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_robot_plugin -- -j8 -l8
+[4.883s] [ 50%] Building CXX object CMakeFiles/wheel_robot_controller.dir/src/wheel_robot_controller.cpp.o
+[31.704s] [100%] Linking CXX shared library libwheel_robot_controller.so
+[33.079s] [100%] Built target wheel_robot_controller
+[33.098s] Invoked command in '/home/eragon/ArUco/build/test_robot_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_robot_plugin -- -j8 -l8
+[33.099s] Invoking command in '/home/eragon/ArUco/build/test_robot_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_robot_plugin
+[33.111s] -- Install configuration: "Debug"
+[33.111s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/lib/libwheel_robot_controller.so
+[33.139s] -- Set runtime path of "/home/eragon/ArUco/install/test_robot_plugin/lib/libwheel_robot_controller.so" to ""
+[33.139s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/ament_index/resource_index/package_run_dependencies/test_robot_plugin
+[33.139s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/ament_index/resource_index/parent_prefix_path/test_robot_plugin
+[33.140s] -- Up-to-date: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/environment/ament_prefix_path.sh
+[33.140s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/environment/ament_prefix_path.dsv
+[33.140s] -- Up-to-date: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/environment/path.sh
+[33.140s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/environment/path.dsv
+[33.141s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/local_setup.bash
+[33.141s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/local_setup.sh
+[33.141s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/local_setup.zsh
+[33.141s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/local_setup.dsv
+[33.142s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.dsv
+[33.142s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/ament_index/resource_index/packages/test_robot_plugin
+[33.142s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/cmake/test_robot_pluginConfig.cmake
+[33.142s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/cmake/test_robot_pluginConfig-version.cmake
+[33.143s] -- Up-to-date: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.xml
+[33.146s] Invoked command in '/home/eragon/ArUco/build/test_robot_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_robot_plugin

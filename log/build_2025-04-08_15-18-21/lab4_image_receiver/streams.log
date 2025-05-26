@@ -1,0 +1,71 @@
+[0.038s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.110s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.334s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.382s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.386s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.399s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.415s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.434s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.482s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.485s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.648s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.718s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.770s] -- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)
+[0.808s] -- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.835s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.839s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.955s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.955s] -- Configured cppcheck include dirs: /home/eragon/ArUco/src/lab4_image_receiver/include
+[0.955s] -- Configured cppcheck exclude dirs and/or files: 
+[0.956s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.956s] -- Added test 'lint_cmake' to check CMake code style
+[0.957s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.959s] -- Added test 'uncrustify' to check C / C++ code style
+[0.959s] -- Configured uncrustify additional arguments: 
+[0.959s] -- Added test 'xmllint' to check XML markup files
+[0.961s] -- Configuring done
+[1.001s] -- Generating done
+[1.008s] -- Build files have been written to: /home/eragon/ArUco/build/lab4_image_receiver
+[1.068s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[1.098s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[5.512s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In member function ‘void ArUcoDetector::image_callback(const ConstSharedPtr&)’:
+[5.512s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:68:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.512s]    68 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+[5.512s]       |                      ~~~~~~~~~~~~~^~~
+[5.513s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:68:52: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.513s]    68 |                     {-marker_size / 2, marker_size / 2, 0},  // Верхний левый угол
+[5.513s]       |                                        ~~~~~~~~~~~~^~~
+[5.513s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:69:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.514s]    69 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+[5.514s]       |                      ~~~~~~~~~~~~^~~
+[5.514s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:69:51: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.515s]    69 |                     {marker_size / 2, marker_size / 2, 0},  // Верхний правый угол
+[5.515s]       |                                       ~~~~~~~~~~~~^~~
+[5.515s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:70:34: warning: narrowing conversion of ‘(((ArUcoDetector*)this)->ArUcoDetector::marker_size / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.515s]    70 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+[5.516s]       |                      ~~~~~~~~~~~~^~~
+[5.516s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:70:52: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.516s]    70 |                     {marker_size / 2, -marker_size / 2, 0}, // Нижний правый угол
+[5.516s]       |                                       ~~~~~~~~~~~~~^~~
+[5.516s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:71:35: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.516s]    71 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+[5.517s]       |                      ~~~~~~~~~~~~~^~~
+[5.517s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:71:53: warning: narrowing conversion of ‘((-((ArUcoDetector*)this)->ArUcoDetector::marker_size) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.517s]    71 |                     {-marker_size / 2, -marker_size / 2, 0} // Нижний левый угол
+[5.517s]       |                                        ~~~~~~~~~~~~~^~~
+[5.517s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:92:17: error: ‘tf2’ has not been declared
+[5.517s]    92 |                 tf2::Matrix3x3 tf_rotation(
+[5.517s]       |                 ^~~
+[5.518s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:97:17: error: ‘tf2’ has not been declared
+[5.518s]    97 |                 tf2::Quaternion q;
+[5.518s]       |                 ^~~
+[5.525s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:98:17: error: ‘tf_rotation’ was not declared in this scope
+[5.525s]    98 |                 tf_rotation.getRotation(q);
+[5.525s]       |                 ^~~~~~~~~~~
+[5.531s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:98:41: error: ‘q’ was not declared in this scope
+[5.531s]    98 |                 tf_rotation.getRotation(q);
+[5.531s]       |                                         ^
+[7.110s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[7.110s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[7.111s] gmake: *** [Makefile:146: all] Ошибка 2
+[7.114s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

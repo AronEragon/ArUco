@@ -1,0 +1,11 @@
+[0.051s] Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+[0.162s] Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[0.224s] [ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+[0.729s] /home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:8:10: fatal error: tf2_ros/transform_broadcaster.h: Нет такого файла или каталога
+[0.729s]     8 | #include <tf2_ros/transform_broadcaster.h>
+[0.729s]       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0.729s] compilation terminated.
+[0.736s] gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+[0.737s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+[0.738s] gmake: *** [Makefile:146: all] Ошибка 2
+[0.741s] Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

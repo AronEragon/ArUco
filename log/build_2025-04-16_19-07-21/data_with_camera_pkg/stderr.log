@@ -1,0 +1,10 @@
+/home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp: In member function ‘void Obrabotchik_data::detect_sign(const cv::Mat&)’:
+/home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:119:26: warning: suggest parentheses around comparison in operand of ‘&’ [-Wparentheses]
+  119 |                 if (area < 10000 & area > 300) {
+      |                     ~~~~~^~~~~~~
+/home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:202:26: warning: suggest parentheses around comparison in operand of ‘&’ [-Wparentheses]
+  202 |                 if (area < 8000 & area > 300) {
+      |                     ~~~~~^~~~~~
+/home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:100:13: warning: unused variable ‘marker_id’ [-Wunused-variable]
+  100 |         int marker_id = 0;
+      |             ^~~~~~~~~

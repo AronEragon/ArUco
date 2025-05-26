@@ -1,0 +1,71 @@
+[0.037s] Invoking command in '/home/eragon/ArUco/build/robot_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eragon/ArUco/src/robot_odometry -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/robot_odometry
+[0.188s] -- The C compiler identification is GNU 11.4.0
+[0.311s] -- The CXX compiler identification is GNU 11.4.0
+[0.390s] -- Detecting C compiler ABI info
+[0.538s] -- Detecting C compiler ABI info - done
+[0.554s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.554s] -- Detecting C compile features
+[0.555s] -- Detecting C compile features - done
+[0.561s] -- Detecting CXX compiler ABI info
+[0.705s] -- Detecting CXX compiler ABI info - done
+[0.721s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.722s] -- Detecting CXX compile features
+[0.723s] -- Detecting CXX compile features - done
+[0.729s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.034s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.241s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[1.336s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.345s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.359s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.378s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.404s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.488s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.488s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.638s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.681s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.745s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.761s] -- Looking for pthread.h
+[1.893s] -- Looking for pthread.h - found
+[1.893s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.026s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.028s] -- Found Threads: TRUE  
+[2.114s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.166s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.193s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.384s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.522s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.522s] -- Configured cppcheck include dirs: 
+[2.522s] -- Configured cppcheck exclude dirs and/or files: 
+[2.524s] -- Added test 'lint_cmake' to check CMake code style
+[2.526s] -- Added test 'uncrustify' to check C / C++ code style
+[2.526s] -- Configured uncrustify additional arguments: 
+[2.527s] -- Added test 'xmllint' to check XML markup files
+[2.529s] -- Configuring done
+[2.564s] -- Generating done
+[2.571s] -- Build files have been written to: /home/eragon/ArUco/build/robot_odometry
+[2.586s] Invoked command in '/home/eragon/ArUco/build/robot_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/eragon/ArUco/src/robot_odometry -G CodeBlocks - Unix Makefiles -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/home/eragon/ArUco/install/robot_odometry
+[2.588s] Invoking command in '/home/eragon/ArUco/build/robot_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_odometry -- -j8 -l8
+[2.662s] [ 50%] Building CXX object CMakeFiles/robot_odometry_node.dir/src/robot_odometry_node.cpp.o
+[21.125s] [100%] Linking CXX executable robot_odometry_node
+[22.371s] [100%] Built target robot_odometry_node
+[22.397s] Invoked command in '/home/eragon/ArUco/build/robot_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_odometry -- -j8 -l8
+[22.399s] Invoking command in '/home/eragon/ArUco/build/robot_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_odometry
+[22.412s] -- Install configuration: "Debug"
+[22.413s] -- Installing: /home/eragon/ArUco/install/robot_odometry/lib/robot_odometry/robot_odometry_node
+[22.449s] -- Set runtime path of "/home/eragon/ArUco/install/robot_odometry/lib/robot_odometry/robot_odometry_node" to ""
+[22.449s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/ament_index/resource_index/package_run_dependencies/robot_odometry
+[22.450s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/ament_index/resource_index/parent_prefix_path/robot_odometry
+[22.450s] -- Up-to-date: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/environment/ament_prefix_path.sh
+[22.450s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/environment/ament_prefix_path.dsv
+[22.451s] -- Up-to-date: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/environment/path.sh
+[22.451s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/environment/path.dsv
+[22.451s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/local_setup.bash
+[22.451s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/local_setup.sh
+[22.451s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/local_setup.zsh
+[22.452s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/local_setup.dsv
+[22.452s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.dsv
+[22.452s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/ament_index/resource_index/packages/robot_odometry
+[22.453s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/cmake/robot_odometryConfig.cmake
+[22.453s] -- Installing: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/cmake/robot_odometryConfig-version.cmake
+[22.454s] -- Up-to-date: /home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.xml
+[22.457s] Invoked command in '/home/eragon/ArUco/build/robot_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_odometry

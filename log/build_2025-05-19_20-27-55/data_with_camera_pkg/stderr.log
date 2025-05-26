@@ -1,0 +1,4 @@
+/home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp: In member function ‘void Obrabotchik_data::detect_sign(const cv::Mat&)’:
+/home/eragon/ArUco/src/data_with_camera_pkg/src/data_with_camera_pkg_node.cpp:144:24: warning: unused variable ‘z_robot’ [-Wunused-variable]
+  144 |                 double z_robot = 0.15 - y_cam;
+      |                        ^~~~~~~

@@ -1,0 +1,25 @@
+[0.028s] Invoking command in '/home/eragon/ArUco/build/test_robot_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_robot_plugin -- -j8 -l8
+[0.134s] [ 50%] Building CXX object CMakeFiles/wheel_robot_controller.dir/src/wheel_robot_controller.cpp.o
+[26.300s] [100%] Linking CXX shared library libwheel_robot_controller.so
+[27.654s] [100%] Built target wheel_robot_controller
+[27.680s] Invoked command in '/home/eragon/ArUco/build/test_robot_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_robot_plugin -- -j8 -l8
+[27.681s] Invoking command in '/home/eragon/ArUco/build/test_robot_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_robot_plugin
+[27.696s] -- Install configuration: "Debug"
+[27.696s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/lib/libwheel_robot_controller.so
+[27.731s] -- Set runtime path of "/home/eragon/ArUco/install/test_robot_plugin/lib/libwheel_robot_controller.so" to ""
+[27.732s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/ament_index/resource_index/package_run_dependencies/test_robot_plugin
+[27.732s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/ament_index/resource_index/parent_prefix_path/test_robot_plugin
+[27.733s] -- Up-to-date: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/environment/ament_prefix_path.sh
+[27.733s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/environment/ament_prefix_path.dsv
+[27.734s] -- Up-to-date: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/environment/path.sh
+[27.734s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/environment/path.dsv
+[27.734s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/local_setup.bash
+[27.735s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/local_setup.sh
+[27.735s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/local_setup.zsh
+[27.735s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/local_setup.dsv
+[27.735s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.dsv
+[27.735s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/ament_index/resource_index/packages/test_robot_plugin
+[27.735s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/cmake/test_robot_pluginConfig.cmake
+[27.736s] -- Installing: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/cmake/test_robot_pluginConfig-version.cmake
+[27.736s] -- Up-to-date: /home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.xml
+[27.738s] Invoked command in '/home/eragon/ArUco/build/test_robot_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_robot_plugin

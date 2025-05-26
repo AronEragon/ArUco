@@ -1,0 +1,18 @@
+Consolidate compiler generated dependencies of target lab4_image_receiver_node
+[ 50%] Building CXX object CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:92:21: error: ‘tf2’ has not been declared
+   92 |                     tf2::Matrix3x3 tf_rotation(
+      |                     ^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:96:21: error: ‘tf2’ has not been declared
+   96 |                     tf2::Quaternion q;
+      |                     ^~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:97:21: error: ‘tf_rotation’ was not declared in this scope
+   97 |                     tf_rotation.getRotation(q);
+      |                     ^~~~~~~~~~~
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:97:45: error: ‘q’ was not declared in this scope
+   97 |                     tf_rotation.getRotation(q);
+      |                                             ^
+gmake[2]: *** [CMakeFiles/lab4_image_receiver_node.dir/build.make:76: CMakeFiles/lab4_image_receiver_node.dir/src/lab4_image_receiver_node.cpp.o] Ошибка 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/lab4_image_receiver_node.dir/all] Ошибка 2
+gmake: *** [Makefile:146: all] Ошибка 2

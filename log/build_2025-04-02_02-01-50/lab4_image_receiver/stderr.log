@@ -1,0 +1,4 @@
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp: In member function ‘void LabImageReceiver::image_callback(const ConstSharedPtr&)’:
+/home/eragon/ArUco/src/lab4_image_receiver/src/lab4_image_receiver_node.cpp:44:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<cv::Vec<float, 3> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   44 |         for (int i = 0; i < circles.size() - 1;i++){
+      |                         ~~^~~~~~~~~~~~~~~~~~~~

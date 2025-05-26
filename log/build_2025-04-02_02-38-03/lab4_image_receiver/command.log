@@ -1,0 +1,2 @@
+Invoking command in '/home/eragon/ArUco/build/lab4_image_receiver': /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8
+Invoked command in '/home/eragon/ArUco/build/lab4_image_receiver' returned '2': /usr/bin/cmake --build /home/eragon/ArUco/build/lab4_image_receiver -- -j8 -l8

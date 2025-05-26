@@ -1,0 +1,20 @@
+[0.041s] Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[0.195s] [ 50%] Building CXX object CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o
+[4.971s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:63:16: error: ‘ArucoDetector’ in namespace ‘cv::aruco’ does not name a type
+[4.972s]    63 |     cv::aruco::ArucoDetector detector_;
+[4.972s]       |                ^~~~~~~~~~~~~
+[4.994s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In constructor ‘RobotCameraProcessor::RobotCameraProcessor()’:
+[4.994s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:34:9: error: ‘detector_’ was not declared in this scope
+[4.994s]    34 |         detector_ = cv::aruco::ArucoDetector(dictionary_, detector_params_);
+[4.994s]       |         ^~~~~~~~~
+[4.994s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:34:32: error: ‘ArucoDetector’ is not a member of ‘cv::aruco’
+[4.994s]    34 |         detector_ = cv::aruco::ArucoDetector(dictionary_, detector_params_);
+[4.995s]       |                                ^~~~~~~~~~~~~
+[5.018s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void RobotCameraProcessor::image_callback(const ConstSharedPtr&)’:
+[5.019s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:79:13: error: ‘detector_’ was not declared in this scope
+[5.019s]    79 |             detector_.detectMarkers(image, marker_corners, marker_ids, rejected);
+[5.019s]       |             ^~~~~~~~~
+[6.477s] gmake[2]: *** [CMakeFiles/robot_camera_processor_node.dir/build.make:76: CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o] Ошибка 1
+[6.478s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/robot_camera_processor_node.dir/all] Ошибка 2
+[6.478s] gmake: *** [Makefile:146: all] Ошибка 2
+[6.482s] Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
