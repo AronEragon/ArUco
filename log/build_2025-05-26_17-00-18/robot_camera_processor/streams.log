@@ -1,0 +1,43 @@
+[0.030s] Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[0.086s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.270s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.325s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.328s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.335s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.346s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.360s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.396s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.397s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.538s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.591s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.623s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.638s] -- Found image_transport: 3.1.11 (/opt/ros/humble/share/image_transport/cmake)
+[0.664s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.668s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.852s] -- Configuring done
+[0.895s] -- Generating done
+[0.903s] -- Build files have been written to: /home/eragon/ArUco/build/robot_camera_processor
+[0.954s] Consolidate compiler generated dependencies of target robot_camera_processor_node
+[0.962s] gmake[2]: Предупреждение: время изменения файла «robot_camera_processor_node» находится в будущем (3668)
+[0.965s] gmake[2]: предупреждение: Неправильный ход часов.  Сборка может быть неполной.
+[0.979s] [100%] Built target robot_camera_processor_node
+[1.004s] Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[1.007s] Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_camera_processor
+[1.025s] -- Install configuration: "Debug"
+[1.025s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/lib/robot_camera_processor/robot_camera_processor_node
+[1.026s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/ament_index/resource_index/package_run_dependencies/robot_camera_processor
+[1.026s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/ament_index/resource_index/parent_prefix_path/robot_camera_processor
+[1.026s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/environment/ament_prefix_path.sh
+[1.027s] -- Installing: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/environment/ament_prefix_path.dsv
+[1.027s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/environment/path.sh
+[1.027s] -- Installing: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/environment/path.dsv
+[1.027s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/local_setup.bash
+[1.027s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/local_setup.sh
+[1.027s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/local_setup.zsh
+[1.028s] -- Installing: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/local_setup.dsv
+[1.028s] -- Installing: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.dsv
+[1.028s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/ament_index/resource_index/packages/robot_camera_processor
+[1.028s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/cmake/robot_camera_processorConfig.cmake
+[1.028s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/cmake/robot_camera_processorConfig-version.cmake
+[1.028s] -- Installing: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.xml
+[1.031s] Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_camera_processor

@@ -1,0 +1,418 @@
+[0.244s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--event-handlers', 'status+', 'console_start_end+', '--cmake-args', '-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']
+[0.244s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=['status+', 'console_start_end+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x77500ca45900>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77500ca45210>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77500ca45210>>, mixin_verb=('build',))
+[0.725s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.726s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.726s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.726s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.726s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.726s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.726s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/eragon/ArUco'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extensions ['ignore', 'ignore_ament_install']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extension 'ignore'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extension 'ignore_ament_install'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extensions ['colcon_pkg']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extension 'colcon_pkg'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extensions ['colcon_meta']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extension 'colcon_meta'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extensions ['ros']
+[0.753s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extension 'ros'
+[0.757s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot' with type 'ros.ament_cmake' and name 'robot'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_camera_processor) by extensions ['ignore', 'ignore_ament_install']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_camera_processor) by extension 'ignore'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_camera_processor) by extension 'ignore_ament_install'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_camera_processor) by extensions ['colcon_pkg']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_camera_processor) by extension 'colcon_pkg'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_camera_processor) by extensions ['colcon_meta']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_camera_processor) by extension 'colcon_meta'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_camera_processor) by extensions ['ros']
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_camera_processor) by extension 'ros'
+[0.760s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_camera_processor' with type 'ros.ament_cmake' and name 'robot_camera_processor'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_odometry) by extensions ['ignore', 'ignore_ament_install']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_odometry) by extension 'ignore'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_odometry) by extension 'ignore_ament_install'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_odometry) by extensions ['colcon_pkg']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_odometry) by extension 'colcon_pkg'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_odometry) by extensions ['colcon_meta']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_odometry) by extension 'colcon_meta'
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_odometry) by extensions ['ros']
+[0.761s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_odometry) by extension 'ros'
+[0.762s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_odometry' with type 'ros.ament_cmake' and name 'robot_odometry'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_teleop) by extension 'ignore'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_teleop) by extension 'ignore_ament_install'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_teleop) by extensions ['colcon_pkg']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_teleop) by extension 'colcon_pkg'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_teleop) by extensions ['colcon_meta']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_teleop) by extension 'colcon_meta'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_teleop) by extensions ['ros']
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_teleop) by extension 'ros'
+[0.764s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_teleop' with type 'ros.ament_cmake' and name 'robot_teleop'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_robot_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_robot_plugin) by extension 'ignore'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_robot_plugin) by extension 'ignore_ament_install'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_robot_plugin) by extensions ['colcon_pkg']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_robot_plugin) by extension 'colcon_pkg'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_robot_plugin) by extensions ['colcon_meta']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_robot_plugin) by extension 'colcon_meta'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_robot_plugin) by extensions ['ros']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_robot_plugin) by extension 'ros'
+[0.766s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_robot_plugin' with type 'ros.ament_cmake' and name 'test_robot_plugin'
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extensions ['ignore', 'ignore_ament_install']
+[0.766s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extension 'ignore'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extension 'ignore_ament_install'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extensions ['colcon_pkg']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extension 'colcon_pkg'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extensions ['colcon_meta']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extension 'colcon_meta'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extensions ['ros']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extension 'ros'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extensions ['cmake', 'python']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extension 'cmake'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extension 'python'
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extensions ['python_setup_py']
+[0.767s] Level 1:colcon.colcon_core.package_identification:_identify(резерв) by extension 'python_setup_py'
+[0.768s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.768s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.768s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.768s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.768s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.832s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 11 installed packages in /home/eragon/ArUco/install
+[0.834s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 284 installed packages in /opt/ros/humble
+[0.837s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_target' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.891s] DEBUG:colcon.colcon_core.verb:Building package 'robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/ArUco/build/robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/ArUco/install/robot', 'merge_install': False, 'path': '/home/eragon/ArUco/src/robot', 'symlink_install': False, 'test_result_base': None}
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'robot_camera_processor' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'robot_camera_processor' build argument 'cmake_target' from command line to 'None'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'robot_camera_processor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'robot_camera_processor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'robot_camera_processor' build argument 'cmake_clean_first' from command line to 'False'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'robot_camera_processor' build argument 'cmake_force_configure' from command line to 'False'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'robot_camera_processor' build argument 'ament_cmake_args' from command line to 'None'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'robot_camera_processor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.892s] Level 5:colcon.colcon_core.verb:set package 'robot_camera_processor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.892s] DEBUG:colcon.colcon_core.verb:Building package 'robot_camera_processor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/ArUco/build/robot_camera_processor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/ArUco/install/robot_camera_processor', 'merge_install': False, 'path': '/home/eragon/ArUco/src/robot_camera_processor', 'symlink_install': False, 'test_result_base': None}
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'robot_odometry' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'robot_odometry' build argument 'cmake_target' from command line to 'None'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'robot_odometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'robot_odometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'robot_odometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'robot_odometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'robot_odometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'robot_odometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'robot_odometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.893s] DEBUG:colcon.colcon_core.verb:Building package 'robot_odometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/ArUco/build/robot_odometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/ArUco/install/robot_odometry', 'merge_install': False, 'path': '/home/eragon/ArUco/src/robot_odometry', 'symlink_install': False, 'test_result_base': None}
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'robot_teleop' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'robot_teleop' build argument 'cmake_target' from command line to 'None'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'robot_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'robot_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'robot_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'robot_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'robot_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'robot_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'robot_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.894s] DEBUG:colcon.colcon_core.verb:Building package 'robot_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/ArUco/build/robot_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/ArUco/install/robot_teleop', 'merge_install': False, 'path': '/home/eragon/ArUco/src/robot_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.895s] Level 5:colcon.colcon_core.verb:set package 'test_robot_plugin' build argument 'cmake_args' from command line to '['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug']'
+[0.895s] Level 5:colcon.colcon_core.verb:set package 'test_robot_plugin' build argument 'cmake_target' from command line to 'None'
+[0.895s] Level 5:colcon.colcon_core.verb:set package 'test_robot_plugin' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.895s] Level 5:colcon.colcon_core.verb:set package 'test_robot_plugin' build argument 'cmake_clean_cache' from command line to 'False'
+[0.895s] Level 5:colcon.colcon_core.verb:set package 'test_robot_plugin' build argument 'cmake_clean_first' from command line to 'False'
+[0.895s] Level 5:colcon.colcon_core.verb:set package 'test_robot_plugin' build argument 'cmake_force_configure' from command line to 'False'
+[0.895s] Level 5:colcon.colcon_core.verb:set package 'test_robot_plugin' build argument 'ament_cmake_args' from command line to 'None'
+[0.895s] Level 5:colcon.colcon_core.verb:set package 'test_robot_plugin' build argument 'catkin_cmake_args' from command line to 'None'
+[0.895s] Level 5:colcon.colcon_core.verb:set package 'test_robot_plugin' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.895s] DEBUG:colcon.colcon_core.verb:Building package 'test_robot_plugin' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/eragon/ArUco/build/test_robot_plugin', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-G', 'CodeBlocks - Unix Makefiles', '-DCMAKE_BUILD_TYPE=Debug'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/eragon/ArUco/install/test_robot_plugin', 'merge_install': False, 'path': '/home/eragon/ArUco/src/test_robot_plugin', 'symlink_install': False, 'test_result_base': None}
+[0.896s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.897s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.898s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/ArUco/src/robot' with build type 'ament_cmake'
+[0.898s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/ArUco/src/robot'
+[0.904s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.905s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.905s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.912s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/ArUco/src/robot_camera_processor' with build type 'ament_cmake'
+[0.912s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/ArUco/src/robot_camera_processor'
+[0.913s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.913s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.919s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/ArUco/src/robot_odometry' with build type 'ament_cmake'
+[0.919s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/ArUco/src/robot_odometry'
+[0.919s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.920s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.925s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/ArUco/src/robot_teleop' with build type 'ament_cmake'
+[0.925s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/ArUco/src/robot_teleop'
+[0.926s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.926s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.934s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/eragon/ArUco/src/test_robot_plugin' with build type 'ament_cmake'
+[0.935s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/eragon/ArUco/src/test_robot_plugin'
+[0.935s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.935s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.949s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot -- -j8 -l8
+[0.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[0.962s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/robot_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_odometry -- -j8 -l8
+[0.964s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/robot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_teleop -- -j8 -l8
+[0.972s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/test_robot_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_robot_plugin -- -j8 -l8
+[1.034s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot -- -j8 -l8
+[1.056s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot
+[1.079s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot)
+[1.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot
+[1.090s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot' for CMake module files
+[1.091s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot' for CMake config files
+[1.092s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot', 'cmake_prefix_path')
+[1.092s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot/share/robot/hook/cmake_prefix_path.ps1'
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/robot/share/robot/hook/cmake_prefix_path.dsv'
+[1.095s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot/share/robot/hook/cmake_prefix_path.sh'
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot/bin'
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot/lib/pkgconfig/robot.pc'
+[1.098s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot/lib/python3.10/site-packages'
+[1.099s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot/bin'
+[1.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot/share/robot/package.ps1'
+[1.102s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/robot/share/robot/package.dsv'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot/share/robot/package.sh'
+[1.106s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot/share/robot/package.bash'
+[1.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot/share/robot/package.zsh'
+[1.109s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/robot/share/colcon-core/packages/robot)
+[1.111s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot)
+[1.111s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot' for CMake module files
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot' for CMake config files
+[1.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot', 'cmake_prefix_path')
+[1.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot/share/robot/hook/cmake_prefix_path.ps1'
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/robot/share/robot/hook/cmake_prefix_path.dsv'
+[1.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot/share/robot/hook/cmake_prefix_path.sh'
+[1.117s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot/bin'
+[1.117s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot/lib/pkgconfig/robot.pc'
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot/lib/python3.10/site-packages'
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot/bin'
+[1.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot/share/robot/package.ps1'
+[1.120s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/robot/share/robot/package.dsv'
+[1.121s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot/share/robot/package.sh'
+[1.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot/share/robot/package.bash'
+[1.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot/share/robot/package.zsh'
+[1.125s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/robot/share/colcon-core/packages/robot)
+[1.130s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[1.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_camera_processor
+[1.133s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/robot_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_odometry -- -j8 -l8
+[1.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/robot_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_odometry
+[1.139s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/robot_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_teleop -- -j8 -l8
+[1.140s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/robot_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_teleop
+[1.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/test_robot_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/test_robot_plugin -- -j8 -l8
+[1.154s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/eragon/ArUco/build/test_robot_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_robot_plugin
+[1.156s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_camera_processor)
+[1.156s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor' for CMake module files
+[1.160s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_camera_processor
+[1.160s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor' for CMake config files
+[1.161s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_camera_processor', 'cmake_prefix_path')
+[1.161s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/hook/cmake_prefix_path.ps1'
+[1.162s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/hook/cmake_prefix_path.dsv'
+[1.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/hook/cmake_prefix_path.sh'
+[1.164s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor/lib'
+[1.164s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor/bin'
+[1.164s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor/lib/pkgconfig/robot_camera_processor.pc'
+[1.165s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor/lib/python3.10/site-packages'
+[1.165s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor/bin'
+[1.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.ps1'
+[1.167s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.dsv'
+[1.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.sh'
+[1.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.bash'
+[1.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.zsh'
+[1.170s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/robot_camera_processor/share/colcon-core/packages/robot_camera_processor)
+[1.171s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_camera_processor)
+[1.172s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor' for CMake module files
+[1.172s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor' for CMake config files
+[1.173s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_camera_processor', 'cmake_prefix_path')
+[1.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/hook/cmake_prefix_path.ps1'
+[1.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/hook/cmake_prefix_path.dsv'
+[1.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/hook/cmake_prefix_path.sh'
+[1.175s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor/lib'
+[1.176s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor/bin'
+[1.176s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor/lib/pkgconfig/robot_camera_processor.pc'
+[1.176s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor/lib/python3.10/site-packages'
+[1.176s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_camera_processor/bin'
+[1.177s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.ps1'
+[1.178s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.dsv'
+[1.178s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.sh'
+[1.179s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.bash'
+[1.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.zsh'
+[1.181s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/robot_camera_processor/share/colcon-core/packages/robot_camera_processor)
+[1.183s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_odometry)
+[1.183s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry' for CMake module files
+[1.186s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry' for CMake config files
+[1.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/robot_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_odometry
+[1.189s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_odometry', 'cmake_prefix_path')
+[1.189s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/hook/cmake_prefix_path.ps1'
+[1.190s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/hook/cmake_prefix_path.dsv'
+[1.191s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/hook/cmake_prefix_path.sh'
+[1.192s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry/lib'
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry/bin'
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry/lib/pkgconfig/robot_odometry.pc'
+[1.193s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry/lib/python3.10/site-packages'
+[1.194s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry/bin'
+[1.194s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.ps1'
+[1.195s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.dsv'
+[1.196s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.sh'
+[1.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.bash'
+[1.198s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.zsh'
+[1.199s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/robot_odometry/share/colcon-core/packages/robot_odometry)
+[1.200s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_odometry)
+[1.201s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry' for CMake module files
+[1.202s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry' for CMake config files
+[1.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_odometry', 'cmake_prefix_path')
+[1.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/hook/cmake_prefix_path.ps1'
+[1.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/hook/cmake_prefix_path.dsv'
+[1.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/hook/cmake_prefix_path.sh'
+[1.206s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry/lib'
+[1.207s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry/bin'
+[1.207s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry/lib/pkgconfig/robot_odometry.pc'
+[1.207s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry/lib/python3.10/site-packages'
+[1.208s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_odometry/bin'
+[1.208s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.ps1'
+[1.209s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.dsv'
+[1.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.sh'
+[1.212s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.bash'
+[1.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_odometry/share/robot_odometry/package.zsh'
+[1.214s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/robot_odometry/share/colcon-core/packages/robot_odometry)
+[1.214s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_teleop)
+[1.215s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop' for CMake module files
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop' for CMake config files
+[1.218s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/robot_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_teleop
+[1.219s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_teleop', 'cmake_prefix_path')
+[1.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/hook/cmake_prefix_path.ps1'
+[1.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/hook/cmake_prefix_path.dsv'
+[1.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/hook/cmake_prefix_path.sh'
+[1.222s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop/lib'
+[1.222s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop/bin'
+[1.222s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop/lib/pkgconfig/robot_teleop.pc'
+[1.223s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop/lib/python3.10/site-packages'
+[1.223s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop/bin'
+[1.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.ps1'
+[1.224s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.dsv'
+[1.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.sh'
+[1.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.bash'
+[1.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.zsh'
+[1.228s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/robot_teleop/share/colcon-core/packages/robot_teleop)
+[1.228s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_teleop)
+[1.229s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop' for CMake module files
+[1.230s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop' for CMake config files
+[1.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_teleop', 'cmake_prefix_path')
+[1.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/hook/cmake_prefix_path.ps1'
+[1.232s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/hook/cmake_prefix_path.dsv'
+[1.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/hook/cmake_prefix_path.sh'
+[1.234s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop/lib'
+[1.234s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop/bin'
+[1.234s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop/lib/pkgconfig/robot_teleop.pc'
+[1.234s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop/lib/python3.10/site-packages'
+[1.235s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/robot_teleop/bin'
+[1.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.ps1'
+[1.236s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.dsv'
+[1.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.sh'
+[1.238s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.bash'
+[1.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/robot_teleop/share/robot_teleop/package.zsh'
+[1.240s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/robot_teleop/share/colcon-core/packages/robot_teleop)
+[1.240s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_robot_plugin)
+[1.241s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin' for CMake module files
+[1.242s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin' for CMake config files
+[1.243s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/eragon/ArUco/build/test_robot_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/test_robot_plugin
+[1.243s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_robot_plugin', 'cmake_prefix_path')
+[1.243s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/cmake_prefix_path.ps1'
+[1.244s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/cmake_prefix_path.dsv'
+[1.245s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/cmake_prefix_path.sh'
+[1.246s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin/lib'
+[1.246s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_robot_plugin', 'ld_library_path_lib')
+[1.246s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/ld_library_path_lib.ps1'
+[1.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/ld_library_path_lib.dsv'
+[1.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/ld_library_path_lib.sh'
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin/bin'
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin/lib/pkgconfig/test_robot_plugin.pc'
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin/lib/python3.10/site-packages'
+[1.250s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin/bin'
+[1.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.ps1'
+[1.251s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.dsv'
+[1.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.sh'
+[1.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.bash'
+[1.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.zsh'
+[1.255s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/test_robot_plugin/share/colcon-core/packages/test_robot_plugin)
+[1.255s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_robot_plugin)
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin' for CMake module files
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin' for CMake config files
+[1.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_robot_plugin', 'cmake_prefix_path')
+[1.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/cmake_prefix_path.ps1'
+[1.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/cmake_prefix_path.dsv'
+[1.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/cmake_prefix_path.sh'
+[1.260s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin/lib'
+[1.260s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_robot_plugin', 'ld_library_path_lib')
+[1.260s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/ld_library_path_lib.ps1'
+[1.261s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/ld_library_path_lib.dsv'
+[1.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/hook/ld_library_path_lib.sh'
+[1.262s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin/bin'
+[1.263s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin/lib/pkgconfig/test_robot_plugin.pc'
+[1.263s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin/lib/python3.10/site-packages'
+[1.264s] Level 1:colcon.colcon_core.environment:checking '/home/eragon/ArUco/install/test_robot_plugin/bin'
+[1.264s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.ps1'
+[1.265s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.dsv'
+[1.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.sh'
+[1.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.bash'
+[1.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/eragon/ArUco/install/test_robot_plugin/share/test_robot_plugin/package.zsh'
+[1.269s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/eragon/ArUco/install/test_robot_plugin/share/colcon-core/packages/test_robot_plugin)
+[1.269s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.270s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.270s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.270s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.285s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.285s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.286s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.286s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.BadAddress: '=' character not found or has no value following it
+[1.286s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.286s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/ArUco/install/local_setup.ps1'
+[1.289s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eragon/ArUco/install/_local_setup_util_ps1.py'
+[1.291s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/ArUco/install/setup.ps1'
+[1.295s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/ArUco/install/local_setup.sh'
+[1.296s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/eragon/ArUco/install/_local_setup_util_sh.py'
+[1.297s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/ArUco/install/setup.sh'
+[1.300s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/ArUco/install/local_setup.bash'
+[1.302s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/ArUco/install/setup.bash'
+[1.304s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/eragon/ArUco/install/local_setup.zsh'
+[1.306s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/eragon/ArUco/install/setup.zsh'

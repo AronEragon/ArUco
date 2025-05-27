@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 14.0.2, 2025-05-26T15:35:53. -->
+<!-- Written by QtCreator 14.0.2, 2025-05-27T15:43:58. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -129,8 +129,8 @@
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.CustomParsers"/>
     <value type="bool" key="ProjectExplorer.BuildConfiguration.ParseStandardOutput">false</value>
     <valuelist type="QVariantList" key="ProjectExplorer.BuildConfiguration.UserEnvironmentChanges">
-     <value type="QString">AMENT_PREFIX_PATH=/home/eragon/ArUco/install/test_robot_plugin:/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/robot_teleop:/home/eragon/ArUco/install/robot_odometry:/home/eragon/ArUco/install/robot_camera_processor:/home/eragon/ArUco/install/robot:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/home/eragon/ArUco/install/data_with_camera_pkg:/opt/ros/humble</value>
-     <value type="QString">CMAKE_PREFIX_PATH=/home/eragon/ArUco/install/test_robot_plugin:/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/robot_teleop:/home/eragon/ArUco/install/robot_odometry:/home/eragon/ArUco/install/robot_camera_processor:/home/eragon/ArUco/install/robot:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/home/eragon/ArUco/install/data_with_camera_pkg</value>
+     <value type="QString">AMENT_PREFIX_PATH=/home/eragon/ArUco/install/test_robot_plugin:/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/robot_teleop:/home/eragon/ArUco/install/robot_odometry:/home/eragon/ArUco/install/robot_camera_processor:/home/eragon/ArUco/install/robot:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/home/eragon/ArUco/install/data_with_camera_pkg:/home/eragon/ArUco/install/camera_customization:/opt/ros/humble</value>
+     <value type="QString">CMAKE_PREFIX_PATH=/home/eragon/ArUco/install/test_robot_plugin:/home/eragon/ArUco/install/test_image_sender:/home/eragon/ArUco/install/test_image_receiver:/home/eragon/ArUco/install/test_image_processing:/home/eragon/ArUco/install/robot_teleop:/home/eragon/ArUco/install/robot_odometry:/home/eragon/ArUco/install/robot_camera_processor:/home/eragon/ArUco/install/robot:/home/eragon/ArUco/install/lab4_image_sender:/home/eragon/ArUco/install/lab4_image_receiver:/home/eragon/ArUco/install/data_with_camera_pkg:/home/eragon/ArUco/install/camera_customization</value>
      <value type="QString">COLCON_PREFIX_PATH=/home/eragon/ArUco/install</value>
      <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:path</value>
      <value type="QString">DBUS_STARTER_ADDRESS=unix:path</value>

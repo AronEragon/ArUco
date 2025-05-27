@@ -1,0 +1,2 @@
+Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '2': /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
