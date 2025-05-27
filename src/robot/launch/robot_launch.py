@@ -3,14 +3,15 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
+
         #Узел управления с клавиатуры
-        # Node(
-        #     package='robot_teleop',
-        #     executable='robot_teleop_node',
-        #     name='keyboard_teleop',
-        #     output='screen',
-        #     emulate_tty=True  # Для корректного отображения нажатий клавиш
-        # ),
+        Node(
+            package='robot_teleop',
+            executable='robot_teleop_node',
+            name='keyboard_teleop',
+            output='screen',
+            emulate_tty=True  # Для корректного отображения нажатий клавиш
+        ),
 
         # Узел одометрии с параметрами платформы
         # Node(

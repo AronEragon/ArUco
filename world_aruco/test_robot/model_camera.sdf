@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='test_robot'>
+    <static>true</static>
+    <link name='camera_link'>
+      <!-- Позиция камеры (x,y,z,r,p,y) -->
+      <pose>0.1 0 0.16 0 0 0</pose>
+
+      <!-- Визуальное представление камеры с текстурой -->
+      <visual name='camera_visual'>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.03</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Black</name>
+          </script>
+          <!-- Увеличиваем ambient и diffuse для лучшего отображения текстур -->
+          <ambient>1.0 1.0 1.0 1</ambient>
+          <diffuse>1.0 1.0 1.0 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+        <cast_shadows>false</cast_shadows>
+      </visual>
+
+      <!-- Основной сенсор камеры с настройками для текстур -->
+      <sensor name="camera" type="camera">
+        <always_on>true</always_on>
+        <update_rate>30</update_rate>
+        <camera name="main">
+          <horizontal_fov>1.57</horizontal_fov>  <!-- 60 градусов -->
+          <image>
+            <width>800</width>
+            <height>600</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+          <!-- Настройки для лучшего качества текстур -->
+          <save enabled="true"/>
+          <depth_camera>
+            <output>points</output>
+          </depth_camera>
+        </camera>
+        <plugin name="camera_plugin" filename="libgazebo_ros_camera.so">
+          <camera_name>textured_camera</camera_name>
+          <image_topic_name>image_raw</image_topic_name>
+          <camera_info_topic_name>camera_info</camera_info_topic_name>
+          <frame_name>camera_link</frame_name>
+          <hack_baseline>0.0</hack_baseline>
+        </plugin>
+      </sensor>
+
+      <!-- Дополнительные настройки для корректного отображения -->
+      <visual name='screen_visual'>
+        <pose>0 0 0.015 0 0 0</pose>  <!-- Сдвигаем немного вперед -->
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>0.04 0.03</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/White</name>
+          </script>
+          <ambient>1.0 1.0 1.0 1</ambient>
+          <diffuse>1.0 1.0 1.0 1</diffuse>
+          <emissive>0.1 0.1 0.1 1</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
