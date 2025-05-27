@@ -62,15 +62,15 @@ def generate_launch_description():
                      '--child-frame-id', 'camera_optical_link'
                  ]
              )
-             ,
-             # Запуск RViz2
-             Node(
-                 package='rviz2',
-                 executable='rviz2',
-                 name='rviz2',
-                 arguments=['-d', 'config/aruco.rviz'],
-                 output='screen'
-             )
+             # ,
+             # # Запуск RViz2
+             # Node(
+             #     package='rviz2',
+             #     executable='rviz2',
+             #     name='rviz2',
+             #     arguments=['-d', 'config/aruco.rviz'],
+             #     output='screen'
+             # )
 
 
     ])

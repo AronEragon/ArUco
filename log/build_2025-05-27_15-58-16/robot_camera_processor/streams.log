@@ -1,0 +1,51 @@
+[0.038s] Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[0.143s] Consolidate compiler generated dependencies of target robot_camera_processor_node
+[0.161s] [ 50%] Building CXX object CMakeFiles/robot_camera_processor_node.dir/src/robot_camera_processor_node.cpp.o
+[5.665s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp: In member function ‘void RobotCameraProcessor::timer_callback()’:
+[5.666s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:331:39: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.666s]   331 |                         {-marker_size_/2, marker_size_/2, 0},
+[5.667s]       |                          ~~~~~~~~~~~~~^~
+[5.667s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:331:55: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.667s]   331 |                         {-marker_size_/2, marker_size_/2, 0},
+[5.668s]       |                                           ~~~~~~~~~~~~^~
+[5.668s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:332:38: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.668s]   332 |                         {marker_size_/2, marker_size_/2, 0},
+[5.668s]       |                          ~~~~~~~~~~~~^~
+[5.668s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:332:54: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.668s]   332 |                         {marker_size_/2, marker_size_/2, 0},
+[5.669s]       |                                          ~~~~~~~~~~~~^~
+[5.669s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:333:38: warning: narrowing conversion of ‘(((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_ / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.669s]   333 |                         {marker_size_/2, -marker_size_/2, 0},
+[5.669s]       |                          ~~~~~~~~~~~~^~
+[5.669s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:333:55: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.670s]   333 |                         {marker_size_/2, -marker_size_/2, 0},
+[5.670s]       |                                          ~~~~~~~~~~~~~^~
+[5.670s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:334:39: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.670s]   334 |                         {-marker_size_/2, -marker_size_/2, 0}
+[5.670s]       |                          ~~~~~~~~~~~~~^~
+[5.670s] /home/eragon/ArUco/src/robot_camera_processor/src/robot_camera_processor_node.cpp:334:56: warning: narrowing conversion of ‘((-((RobotCameraProcessor*)this)->RobotCameraProcessor::marker_size_) / (double)2)’ from ‘double’ to ‘float’ [-Wnarrowing]
+[5.671s]   334 |                         {-marker_size_/2, -marker_size_/2, 0}
+[5.671s]       |                                           ~~~~~~~~~~~~~^~
+[10.343s] [100%] Linking CXX executable robot_camera_processor_node
+[11.154s] [100%] Built target robot_camera_processor_node
+[11.174s] Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/eragon/ArUco/build/robot_camera_processor -- -j8 -l8
+[11.175s] Invoking command in '/home/eragon/ArUco/build/robot_camera_processor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_camera_processor
+[11.194s] -- Install configuration: "Debug"
+[11.194s] -- Installing: /home/eragon/ArUco/install/robot_camera_processor/lib/robot_camera_processor/robot_camera_processor_node
+[11.203s] -- Set runtime path of "/home/eragon/ArUco/install/robot_camera_processor/lib/robot_camera_processor/robot_camera_processor_node" to ""
+[11.204s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/ament_index/resource_index/package_run_dependencies/robot_camera_processor
+[11.204s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/ament_index/resource_index/parent_prefix_path/robot_camera_processor
+[11.204s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/environment/ament_prefix_path.sh
+[11.204s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/environment/ament_prefix_path.dsv
+[11.205s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/environment/path.sh
+[11.205s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/environment/path.dsv
+[11.205s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/local_setup.bash
+[11.205s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/local_setup.sh
+[11.205s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/local_setup.zsh
+[11.205s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/local_setup.dsv
+[11.205s] -- Installing: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.dsv
+[11.205s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/ament_index/resource_index/packages/robot_camera_processor
+[11.205s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/cmake/robot_camera_processorConfig.cmake
+[11.206s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/cmake/robot_camera_processorConfig-version.cmake
+[11.206s] -- Up-to-date: /home/eragon/ArUco/install/robot_camera_processor/share/robot_camera_processor/package.xml
+[11.207s] Invoked command in '/home/eragon/ArUco/build/robot_camera_processor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/eragon/ArUco/build/robot_camera_processor
